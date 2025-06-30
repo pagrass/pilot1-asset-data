@@ -6,7 +6,7 @@ import yfinance as yf, json, os, time
 
 repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 out_path  = os.path.join(repo_root, "fundamentals.json")
-T = ["NVDA","TER","PAYC"]
+T = ["ADBE","CSCO","INTU", "CRM", "TXN"]
 funds = {}
 for sym in T:
     print(f"⏳ Fetching fundamentals for {sym}…")
