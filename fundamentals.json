@@ -1,22 +1,26 @@
 {
   "NVDA": {
     "eps": 3.1,
-    "pe": 53.0,
-    "div_y": 3.0
+    "pe": 53.2,
+    "div_y": 3.0,
+    "sector": "Technology"
   },
   "PAYC": {
     "eps": 7.02,
-    "pe": 31.7,
-    "div_y": 65.0
+    "pe": 31.6,
+    "div_y": 65.0,
+    "sector": "Technology"
   },
   "TER": {
     "eps": 3.53,
-    "pe": 27.0,
-    "div_y": 53.0
+    "pe": 26.9,
+    "div_y": 53.0,
+    "sector": "Technology"
   },
   "PG": {
     "eps": 6.3,
-    "pe": 24.3,
-    "div_y": 265.0
+    "pe": 24.4,
+    "div_y": 265.0,
+    "sector": "Consumer Staples"
   }
 }

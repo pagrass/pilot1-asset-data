@@ -4,9 +4,16 @@
 python3 - <<'PYCODE'
 import yfinance as yf, json, os, time
 
-repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-out_path  = os.path.join(repo_root, "fundamentals.json")
+# Save in current working directory (no subfolder)
+out_path = os.path.join(os.getcwd(), "fundamentals.json")
+
 T = ["NVDA","PAYC","TER", "PG"]
+sector_map = {
+    "NVDA": "Technology",
+    "PAYC": "Technology",
+    "TER": "Technology",
+    "PG": "Consumer Staples"
+}
 funds = {}
 for sym in T:
     print(f"⏳ Fetching fundamentals for {sym}…")
@@ -15,9 +22,13 @@ for sym in T:
     pr  = t.get("regularMarketPrice")
     pe  = round(pr/eps,1) if eps and pr else None
     dy  = round(t.get("dividendYield",0)*100,1)
-    funds[sym] = {"eps": eps, "pe": pe, "div_y": dy}
+    funds[sym] = {
+        "eps": eps,
+        "pe": pe,
+        "div_y": dy,
+        "sector": sector_map[sym]
+    }
     time.sleep(10)
 with open(out_path, "w") as f: json.dump(funds, f, indent=2)
-print("→ Written fundamentals.json")
+print("→ Written fundamentals.json to", out_path)
 PYCODE
-
