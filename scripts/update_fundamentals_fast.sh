@@ -7,12 +7,13 @@ import yfinance as yf, json, os, time
 # Save in current working directory (no subfolder)
 out_path = os.path.join(os.getcwd(), "fundamentals.json")
 
-T = ["NVDA","PAYC","TER", "PG"]
+T = ["NVDA","PAYC","TER", "TGT", "COST"]
 sector_map = {
     "NVDA": "Technology",
     "PAYC": "Technology",
     "TER": "Technology",
-    "PG": "Consumer Staples"
+    "TGT": "Consumer Staples",
+    "COST": "Consumer Staples"
 }
 funds = {}
 for sym in T:
