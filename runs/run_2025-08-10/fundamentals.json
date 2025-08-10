@@ -1,0 +1,44 @@
+{
+  "NVDA": {
+    "eps": 3.11,
+    "pe": 58.8,
+    "div_y": 2.0,
+    "sector": "Technology"
+  },
+  "PAYC": {
+    "eps": 7.4,
+    "pe": 31.1,
+    "div_y": 65.0,
+    "sector": "Technology"
+  },
+  "TER": {
+    "eps": 2.88,
+    "pe": 37.3,
+    "div_y": 45.0,
+    "sector": "Technology"
+  },
+  "TGT": {
+    "eps": 9.1,
+    "pe": 11.6,
+    "div_y": 427.0,
+    "sector": "Consumer Defensive"
+  },
+  "COST": {
+    "eps": 17.66,
+    "pe": 55.5,
+    "div_y": 53.0,
+    "sector": "Consumer Defensive"
+  },
+  "KO": {
+    "eps": 2.82,
+    "pe": 24.9,
+    "div_y": 290.0,
+    "sector": "Consumer Defensive"
+  },
+  "PEP": {
+    "eps": 5.49,
+    "pe": 26.4,
+    "div_y": 392.0,
+    "sector": "Consumer Defensive"
+  }
+}

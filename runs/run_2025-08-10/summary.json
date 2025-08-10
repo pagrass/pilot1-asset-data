@@ -1,0 +1,105 @@
+{
+  "started_at": "2025-08-10T19:40:00",
+  "window_start": "2024-08-10",
+  "window_end": "2025-08-10",
+  "files": [
+    {
+      "symbol": "NVDA",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/nvda_365d.json",
+      "points": 249,
+      "first_ts": 1723435200000,
+      "last_ts": 1754625600000
+    },
+    {
+      "symbol": "TER",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/ter_365d.json",
+      "points": 249,
+      "first_ts": 1723435200000,
+      "last_ts": 1754625600000
+    },
+    {
+      "symbol": "PAYC",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/payc_365d.json",
+      "points": 249,
+      "first_ts": 1723435200000,
+      "last_ts": 1754625600000
+    },
+    {
+      "symbol": "KO",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/ko_365d.json",
+      "points": 249,
+      "first_ts": 1723435200000,
+      "last_ts": 1754625600000
+    },
+    {
+      "symbol": "PEP",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/pep_365d.json",
+      "points": 249,
+      "first_ts": 1723435200000,
+      "last_ts": 1754625600000
+    },
+    {
+      "symbol": "BTC-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/btc_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    },
+    {
+      "symbol": "ETH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/eth_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    },
+    {
+      "symbol": "ADA-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/ada_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    },
+    {
+      "symbol": "ATOM-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/atom_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    },
+    {
+      "symbol": "QNT-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/qnt_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    },
+    {
+      "symbol": "LTC-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/ltc_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    },
+    {
+      "symbol": "TON11419-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/ton11419_365d.json",
+      "points": 364,
+      "first_ts": 1723248000000,
+      "last_ts": 1754611200000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "NVDA",
+      "PAYC",
+      "TER",
+      "TGT",
+      "COST",
+      "KO",
+      "PEP"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-10/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/current/fundamentals.json"
+  }
+}
