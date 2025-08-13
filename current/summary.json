@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-08-13T11:39:16",
+  "started_at": "2025-08-13T12:02:17",
   "window_start": "2024-08-13",
   "window_end": "2025-08-13",
   "files": [
@@ -48,6 +48,13 @@
     {
       "symbol": "COST",
       "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-13/cost_365d.json",
+      "points": 250,
+      "first_ts": 1723521600000,
+      "last_ts": 1754971200000
+    },
+    {
+      "symbol": "MA",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-13/ma_365d.json",
       "points": 250,
       "first_ts": 1723521600000,
       "last_ts": 1754971200000
