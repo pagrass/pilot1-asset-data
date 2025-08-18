@@ -1,0 +1,38 @@
+{
+  "DOCN": {
+    "eps": 1.31,
+    "pe": 23.7,
+    "div_y": null,
+    "sector": "Technology"
+  },
+  "XYZ": {
+    "eps": 4.68,
+    "pe": 16.2,
+    "div_y": null,
+    "sector": "Technology"
+  },
+  "COIN": {
+    "eps": 10.38,
+    "pe": 30.6,
+    "div_y": null,
+    "sector": "Financial Services"
+  },
+  "BAC": {
+    "eps": 3.41,
+    "pe": 13.8,
+    "div_y": 239.0,
+    "sector": "Financial Services"
+  },
+  "PEP": {
+    "eps": 5.49,
+    "pe": 27.4,
+    "div_y": 378.0,
+    "sector": "Consumer Defensive"
+  },
+  "GLW": {
+    "eps": 0.94,
+    "pe": 69.6,
+    "div_y": 171.0,
+    "sector": "Materials"
+  }
+}
