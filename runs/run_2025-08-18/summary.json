@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-08-18T10:19:09",
+  "started_at": "2025-08-18T13:37:45",
   "window_start": "2024-08-18",
   "window_end": "2025-08-18",
   "files": [
@@ -60,29 +60,22 @@
       "last_ts": 1755388800000
     },
     {
-      "symbol": "ADA-USD",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/ada_365d.json",
+      "symbol": "XMR-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/xmr_365d.json",
       "points": 365,
       "first_ts": 1723939200000,
       "last_ts": 1755388800000
     },
     {
-      "symbol": "ATOM-USD",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/atom_365d.json",
-      "points": 365,
+      "symbol": "APT-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/apt_365d.json",
+      "points": 311,
       "first_ts": 1723939200000,
-      "last_ts": 1755388800000
+      "last_ts": 1750723200000
     },
     {
       "symbol": "QNT-USD",
       "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/qnt_365d.json",
-      "points": 365,
-      "first_ts": 1723939200000,
-      "last_ts": 1755388800000
-    },
-    {
-      "symbol": "LTC-USD",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/ltc_365d.json",
       "points": 365,
       "first_ts": 1723939200000,
       "last_ts": 1755388800000
