@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-08-18T14:13:30",
+  "started_at": "2025-08-18T14:39:32",
   "window_start": "2024-08-18",
   "window_end": "2025-08-18",
   "files": [
@@ -25,11 +25,11 @@
       "last_ts": 1755388800000
     },
     {
-      "symbol": "APT-USD",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/apt_365d.json",
-      "points": 311,
+      "symbol": "APT21794-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-18/apt21794_365d.json",
+      "points": 365,
       "first_ts": 1723939200000,
-      "last_ts": 1750723200000
+      "last_ts": 1755388800000
     },
     {
       "symbol": "QNT-USD",
