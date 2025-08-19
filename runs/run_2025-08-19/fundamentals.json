@@ -1,0 +1,36 @@
+{
+  "DOCN": {
+    "eps": 1.31,
+    "pe": 24.2,
+    "div_y": null,
+    "sector": "Technology"
+  },
+  "MSFT": {
+    "eps": 13.65,
+    "pe": 37.9,
+    "div_y": 64.0,
+    "sector": "Technology"
+  },
+  "VZ": {
+    "eps": 4.3,
+    "pe": 10.3,
+    "div_y": 610.0,
+    "sector": "Communication Services"
+  },
+  "ZS": {
+    "eps": -0.25,
+    "pe": -1108.1,
+    "div_y": null,
+    "sector": "Technology"
+  },
+  "UFTI": {
+    "error": "HTTP Error 404: ",
+    "sector": "Basic Materials"
+  },
+  "DY": {
+    "eps": 7.89,
+    "pe": 34.6,
+    "div_y": null,
+    "sector": "Industrials"
+  }
+}
