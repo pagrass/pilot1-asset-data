@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-08-19T12:10:57",
+  "started_at": "2025-08-19T12:59:09",
   "window_start": "2024-08-19",
   "window_end": "2025-08-19",
   "files": [
@@ -32,6 +32,13 @@
       "last_ts": 1755489600000
     },
     {
+      "symbol": "UFPI",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-19/ufpi_365d.json",
+      "points": 250,
+      "first_ts": 1724040000000,
+      "last_ts": 1755489600000
+    },
+    {
       "symbol": "DY",
       "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-19/dy_365d.json",
       "points": 250,
@@ -39,19 +46,14 @@
       "last_ts": 1755489600000
     }
   ],
-  "errors": [
-    {
-      "symbol": "UFTI",
-      "error": "Empty dataframe returned."
-    }
-  ],
+  "errors": [],
   "fundamentals": {
     "tickers": [
       "DOCN",
       "MSFT",
       "VZ",
       "ZS",
-      "UFTI",
+      "UFPI",
       "DY"
     ],
     "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-08-19/fundamentals.json",
