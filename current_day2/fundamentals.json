@@ -1,6 +1,6 @@
 {
   "CSCO": {
-    "marketcap": 278.92,
+    "marketcap": 278917.81,
     "pb_current": 5.95,
     "pb_current_pctile": 52.0,
     "div_y": 2.31,
@@ -8,7 +8,7 @@
     "sector": "Information Technology"
   },
   "TMUS": {
-    "marketcap": 255.3,
+    "marketcap": 255301.3,
     "pb_current": 4.14,
     "pb_current_pctile": 65.0,
     "div_y": 1.84,
@@ -16,7 +16,7 @@
     "sector": "Communication Services"
   },
   "TWLO": {
-    "marketcap": 16.74,
+    "marketcap": 16738.84,
     "pb_current": 2.1,
     "pb_current_pctile": 16.0,
     "div_y": null,
@@ -24,7 +24,7 @@
     "sector": "Information Technology"
   },
   "PEGA": {
-    "marketcap": 9.34,
+    "marketcap": 9342.72,
     "pb_current": 15.96,
     "pb_current_pctile": 79.0,
     "div_y": 0.19,
@@ -32,7 +32,7 @@
     "sector": "Information Technology"
   },
   "ROG": {
-    "marketcap": 1.57,
+    "marketcap": 1568.52,
     "pb_current": 1.25,
     "pb_current_pctile": 5.0,
     "div_y": 0.04,
@@ -40,7 +40,7 @@
     "sector": "Information Technology"
   },
   "PD": {
-    "marketcap": 1.47,
+    "marketcap": 1467.23,
     "pb_current": 11.3,
     "pb_current_pctile": 71.0,
     "div_y": null,
