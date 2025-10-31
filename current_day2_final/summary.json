@@ -1,0 +1,70 @@
+{
+  "started_at": "2025-10-31T14:59:23",
+  "window_start": "2024-10-31",
+  "window_end": "2025-10-31",
+  "files": [
+    {
+      "symbol": "CSCO",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/csco_365d.json",
+      "points": 250,
+      "first_ts": 1730347200000,
+      "last_ts": 1761796800000
+    },
+    {
+      "symbol": "TMUS",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/tmus_365d.json",
+      "points": 250,
+      "first_ts": 1730347200000,
+      "last_ts": 1761796800000
+    },
+    {
+      "symbol": "TWLO",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/twlo_365d.json",
+      "points": 250,
+      "first_ts": 1730347200000,
+      "last_ts": 1761796800000
+    },
+    {
+      "symbol": "PEGA",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/pega_365d.json",
+      "points": 250,
+      "first_ts": 1730347200000,
+      "last_ts": 1761796800000
+    },
+    {
+      "symbol": "ROG",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/rog_365d.json",
+      "points": 250,
+      "first_ts": 1730347200000,
+      "last_ts": 1761796800000
+    },
+    {
+      "symbol": "PD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/pd_365d.json",
+      "points": 250,
+      "first_ts": 1730347200000,
+      "last_ts": 1761796800000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "CSCO",
+      "TMUS",
+      "TWLO",
+      "PEGA",
+      "ROG",
+      "PD"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-10-31/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/current_day2/fundamentals.json",
+    "source": "csv",
+    "csv_path": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Model Spillovers/Data/Stock Selection/preselection/candidate_subset_all.csv",
+    "fields": [
+      "marketcap",
+      "pb_current",
+      "pb_current_pctile",
+      "div_y"
+    ]
+  }
+}
