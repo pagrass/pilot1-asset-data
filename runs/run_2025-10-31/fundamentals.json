@@ -4,7 +4,7 @@
     "pb_current": 6.13,
     "pb_current_pctile": 54.0,
     "div_y": 2.24,
-    "valuation": "High",
+    "valuation": "Mid",
     "sector": "Information Technology"
   },
   "TMUS": {
@@ -12,7 +12,7 @@
     "pb_current": 3.82,
     "pb_current_pctile": 63.0,
     "div_y": 1.98,
-    "valuation": "High",
+    "valuation": "Mid",
     "sector": "Communication Services"
   },
   "TWLO": {
@@ -20,7 +20,7 @@
     "pb_current": 2.18,
     "pb_current_pctile": 16.0,
     "div_y": null,
-    "valuation": "High",
+    "valuation": "Low",
     "sector": "Information Technology"
   },
   "PEGA": {
@@ -36,7 +36,7 @@
     "pb_current": 1.27,
     "pb_current_pctile": 6.0,
     "div_y": 0.04,
-    "valuation": "High",
+    "valuation": "Low",
     "sector": "Information Technology"
   },
   "PD": {
