@@ -1,0 +1,44 @@
+{
+  "started_at": "2025-12-08T15:40:35",
+  "window_start": "2024-12-08",
+  "window_end": "2025-12-08",
+  "files": [
+    {
+      "ticker": "EURUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/eurusd_365d.json",
+      "points": 257
+    },
+    {
+      "ticker": "GBPUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/gbpusd_365d.json",
+      "points": 257
+    },
+    {
+      "ticker": "JPYUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/jpyusd_365d.json",
+      "points": 257
+    },
+    {
+      "ticker": "AUDUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/audusd_365d.json",
+      "points": 257
+    },
+    {
+      "ticker": "CADUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/cadusd_365d.json",
+      "points": 257
+    },
+    {
+      "ticker": "MXNUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/mxnusd_365d.json",
+      "points": 257
+    },
+    {
+      "ticker": "KRWUSD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/runs/run_2025-12-08/krwusd_365d.json",
+      "points": 257
+    }
+  ],
+  "errors": [],
+  "fundamentals_file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/fx/current_fx/fundamentals.json"
+}

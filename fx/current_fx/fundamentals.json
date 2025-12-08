@@ -1,0 +1,30 @@
+{
+  "EURUSD=X": {
+    "country": "Euro Area",
+    "ppp_misalign_percent": 36.1
+  },
+  "GBPUSD=X": {
+    "country": "United Kingdom",
+    "ppp_misalign_percent": 31.1
+  },
+  "JPYUSD=X": {
+    "country": "Japan",
+    "ppp_misalign_percent": -41.2
+  },
+  "AUDUSD=X": {
+    "country": "Australia",
+    "ppp_misalign_percent": -9.8
+  },
+  "CADUSD=X": {
+    "country": "Canada",
+    "ppp_misalign_percent": 0.4
+  },
+  "MXNUSD=X": {
+    "country": "Mexico",
+    "ppp_misalign_percent": 17.7
+  },
+  "KRWUSD=X": {
+    "country": "South Korea",
+    "ppp_misalign_percent": -25.0
+  }
+}
