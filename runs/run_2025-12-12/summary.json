@@ -1,0 +1,39 @@
+{
+  "started_at": "2025-12-12T16:35:03",
+  "window_start": "2024-12-12",
+  "window_end": "2025-12-12",
+  "files": [
+    {
+      "ticker": "USDEUR=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-12-12/usdeur_365d.json",
+      "points": 258
+    },
+    {
+      "ticker": "USDGBP=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-12-12/usdgbp_365d.json",
+      "points": 258
+    },
+    {
+      "ticker": "USDJPY=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-12-12/usdjpy_365d.json",
+      "points": 258
+    },
+    {
+      "ticker": "USDNZD=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-12-12/usdnzd_365d.json",
+      "points": 258
+    },
+    {
+      "ticker": "USDMXN=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-12-12/usdmxn_365d.json",
+      "points": 258
+    },
+    {
+      "ticker": "USDCNY=X",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/runs/run_2025-12-12/usdcny_365d.json",
+      "points": 258
+    }
+  ],
+  "errors": [],
+  "fundamentals_file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/current_fx/fundamentals.json"
+}
