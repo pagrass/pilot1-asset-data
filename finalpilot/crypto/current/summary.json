@@ -1,0 +1,70 @@
+{
+  "started_at": "2025-12-16T14:24:03",
+  "window_start": "2024-12-16",
+  "window_end": "2025-12-16",
+  "files": [
+    {
+      "symbol": "BTC-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/btc_365d.json",
+      "points": 365,
+      "first_ts": 1734307200000,
+      "last_ts": 1765756800000
+    },
+    {
+      "symbol": "XMR-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/xmr_365d.json",
+      "points": 365,
+      "first_ts": 1734307200000,
+      "last_ts": 1765756800000
+    },
+    {
+      "symbol": "BNB-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/bnb_365d.json",
+      "points": 365,
+      "first_ts": 1734307200000,
+      "last_ts": 1765756800000
+    },
+    {
+      "symbol": "BCH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/bch_365d.json",
+      "points": 365,
+      "first_ts": 1734307200000,
+      "last_ts": 1765756800000
+    },
+    {
+      "symbol": "ETH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/eth_365d.json",
+      "points": 365,
+      "first_ts": 1734307200000,
+      "last_ts": 1765756800000
+    },
+    {
+      "symbol": "TRX-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/trx_365d.json",
+      "points": 365,
+      "first_ts": 1734307200000,
+      "last_ts": 1765756800000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "CSCO",
+      "TMUS",
+      "TWLO",
+      "PEGA",
+      "ROG",
+      "PD"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/runs/run_2025-12-16/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/crypto/current/fundamentals.json",
+    "source": "csv",
+    "csv_path": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Model Spillovers/Data/Stock Selection/preselection/candidate_subset_all.csv",
+    "fields": [
+      "marketcap",
+      "pb_current",
+      "pb_current_pctile",
+      "div_y"
+    ]
+  }
+}
