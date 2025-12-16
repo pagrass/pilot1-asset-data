@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-12-16T13:35:50",
+  "started_at": "2025-12-16T13:58:49",
   "window_start": "2024-12-16",
   "window_end": "2025-12-16",
   "files": [
@@ -18,8 +18,8 @@
       "last_ts": 1765756800000
     },
     {
-      "symbol": "TON11419-USD",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/crypto/runs/run_2025-12-16/ton11419_365d.json",
+      "symbol": "XRP-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/crypto/runs/run_2025-12-16/xrp_365d.json",
       "points": 365,
       "first_ts": 1734307200000,
       "last_ts": 1765756800000
