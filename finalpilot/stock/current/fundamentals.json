@@ -8,7 +8,11 @@
     "sector": "Information Technology"
   },
   "MSFT": {
-    "error": "Ticker not found in CSV",
+    "marketcap": 3541086.24,
+    "pb_current": 10.31,
+    "pb_current_pctile": 68.0,
+    "div_y": 0.89,
+    "valuation": "High",
     "sector": "Information Technology"
   },
   "TER": {
