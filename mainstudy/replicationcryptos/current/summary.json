@@ -1,28 +1,28 @@
 {
-  "started_at": "2025-12-17T16:57:58",
+  "started_at": "2025-12-17T17:52:06",
   "window_start": "2024-12-17",
-  "window_end": "2025-12-17",
+  "window_end_exclusive": "2025-12-18",
   "files": [
     {
       "symbol": "XMR-USD",
       "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/mainstudy/replicationcryptos/runs/run_2025-12-17/xmr_365d.json",
-      "points": 365,
+      "points": 366,
       "first_ts": 1734393600000,
-      "last_ts": 1765843200000
+      "last_ts": 1765929600000
     },
     {
       "symbol": "BCH-USD",
       "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/mainstudy/replicationcryptos/runs/run_2025-12-17/bch_365d.json",
-      "points": 365,
+      "points": 366,
       "first_ts": 1734393600000,
-      "last_ts": 1765843200000
+      "last_ts": 1765929600000
     },
     {
       "symbol": "ETH-USD",
       "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/mainstudy/replicationcryptos/runs/run_2025-12-17/eth_365d.json",
-      "points": 365,
+      "points": 366,
       "first_ts": 1734393600000,
-      "last_ts": 1765843200000
+      "last_ts": 1765929600000
     }
   ],
   "errors": [],
