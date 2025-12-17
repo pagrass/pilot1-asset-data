@@ -9,7 +9,7 @@
   },
   "MSFT": {
     "error": "Ticker not found in CSV",
-    "sector": null
+    "sector": "Information Technology"
   },
   "TER": {
     "marketcap": 30191.36,
@@ -17,7 +17,7 @@
     "pb_current_pctile": 70.0,
     "div_y": 0.32,
     "valuation": "High",
-    "sector": null
+    "sector": "Information Technology"
   },
   "AKAM": {
     "marketcap": 12606.19,
@@ -25,7 +25,7 @@
     "pb_current_pctile": 21.0,
     "div_y": null,
     "valuation": "Low",
-    "sector": null
+    "sector": "Information Technology"
   },
   "NTAP": {
     "marketcap": 22594.81,
@@ -33,7 +33,7 @@
     "pb_current_pctile": 88.0,
     "div_y": 2.3,
     "valuation": "High",
-    "sector": null
+    "sector": "Information Technology"
   },
   "AMKR": {
     "marketcap": 9881.56,
@@ -41,6 +41,6 @@
     "pb_current_pctile": 16.0,
     "div_y": 2.05,
     "valuation": "Low",
-    "sector": null
+    "sector": "Information Technology"
   }
 }
