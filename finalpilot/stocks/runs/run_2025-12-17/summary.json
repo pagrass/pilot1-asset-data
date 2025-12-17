@@ -1,0 +1,70 @@
+{
+  "started_at": "2025-12-17T14:54:51",
+  "window_start": "2024-12-17",
+  "window_end": "2025-12-17",
+  "files": [
+    {
+      "symbol": "CSCO",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/csco_365d.json",
+      "points": 250,
+      "first_ts": 1734411600000,
+      "last_ts": 1765861200000
+    },
+    {
+      "symbol": "MSFT",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/msft_365d.json",
+      "points": 250,
+      "first_ts": 1734411600000,
+      "last_ts": 1765861200000
+    },
+    {
+      "symbol": "TER",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/ter_365d.json",
+      "points": 250,
+      "first_ts": 1734411600000,
+      "last_ts": 1765861200000
+    },
+    {
+      "symbol": "AKAM",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/akam_365d.json",
+      "points": 250,
+      "first_ts": 1734411600000,
+      "last_ts": 1765861200000
+    },
+    {
+      "symbol": "NTAP",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/ntap_365d.json",
+      "points": 250,
+      "first_ts": 1734411600000,
+      "last_ts": 1765861200000
+    },
+    {
+      "symbol": "AMKR",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/amkr_365d.json",
+      "points": 250,
+      "first_ts": 1734411600000,
+      "last_ts": 1765861200000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "CSCO",
+      "MSFT",
+      "TER",
+      "AKAM",
+      "NTAP",
+      "AMKR"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/runs/run_2025-12-17/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finalpilot/stocks/current/fundamentals.json",
+    "source": "csv",
+    "csv_path": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Model Spillovers/Data/Stock Selection/preselection/candidate_subset_all.csv",
+    "fields": [
+      "marketcap",
+      "pb_current",
+      "pb_current_pctile",
+      "div_y"
+    ]
+  }
+}
