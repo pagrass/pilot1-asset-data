@@ -1,0 +1,49 @@
+{
+  "started_at": "2025-12-17T18:12:03",
+  "window_start": "2024-12-17",
+  "window_end": "2025-12-17",
+  "files": [
+    {
+      "symbol": "ETH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/replicationcryptos/runs/run_2025-12-17/eth_365d.json",
+      "points": 365,
+      "first_ts": 1734393600000,
+      "last_ts": 1765843200000
+    },
+    {
+      "symbol": "XMR-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/replicationcryptos/runs/run_2025-12-17/xmr_365d.json",
+      "points": 365,
+      "first_ts": 1734393600000,
+      "last_ts": 1765843200000
+    },
+    {
+      "symbol": "BCH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/replicationcryptos/runs/run_2025-12-17/bch_365d.json",
+      "points": 365,
+      "first_ts": 1734393600000,
+      "last_ts": 1765843200000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "CSCO",
+      "TMUS",
+      "TWLO",
+      "PEGA",
+      "ROG",
+      "PD"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/replicationcryptos/runs/run_2025-12-17/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/replicationcryptos/current/fundamentals.json",
+    "source": "csv",
+    "csv_path": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Model Spillovers/Data/Stock Selection/preselection/candidate_subset_all.csv",
+    "fields": [
+      "marketcap",
+      "pb_current",
+      "pb_current_pctile",
+      "div_y"
+    ]
+  }
+}
