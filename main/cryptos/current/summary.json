@@ -1,0 +1,70 @@
+{
+  "started_at": "2025-12-18T10:50:50",
+  "window_start": "2024-12-18",
+  "window_end": "2025-12-18",
+  "files": [
+    {
+      "symbol": "BTC-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/btc_365d.json",
+      "points": 365,
+      "first_ts": 1734480000000,
+      "last_ts": 1765929600000
+    },
+    {
+      "symbol": "XMR-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/xmr_365d.json",
+      "points": 365,
+      "first_ts": 1734480000000,
+      "last_ts": 1765929600000
+    },
+    {
+      "symbol": "BNB-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/bnb_365d.json",
+      "points": 365,
+      "first_ts": 1734480000000,
+      "last_ts": 1765929600000
+    },
+    {
+      "symbol": "BCH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/bch_365d.json",
+      "points": 365,
+      "first_ts": 1734480000000,
+      "last_ts": 1765929600000
+    },
+    {
+      "symbol": "ETH-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/eth_365d.json",
+      "points": 365,
+      "first_ts": 1734480000000,
+      "last_ts": 1765929600000
+    },
+    {
+      "symbol": "TRX-USD",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/trx_365d.json",
+      "points": 365,
+      "first_ts": 1734480000000,
+      "last_ts": 1765929600000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "CSCO",
+      "MSFT",
+      "TER",
+      "AKAM",
+      "NTAP",
+      "AMKR"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/runs/run_2025-12-18/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/cryptos/current/fundamentals.json",
+    "source": "csv",
+    "csv_path": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Model Spillovers/Data/Stock Selection/preselection/candidate_subset_all.csv",
+    "fields": [
+      "marketcap",
+      "pb_current",
+      "pb_current_pctile",
+      "div_y"
+    ]
+  }
+}
