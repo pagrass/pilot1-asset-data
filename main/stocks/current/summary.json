@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-12-19T13:49:02",
+  "started_at": "2025-12-19T14:01:03",
   "window_start": "2024-12-19",
   "window_end": "2025-12-19",
   "files": [
@@ -25,8 +25,8 @@
       "last_ts": 1766034000000
     },
     {
-      "symbol": "AKAM",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stocks/runs/run_2025-12-19/akam_365d.json",
+      "symbol": "AMKR",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stocks/runs/run_2025-12-19/amkr_365d.json",
       "points": 250,
       "first_ts": 1734584400000,
       "last_ts": 1766034000000
@@ -52,7 +52,7 @@
       "CSCO",
       "MSFT",
       "TER",
-      "AKAM",
+      "AMKR",
       "CRM",
       "NOW"
     ],
