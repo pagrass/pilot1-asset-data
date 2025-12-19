@@ -1,5 +1,5 @@
 {
-  "started_at": "2025-12-19T09:14:19",
+  "started_at": "2025-12-19T10:58:55",
   "window_start": "2024-12-19",
   "window_end": "2025-12-19",
   "files": [
@@ -32,15 +32,15 @@
       "last_ts": 1766034000000
     },
     {
-      "symbol": "NTAP",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finaltest/stocks/runs/run_2025-12-19/ntap_365d.json",
+      "symbol": "CRM",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finaltest/stocks/runs/run_2025-12-19/crm_365d.json",
       "points": 250,
       "first_ts": 1734584400000,
       "last_ts": 1766034000000
     },
     {
-      "symbol": "AMKR",
-      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finaltest/stocks/runs/run_2025-12-19/amkr_365d.json",
+      "symbol": "NOW",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finaltest/stocks/runs/run_2025-12-19/now_365d.json",
       "points": 250,
       "first_ts": 1734584400000,
       "last_ts": 1766034000000
@@ -53,8 +53,8 @@
       "MSFT",
       "TER",
       "AKAM",
-      "NTAP",
-      "AMKR"
+      "CRM",
+      "NOW"
     ],
     "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finaltest/stocks/runs/run_2025-12-19/fundamentals.json",
     "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/finaltest/stocks/current/fundamentals.json",
