@@ -1,0 +1,70 @@
+{
+  "started_at": "2025-12-20T09:08:42",
+  "window_start": "2024-12-20",
+  "window_end": "2025-12-20",
+  "files": [
+    {
+      "symbol": "CSCO",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/csco_365d.json",
+      "points": 250,
+      "first_ts": 1734670800000,
+      "last_ts": 1766120400000
+    },
+    {
+      "symbol": "MSFT",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/msft_365d.json",
+      "points": 250,
+      "first_ts": 1734670800000,
+      "last_ts": 1766120400000
+    },
+    {
+      "symbol": "TER",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/ter_365d.json",
+      "points": 250,
+      "first_ts": 1734670800000,
+      "last_ts": 1766120400000
+    },
+    {
+      "symbol": "AMKR",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/amkr_365d.json",
+      "points": 250,
+      "first_ts": 1734670800000,
+      "last_ts": 1766120400000
+    },
+    {
+      "symbol": "CRM",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/crm_365d.json",
+      "points": 250,
+      "first_ts": 1734670800000,
+      "last_ts": 1766120400000
+    },
+    {
+      "symbol": "NOW",
+      "file": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/now_365d.json",
+      "points": 250,
+      "first_ts": 1734670800000,
+      "last_ts": 1766120400000
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "tickers": [
+      "CSCO",
+      "MSFT",
+      "TER",
+      "AMKR",
+      "CRM",
+      "NOW"
+    ],
+    "file_run": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/runs/run_2025-12-20/fundamentals.json",
+    "file_current": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data/main/stockd2/current/fundamentals.json",
+    "source": "csv",
+    "csv_path": "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Model Spillovers/Data/Stock Selection/preselection/candidate_subset_all.csv",
+    "fields": [
+      "marketcap",
+      "pb_current",
+      "pb_current_pctile",
+      "div_y"
+    ]
+  }
+}
