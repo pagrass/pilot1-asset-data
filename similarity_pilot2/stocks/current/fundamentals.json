@@ -1,50 +1,20 @@
 {
   "CME": {
-    "marketcap": 109050.9,
-    "pb_current": 3.79,
-    "pb_current_pctile": 38,
-    "div_y": 170.0,
-    "valuation": "Mid",
-    "sector": "Financials"
+    "error": "fetch failed"
   },
   "ICE": {
-    "marketcap": 89529.44,
-    "pb_current": 3.08,
-    "pb_current_pctile": 38,
-    "div_y": 130.0,
-    "valuation": "Mid",
-    "sector": "Financials"
+    "error": "fetch failed"
   },
   "MSTR": {
-    "marketcap": 46168.01,
-    "pb_current": 0.98,
-    "pb_current_pctile": 0,
-    "div_y": null,
-    "valuation": "Low",
-    "sector": "Technology"
+    "error": "fetch failed"
   },
   "PYPL": {
-    "marketcap": 42637.66,
-    "pb_current": 2.07,
-    "pb_current_pctile": 8,
-    "div_y": 124.0,
-    "valuation": "Low",
-    "sector": "Financials"
+    "error": "fetch failed"
   },
   "HOOD": {
-    "marketcap": 70845.27,
-    "pb_current": 7.76,
-    "pb_current_pctile": 77,
-    "div_y": null,
-    "valuation": "High",
-    "sector": "Financials"
+    "error": "fetch failed"
   },
   "SOFI": {
-    "marketcap": 23630.64,
-    "pb_current": 2.24,
-    "pb_current_pctile": 8,
-    "div_y": null,
-    "valuation": "Low",
-    "sector": "Financials"
+    "error": "fetch failed"
   }
 }
