@@ -1,66 +1,97 @@
 {
-  "started_at": "2026-03-11T21:01:49",
+  "started_at": "2026-03-11T21:10:58",
   "window_start": "2025-03-11",
   "window_end": "2026-03-11",
-  "cryptos": [],
-  "stocks": [],
-  "errors": [
+  "cryptos": [
     {
       "symbol": "BTC-USD",
-      "type": "price"
+      "points": 365
     },
     {
-      "symbol": "BCH-USD",
-      "type": "price"
+      "symbol": "ETH-USD",
+      "points": 365
     },
     {
       "symbol": "TRX-USD",
-      "type": "price"
-    },
+      "points": 365
+    }
+  ],
+  "stocks": [
     {
       "symbol": "CME",
-      "type": "price"
+      "points": 251
     },
     {
       "symbol": "ICE",
-      "type": "price"
+      "points": 251
     },
     {
       "symbol": "MSTR",
-      "type": "price"
+      "points": 251
     },
     {
       "symbol": "PYPL",
-      "type": "price"
+      "points": 251
     },
     {
       "symbol": "HOOD",
-      "type": "price"
+      "points": 251
     },
     {
       "symbol": "SOFI",
-      "type": "price"
+      "points": 251
     }
   ],
+  "errors": [],
   "fundamentals": {
     "CME": {
-      "error": "fetch failed"
+      "marketcap": 109050.9,
+      "pb_current": 3.79,
+      "pb_current_pctile": 38,
+      "div_y": 170.0,
+      "valuation": "Mid",
+      "sector": "Financials"
     },
     "ICE": {
-      "error": "fetch failed"
+      "marketcap": 89529.44,
+      "pb_current": 3.08,
+      "pb_current_pctile": 38,
+      "div_y": 130.0,
+      "valuation": "Mid",
+      "sector": "Financials"
     },
     "MSTR": {
-      "error": "fetch failed"
+      "marketcap": 46168.01,
+      "pb_current": 0.98,
+      "pb_current_pctile": 0,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Technology"
     },
     "PYPL": {
-      "error": "fetch failed"
+      "marketcap": 42637.66,
+      "pb_current": 2.07,
+      "pb_current_pctile": 8,
+      "div_y": 124.0,
+      "valuation": "Low",
+      "sector": "Financials"
     },
     "HOOD": {
-      "error": "fetch failed"
+      "marketcap": 70845.27,
+      "pb_current": 7.76,
+      "pb_current_pctile": 77,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Financials"
     },
     "SOFI": {
-      "error": "fetch failed"
+      "marketcap": 23630.64,
+      "pb_current": 2.24,
+      "pb_current_pctile": 8,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Financials"
     }
   },
-  "finished_at": "2026-03-11T21:05:56"
+  "finished_at": "2026-03-11T21:17:59"
 }
