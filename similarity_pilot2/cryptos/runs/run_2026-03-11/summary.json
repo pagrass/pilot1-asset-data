@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-03-11T21:01:49",
+  "window_start": "2025-03-11",
+  "window_end": "2026-03-11",
+  "cryptos": [],
+  "stocks": [],
+  "errors": [
+    {
+      "symbol": "BTC-USD",
+      "type": "price"
+    },
+    {
+      "symbol": "BCH-USD",
+      "type": "price"
+    },
+    {
+      "symbol": "TRX-USD",
+      "type": "price"
+    },
+    {
+      "symbol": "CME",
+      "type": "price"
+    },
+    {
+      "symbol": "ICE",
+      "type": "price"
+    },
+    {
+      "symbol": "MSTR",
+      "type": "price"
+    },
+    {
+      "symbol": "PYPL",
+      "type": "price"
+    },
+    {
+      "symbol": "HOOD",
+      "type": "price"
+    },
+    {
+      "symbol": "SOFI",
+      "type": "price"
+    }
+  ],
+  "fundamentals": {
+    "CME": {
+      "error": "fetch failed"
+    },
+    "ICE": {
+      "error": "fetch failed"
+    },
+    "MSTR": {
+      "error": "fetch failed"
+    },
+    "PYPL": {
+      "error": "fetch failed"
+    },
+    "HOOD": {
+      "error": "fetch failed"
+    },
+    "SOFI": {
+      "error": "fetch failed"
+    }
+  },
+  "finished_at": "2026-03-11T21:05:56"
+}
