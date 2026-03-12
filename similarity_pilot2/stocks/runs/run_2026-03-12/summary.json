@@ -1,0 +1,64 @@
+{
+  "date": "2026-03-12",
+  "window_start": "2025-03-12",
+  "window_end": "2026-03-12",
+  "fundamentals": {
+    "CME": {
+      "marketcap": 109829.24,
+      "pb_current": 3.41,
+      "pb_current_pctile": 54,
+      "div_y": 1.71,
+      "valuation": "Mid",
+      "sector": "Financials"
+    },
+    "ICE": {
+      "marketcap": 90093.91,
+      "pb_current": 3.18,
+      "pb_current_pctile": 51,
+      "div_y": 1.32,
+      "valuation": "Mid",
+      "sector": "Financials"
+    },
+    "MSTR": {
+      "marketcap": 45680.73,
+      "pb_current": 1.07,
+      "pb_current_pctile": 1,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "PYPL": {
+      "marketcap": 42820.11,
+      "pb_current": 2.65,
+      "pb_current_pctile": 58,
+      "div_y": 1.23,
+      "valuation": "Mid",
+      "sector": "Financials"
+    },
+    "HOOD": {
+      "marketcap": 69319.25,
+      "pb_current": 11.15,
+      "pb_current_pctile": 93,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Financials"
+    },
+    "SOFI": {
+      "marketcap": 23324.45,
+      "pb_current": 3.17,
+      "pb_current_pctile": 80,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Financials"
+    },
+    "XYZ": {
+      "marketcap": 39072.86,
+      "pb_current": 1.76,
+      "pb_current_pctile": 50,
+      "div_y": null,
+      "valuation": "Mid",
+      "sector": "Financials"
+    }
+  },
+  "errors": []
+}
