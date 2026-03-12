@@ -1,0 +1,23 @@
+{
+  "CME": {
+    "error": "fetch failed"
+  },
+  "ICE": {
+    "error": "fetch failed"
+  },
+  "MSTR": {
+    "error": "fetch failed"
+  },
+  "PYPL": {
+    "error": "fetch failed"
+  },
+  "HOOD": {
+    "error": "fetch failed"
+  },
+  "SOFI": {
+    "error": "fetch failed"
+  },
+  "XYZ": {
+    "error": "fetch failed"
+  }
+}
