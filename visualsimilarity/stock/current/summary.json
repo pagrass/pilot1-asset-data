@@ -1,0 +1,87 @@
+{
+  "started_at": "2026-03-27T11:59:35",
+  "stocks": [
+    {
+      "symbol": "CRM",
+      "points": 252,
+      "return_pct": -33.2
+    },
+    {
+      "symbol": "NOW",
+      "points": 252,
+      "return_pct": -37.4
+    },
+    {
+      "symbol": "ARM",
+      "points": 252,
+      "return_pct": 37.6
+    },
+    {
+      "symbol": "STM",
+      "points": 252,
+      "return_pct": 43.8
+    },
+    {
+      "symbol": "MSFT",
+      "points": 252,
+      "return_pct": -6.3
+    },
+    {
+      "symbol": "CSCO",
+      "points": 252,
+      "return_pct": 33.8
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "CRM": {
+      "marketcap": 173944.68,
+      "pb_current": 3.33,
+      "pb_current_pctile": 40,
+      "div_y": 95.0,
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "NOW": {
+      "marketcap": 109355.02,
+      "pb_current": 12.38,
+      "pb_current_pctile": 83,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "ARM": {
+      "marketcap": 164397.38,
+      "pb_current": 16.5,
+      "pb_current_pctile": 89,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "STM": {
+      "marketcap": 29249.36,
+      "pb_current": 1.29,
+      "pb_current_pctile": 9,
+      "div_y": 1.09,
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "MSFT": {
+      "marketcap": 2720027.38,
+      "pb_current": 10.77,
+      "pb_current_pctile": 79,
+      "div_y": 99.0,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "CSCO": {
+      "marketcap": 324621.93,
+      "pb_current": 5.76,
+      "pb_current_pctile": 58,
+      "div_y": 2.04,
+      "valuation": "Mid",
+      "sector": "Technology"
+    }
+  },
+  "finished_at": "2026-03-27T12:00:05"
+}
