@@ -3,7 +3,7 @@
     "marketcap": 173944.68,
     "pb_current": 3.33,
     "pb_current_pctile": 40,
-    "div_y": 95.0,
+    "div_y": null,
     "valuation": "Mid",
     "sector": "Technology"
   },
@@ -35,7 +35,7 @@
     "marketcap": 2720027.38,
     "pb_current": 10.77,
     "pb_current_pctile": 79,
-    "div_y": 99.0,
+    "div_y": null,
     "valuation": "High",
     "sector": "Technology"
   },
