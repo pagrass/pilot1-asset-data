@@ -3,7 +3,7 @@
     "marketcap": 173944.68,
     "pb_current": 3.33,
     "pb_current_pctile": 40,
-    "div_y": null,
+    "div_y": 0.92,
     "valuation": "Low",
     "sector": "Technology"
   },
@@ -27,7 +27,7 @@
     "marketcap": 29249.36,
     "pb_current": 1.29,
     "pb_current_pctile": 9,
-    "div_y": 1.09,
+    "div_y": 1.11,
     "valuation": "Low",
     "sector": "Technology"
   },
@@ -35,7 +35,7 @@
     "marketcap": 2720027.38,
     "pb_current": 10.77,
     "pb_current_pctile": 79,
-    "div_y": null,
+    "div_y": 0.97,
     "valuation": "High",
     "sector": "Technology"
   },
@@ -43,7 +43,7 @@
     "marketcap": 324621.93,
     "pb_current": 5.76,
     "pb_current_pctile": 58,
-    "div_y": 2.04,
+    "div_y": 2.05,
     "valuation": "Mid",
     "sector": "Technology"
   }
