@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-05-05T16:09:46",
+  "cryptos": [
+    {
+      "symbol": "SOL-USD",
+      "slug": "sol",
+      "points": 366,
+      "return_pct": -42.1
+    },
+    {
+      "symbol": "BCH-USD",
+      "slug": "bch",
+      "points": 366,
+      "return_pct": 30.2
+    },
+    {
+      "symbol": "XMR-USD",
+      "slug": "xmr",
+      "points": 366,
+      "return_pct": 46.6
+    },
+    {
+      "symbol": "BTC-USD",
+      "slug": "btc",
+      "points": 366,
+      "return_pct": -14.6
+    },
+    {
+      "symbol": "TRX-USD",
+      "slug": "trx",
+      "points": 366,
+      "return_pct": 36.0
+    },
+    {
+      "symbol": "XRP-USD",
+      "slug": "xrp",
+      "points": 366,
+      "return_pct": -34.1
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-05-05T16:09:59"
+}
