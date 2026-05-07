@@ -1,0 +1,112 @@
+{
+  "started_at": "2026-05-07T13:14:02",
+  "stocks": [
+    {
+      "symbol": "ORCL",
+      "points": 251,
+      "return_pct": 29.9
+    },
+    {
+      "symbol": "MSFT",
+      "points": 251,
+      "return_pct": -4.5
+    },
+    {
+      "symbol": "PLUS",
+      "points": 251,
+      "return_pct": 32.7
+    },
+    {
+      "symbol": "TDC",
+      "points": 251,
+      "return_pct": 35.5
+    },
+    {
+      "symbol": "QLYS",
+      "points": 251,
+      "return_pct": -28.8
+    },
+    {
+      "symbol": "DOX",
+      "points": 251,
+      "return_pct": -28.4
+    }
+  ],
+  "errors": [
+    {
+      "symbol": "ORCL",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "MSFT",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "PLUS",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "TDC",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "QLYS",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "DOX",
+      "type": "fundamentals_yf"
+    }
+  ],
+  "fundamentals": {
+    "ORCL": {
+      "marketcap": null,
+      "pb_current": 22.72,
+      "pb_current_pctile": 92,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "MSFT": {
+      "marketcap": null,
+      "pb_current": 10.77,
+      "pb_current_pctile": 79,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "PLUS": {
+      "marketcap": null,
+      "pb_current": 1.66,
+      "pb_current_pctile": 15,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "TDC": {
+      "marketcap": null,
+      "pb_current": 12.4,
+      "pb_current_pctile": 83,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "QLYS": {
+      "marketcap": null,
+      "pb_current": 8.46,
+      "pb_current_pctile": 72,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "DOX": {
+      "marketcap": null,
+      "pb_current": 2.59,
+      "pb_current_pctile": 28,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Technology"
+    }
+  },
+  "finished_at": "2026-05-07T13:21:59"
+}

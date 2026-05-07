@@ -1,0 +1,50 @@
+{
+  "ORCL": {
+    "marketcap": null,
+    "pb_current": 22.72,
+    "pb_current_pctile": 92,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "MSFT": {
+    "marketcap": null,
+    "pb_current": 10.77,
+    "pb_current_pctile": 79,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "PLUS": {
+    "marketcap": null,
+    "pb_current": 1.66,
+    "pb_current_pctile": 15,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "TDC": {
+    "marketcap": null,
+    "pb_current": 12.4,
+    "pb_current_pctile": 83,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "QLYS": {
+    "marketcap": null,
+    "pb_current": 8.46,
+    "pb_current_pctile": 72,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "DOX": {
+    "marketcap": null,
+    "pb_current": 2.59,
+    "pb_current_pctile": 28,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  }
+}
