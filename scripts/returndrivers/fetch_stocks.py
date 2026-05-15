@@ -166,7 +166,7 @@ def git_commit_and_push(repo_root, paths_to_add, branch="main"):
             print("ℹ️  No changes to commit; skipping push.")
             return
         subprocess.run(["git", "add"] + rel_paths, check=True)
-        msg = f"visualsimilarity: update stock data {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+        msg = f"returndrivers: update stock data {datetime.now().strftime('%Y-%m-%d %H:%M')}"
         result = subprocess.run(["git", "commit", "-m", msg],
                                 capture_output=True, text=True)
         if result.returncode != 0:
@@ -255,7 +255,11 @@ def main():
             div_raw = raw.get("div_y_raw")
             mc_millions = round(mc_raw / 1_000_000, 2) if mc_raw else None
             if div_raw is not None:
-                div_pct = round(div_raw * 100, 2) if div_raw < 1 else round(div_raw, 2)
+                converted = round(div_raw * 100, 2)
+                # yfinance occasionally returns dividendYield already in % form
+                # (e.g. 0.89 meaning 0.89%). Multiplying by 100 gives 89 — implausible
+                # for a tech stock. Guard: if result >20 treat raw as already a %.
+                div_pct = converted if converted <= 20 else round(div_raw, 2)
             else:
                 div_pct = None
         else:
@@ -310,7 +314,7 @@ def main():
 
     print(f"\nStock data: {stock_cur_dir}")
     print(f"\nCDN base URL (after push):")
-    print(f"  https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/visualsimilarity/stock/current/")
+    print(f"  https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/returndrivers/stock/current/fundamentals.json")
 
 
 if __name__ == "__main__":

@@ -1,61 +1,78 @@
 {
-  "started_at": "2026-05-15T13:41:51",
+  "started_at": "2026-05-15T15:58:10",
   "stocks": [
     {
       "symbol": "CSCO",
-      "points": 251,
-      "return_pct": 79.8
+      "points": 252,
+      "return_pct": 82.3
     },
     {
       "symbol": "MSFT",
-      "points": 251,
-      "return_pct": -9.6
+      "points": 252,
+      "return_pct": -8.3
     },
     {
       "symbol": "LRCX",
-      "points": 251,
-      "return_pct": 252.8
+      "points": 252,
+      "return_pct": 230.9
     },
     {
       "symbol": "CRM",
-      "points": 251,
-      "return_pct": -42.4
+      "points": 252,
+      "return_pct": -40.9
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "symbol": "CSCO",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "MSFT",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "LRCX",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "CRM",
+      "type": "fundamentals_yf"
+    }
+  ],
   "fundamentals": {
     "CSCO": {
-      "marketcap": 456331.13,
+      "marketcap": null,
       "pb_current": 5.76,
       "pb_current_pctile": 58,
-      "div_y": 1.45,
+      "div_y": null,
       "valuation": "Mid",
       "sector": "Technology"
     },
     "MSFT": {
-      "marketcap": 3041424.05,
+      "marketcap": null,
       "pb_current": 10.77,
       "pb_current_pctile": 79,
-      "div_y": 89.0,
+      "div_y": null,
       "valuation": "High",
       "sector": "Technology"
     },
     "LRCX": {
-      "marketcap": 374108.32,
+      "marketcap": null,
       "pb_current": 12.52,
       "pb_current_pctile": 84,
-      "div_y": 35.0,
+      "div_y": null,
       "valuation": "High",
       "sector": "Technology"
     },
     "CRM": {
-      "marketcap": 137089.45,
+      "marketcap": null,
       "pb_current": 3.33,
       "pb_current_pctile": 40,
-      "div_y": 1.05,
+      "div_y": null,
       "valuation": "Low",
       "sector": "Technology"
     }
   },
-  "finished_at": "2026-05-15T13:45:55"
+  "finished_at": "2026-05-15T16:02:16"
 }
