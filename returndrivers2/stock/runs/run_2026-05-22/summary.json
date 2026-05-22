@@ -1,0 +1,78 @@
+{
+  "started_at": "2026-05-22T14:36:44",
+  "stocks": [
+    {
+      "symbol": "CSCO",
+      "points": 251,
+      "return_pct": 86.6
+    },
+    {
+      "symbol": "MSFT",
+      "points": 251,
+      "return_pct": -7.9
+    },
+    {
+      "symbol": "LRCX",
+      "points": 251,
+      "return_pct": 266.1
+    },
+    {
+      "symbol": "CRM",
+      "points": 251,
+      "return_pct": -37.8
+    }
+  ],
+  "errors": [
+    {
+      "symbol": "CSCO",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "MSFT",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "LRCX",
+      "type": "fundamentals_yf"
+    },
+    {
+      "symbol": "CRM",
+      "type": "fundamentals_yf"
+    }
+  ],
+  "fundamentals": {
+    "CSCO": {
+      "marketcap": null,
+      "pb_current": 5.76,
+      "pb_current_pctile": 58,
+      "div_y": null,
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "MSFT": {
+      "marketcap": null,
+      "pb_current": 10.77,
+      "pb_current_pctile": 79,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "LRCX": {
+      "marketcap": null,
+      "pb_current": 12.52,
+      "pb_current_pctile": 84,
+      "div_y": null,
+      "valuation": "High",
+      "sector": "Technology"
+    },
+    "CRM": {
+      "marketcap": null,
+      "pb_current": 3.33,
+      "pb_current_pctile": 40,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Technology"
+    }
+  },
+  "finished_at": "2026-05-22T14:40:53"
+}

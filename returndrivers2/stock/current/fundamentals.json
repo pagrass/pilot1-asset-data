@@ -1,0 +1,34 @@
+{
+  "CSCO": {
+    "marketcap": null,
+    "pb_current": 5.76,
+    "pb_current_pctile": 58,
+    "div_y": null,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "MSFT": {
+    "marketcap": null,
+    "pb_current": 10.77,
+    "pb_current_pctile": 79,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "LRCX": {
+    "marketcap": null,
+    "pb_current": 12.52,
+    "pb_current_pctile": 84,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "CRM": {
+    "marketcap": null,
+    "pb_current": 3.33,
+    "pb_current_pctile": 40,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  }
+}
