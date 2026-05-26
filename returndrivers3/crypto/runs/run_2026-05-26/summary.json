@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-05-26T09:54:47",
+  "cryptos": [
+    {
+      "symbol": "SOL-USD",
+      "slug": "sol",
+      "points": 366,
+      "return_pct": -51.8
+    },
+    {
+      "symbol": "LEO-USD",
+      "slug": "leo",
+      "points": 366,
+      "return_pct": 14.2
+    },
+    {
+      "symbol": "HYPE32196-USD",
+      "slug": "hype",
+      "points": 365,
+      "return_pct": 60.9
+    },
+    {
+      "symbol": "BTC-USD",
+      "slug": "btc",
+      "points": 366,
+      "return_pct": -29.9
+    },
+    {
+      "symbol": "TRX-USD",
+      "slug": "trx",
+      "points": 366,
+      "return_pct": 37.0
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-05-26T09:55:00"
+}
