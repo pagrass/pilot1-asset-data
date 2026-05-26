@@ -1,0 +1,42 @@
+{
+  "NOW": {
+    "marketcap": 105327.48,
+    "pb_current": 12.38,
+    "pb_current_pctile": 83,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "MSFT": {
+    "marketcap": 3109320.13,
+    "pb_current": 10.77,
+    "pb_current_pctile": 79,
+    "div_y": 0.87,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "LRCX": {
+    "marketcap": 381861.86,
+    "pb_current": 12.52,
+    "pb_current_pctile": 84,
+    "div_y": 0.34,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "DDOG": {
+    "marketcap": 79137.07,
+    "pb_current": 12.84,
+    "pb_current_pctile": 84,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "APP": {
+    "marketcap": 161815.35,
+    "pb_current": 106.79,
+    "pb_current_pctile": 100,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  }
+}
