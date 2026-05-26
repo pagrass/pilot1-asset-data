@@ -31,14 +31,14 @@ _YF_SESSION = curl_requests.Session(impersonate="chrome")
 
 # ======================== Config ========================
 
-STOCKS = ["NOW", "MSFT", "LRCX", "DDOG", "APP"]
+STOCKS = ["NOW", "MSFT", "LRCX", "DDOG", "AKAM"]
 
 SECTOR_LABEL = {
     "NOW":  "Technology",
     "MSFT":  "Technology",
     "LRCX":  "Technology",
-    "APP":  "Technology",
     "DDOG": "Technology",
+    "AKAM": "Technology",
 }
 
 WRDS_CSV = os.path.join(
