@@ -1,74 +1,32 @@
 {
-  "started_at": "2026-05-26T16:58:29",
+  "started_at": "2026-05-26T22:16:36",
   "stocks": [
     {
       "symbol": "NOW",
       "points": 251,
-      "return_pct": -50.8
+      "return_pct": -51.4
     },
     {
       "symbol": "MSFT",
       "points": 251,
-      "return_pct": -9.9
+      "return_pct": -9.7
     },
     {
       "symbol": "LRCX",
       "points": 251,
-      "return_pct": 279.9
+      "return_pct": 284.4
     },
     {
       "symbol": "DDOG",
       "points": 251,
-      "return_pct": 90.9
+      "return_pct": 90.2
     },
     {
       "symbol": "AKAM",
       "points": 251,
-      "return_pct": 86.1
+      "return_pct": 90.3
     }
   ],
   "errors": [],
-  "fundamentals": {
-    "NOW": {
-      "marketcap": 104244.62,
-      "pb_current": 12.38,
-      "pb_current_pctile": 83,
-      "div_y": null,
-      "valuation": "High",
-      "sector": "Technology"
-    },
-    "MSFT": {
-      "marketcap": 3081537.59,
-      "pb_current": 10.77,
-      "pb_current_pctile": 79,
-      "div_y": 0.87,
-      "valuation": "High",
-      "sector": "Technology"
-    },
-    "LRCX": {
-      "marketcap": 398244.35,
-      "pb_current": 12.52,
-      "pb_current_pctile": 84,
-      "div_y": 0.34,
-      "valuation": "High",
-      "sector": "Technology"
-    },
-    "DDOG": {
-      "marketcap": 79877.46,
-      "pb_current": 12.84,
-      "pb_current_pctile": 84,
-      "div_y": null,
-      "valuation": "High",
-      "sector": "Technology"
-    },
-    "AKAM": {
-      "marketcap": 21018.38,
-      "pb_current": 2.54,
-      "pb_current_pctile": 27,
-      "div_y": null,
-      "valuation": "Low",
-      "sector": "Technology"
-    }
-  },
-  "finished_at": "2026-05-26T17:03:43"
+  "finished_at": "2026-05-26T22:19:09"
 }
