@@ -1,0 +1,50 @@
+{
+  "CSCO": {
+    "marketcap": 477307.73,
+    "pb_current": 5.76,
+    "pb_current_pctile": 58,
+    "div_y": 1.39,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "CRM": {
+    "marketcap": 135524.03,
+    "pb_current": 3.33,
+    "pb_current_pctile": 40,
+    "div_y": 1.06,
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "WDAY": {
+    "marketcap": 32311.54,
+    "pb_current": 5.83,
+    "pb_current_pctile": 59,
+    "div_y": null,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "ZS": {
+    "marketcap": 20918.74,
+    "pb_current": 25.12,
+    "pb_current_pctile": 93,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "AKAM": {
+    "marketcap": 19589.96,
+    "pb_current": 2.54,
+    "pb_current_pctile": 27,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "TWLO": {
+    "marketcap": 30854.11,
+    "pb_current": 2.77,
+    "pb_current_pctile": 32,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  }
+}
