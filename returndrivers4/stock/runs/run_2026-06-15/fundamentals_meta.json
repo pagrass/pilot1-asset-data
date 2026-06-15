@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-06-15T15:48:33",
+  "pb_source": "yahoo priceToBook (current)",
+  "peer_universe": "GICS sector 45, end-2024 mktcap>=$10000M, current Yahoo P/B",
+  "n_peers_used": 130,
+  "tertile_thresholds": {
+    "low<=": 33,
+    "high>=": 67
+  },
+  "peers_unresolved": ["ANSS", "AZPN", "CFLT", "CYBR", "JNPR"]
+}
