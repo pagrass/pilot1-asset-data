@@ -1,8 +1,8 @@
 {
   "NVDA": {
     "marketcap": 5026583.94,
-    "pb_current": 25.69,
-    "pb_current_pctile": 90,
+    "pb_current": 29.53,
+    "pb_current_pctile": 95,
     "pb_yahoo": 25.72,
     "pe_yahoo": 31.8,
     "div_y": null,
@@ -11,28 +11,28 @@
   },
   "CSCO": {
     "marketcap": 467375.33,
-    "pb_current": 9.55,
-    "pb_current_pctile": 70,
+    "pb_current": 5.76,
+    "pb_current_pctile": 58,
     "pb_yahoo": 9.56,
     "pe_yahoo": 39.5,
     "div_y": 1.41,
-    "valuation": "High",
+    "valuation": "Mid",
     "sector": "Technology"
   },
   "MSFT": {
     "marketcap": 2871906.53,
-    "pb_current": 6.9,
-    "pb_current_pctile": 57,
+    "pb_current": 10.77,
+    "pb_current_pctile": 79,
     "pb_yahoo": 6.93,
     "pe_yahoo": 23.0,
     "div_y": 0.92,
-    "valuation": "Mid",
+    "valuation": "High",
     "sector": "Technology"
   },
   "AKAM": {
     "marketcap": 19007.69,
-    "pb_current": 3.87,
-    "pb_current_pctile": 36,
+    "pb_current": 2.54,
+    "pb_current_pctile": 27,
     "pb_yahoo": 3.88,
     "pe_yahoo": 44.2,
     "div_y": null,
@@ -41,8 +41,8 @@
   },
   "ZS": {
     "marketcap": 20504.77,
-    "pb_current": 8.57,
-    "pb_current_pctile": 67,
+    "pb_current": 25.12,
+    "pb_current_pctile": 93,
     "pb_yahoo": 8.66,
     "pe_yahoo": null,
     "div_y": null,
@@ -51,27 +51,11 @@
   },
   "CRM": {
     "marketcap": 131281.6,
-    "pb_current": 3.8,
-    "pb_current_pctile": 34,
+    "pb_current": 3.33,
+    "pb_current_pctile": 40,
     "pb_yahoo": 3.83,
     "pe_yahoo": 18.6,
     "div_y": 1.09,
-    "valuation": "Low",
-    "sector": "Technology"
-  },
-  "TWLO": {
-    "marketcap": 31515.84,
-    "pb_current": 4.06,
-    "pb_current_pctile": 28,
-    "div_y": null,
-    "valuation": "Low",
-    "sector": "Technology"
-  },
-  "WDAY": {
-    "marketcap": 32325.12,
-    "pb_current": 4.35,
-    "pb_current_pctile": 29,
-    "div_y": null,
     "valuation": "Low",
     "sector": "Technology"
   }

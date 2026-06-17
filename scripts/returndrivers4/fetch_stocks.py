@@ -24,22 +24,27 @@ import time
 import urllib.request
 from datetime import datetime
 
-import yfinance as yf
-from curl_cffi import requests as curl_requests
-
-_YF_SESSION = curl_requests.Session(impersonate="chrome")
+try:
+    import yfinance as yf
+    from curl_cffi import requests as curl_requests
+    _YF_SESSION = curl_requests.Session(impersonate="chrome")
+    _YF_AVAILABLE = True
+except Exception:  # yfinance/curl_cffi not installed -> P/B (WRDS) + returns still work
+    yf = None
+    _YF_SESSION = None
+    _YF_AVAILABLE = False
 
 # ======================== Config ========================
 
-STOCKS = ["CSCO", "CRM", "WDAY", "ZS", "AKAM", "TWLO"]
+STOCKS = ["NVDA", "CSCO", "MSFT", "AKAM", "ZS", "CRM"]
 
 SECTOR_LABEL = {
-    "CSCO":  "Technology",
-    "CRM":  "Technology",
-    "WDAY":  "Technology",
-    "ZS": "Technology",
+    "NVDA": "Technology",
+    "CSCO": "Technology",
+    "MSFT": "Technology",
     "AKAM": "Technology",
-    "TWLO": "Technology",
+    "ZS":   "Technology",
+    "CRM":  "Technology",
 }
 
 WRDS_CSV = os.path.join(
@@ -101,11 +106,15 @@ def fetch_price_data(ticker, max_retries=MAX_RETRIES):
 
 def fetch_fundamentals_yf(ticker):
     """Fetch market cap and dividend yield from yfinance."""
+    if not _YF_AVAILABLE:
+        return None
     try:
         info = yf.Ticker(ticker, session=_YF_SESSION).info
         return {
             "marketcap_raw": info.get("marketCap"),
             "div_y_raw":     info.get("dividendYield"),
+            "pb_yahoo":      info.get("priceToBook"),
+            "pe_yahoo":      info.get("trailingPE"),
         }
     except Exception as e:
         print(f"   ⚠️  yfinance failed for {ticker}: {e}")
@@ -255,9 +264,12 @@ def main():
 
         # Market cap + dividend yield from yfinance
         raw = fetch_fundamentals_yf(sym)
+        pb_yahoo = pe_yahoo = None
         if raw is not None:
             mc_raw = raw.get("marketcap_raw")
             div_raw = raw.get("div_y_raw")
+            pb_yahoo = round(raw["pb_yahoo"], 2) if raw.get("pb_yahoo") else None
+            pe_yahoo = round(raw["pe_yahoo"], 1) if raw.get("pe_yahoo") else None
             mc_millions = round(mc_raw / 1_000_000, 2) if mc_raw else None
             if div_raw is not None:
                 converted = round(div_raw * 100, 2)
@@ -274,14 +286,16 @@ def main():
 
         fundamentals[sym] = {
             "marketcap":         mc_millions,
-            "pb_current":        pb,
-            "pb_current_pctile": pb_pctile,
+            "pb_current":        pb,            # WRDS/Compustat (static snapshot)
+            "pb_current_pctile": pb_pctile,     # percentile vs WRDS sector peers
+            "pb_yahoo":          pb_yahoo,      # current P/B from Yahoo Finance
+            "pe_yahoo":          pe_yahoo,      # current trailing P/E from Yahoo
             "div_y":             div_pct,
             "valuation":         valuation,
             "sector":            SECTOR_LABEL[sym],
         }
-        print(f"  ✅ {sym}: mcap={mc_millions}M, PB={pb} ({pb_pctile}th pctile), "
-              f"val={valuation}, div={div_pct}%")
+        print(f"  ✅ {sym}: mcap={mc_millions}M, PB_yahoo={pb_yahoo}, PE_yahoo={pe_yahoo}, "
+              f"PB_wrds={pb} ({pb_pctile}th pctile {valuation}), div={div_pct}%")
         time.sleep(SLEEP_SEC)
 
     # Save fundamentals
