@@ -12,7 +12,7 @@
   "CSCO": {
     "marketcap": 471159.11,
     "pb_current": 9.64,
-    "pb_current_pctile": 75,
+    "pb_current_pctile": 66,
     "pb_yahoo": 9.64,
     "pe_yahoo": 39.8,
     "div_y": 1.41,
@@ -22,27 +22,27 @@
   "MSFT": {
     "marketcap": 2818348.15,
     "pb_current": 6.8,
-    "pb_current_pctile": 65,
+    "pb_current_pctile": 56,
     "pb_yahoo": 6.8,
     "pe_yahoo": 22.6,
     "div_y": 0.92,
-    "valuation": "High",
+    "valuation": "Mid",
     "sector": "Technology"
   },
   "AKAM": {
     "marketcap": 18160.1,
     "pb_current": 3.7,
-    "pb_current_pctile": 46,
+    "pb_current_pctile": 34,
     "pb_yahoo": 3.7,
     "pe_yahoo": 42.2,
     "div_y": null,
-    "valuation": "Mid",
+    "valuation": "Low",
     "sector": "Technology"
   },
   "ZS": {
     "marketcap": 20189.43,
     "pb_current": 8.53,
-    "pb_current_pctile": 72,
+    "pb_current_pctile": 63,
     "pb_yahoo": 8.53,
     "pe_yahoo": null,
     "div_y": null,
@@ -52,11 +52,11 @@
   "CRM": {
     "marketcap": 124307.82,
     "pb_current": 3.63,
-    "pb_current_pctile": 45,
+    "pb_current_pctile": 34,
     "pb_yahoo": 3.63,
     "pe_yahoo": 17.6,
     "div_y": 1.09,
-    "valuation": "Mid",
+    "valuation": "Low",
     "sector": "Technology"
   }
 }

@@ -61,6 +61,9 @@ RETRY_DELAY = 10
 # Auto commit+push at the end (default on, preserving the original workflow).
 # Set FETCH_PUSH=0 to fetch/write only (e.g. for a controlled manual commit).
 PUSH = os.environ.get("FETCH_PUSH", "1") != "0"
+# Percentile peer set = GICS-45 firms at/above this market cap ($M); drops very small
+# firms whose P/B isn't a meaningful comparison. (Negative/zero P/B excluded separately.)
+PEER_MKTCAP_FLOOR = int(os.environ.get("PEER_MKTCAP_FLOOR", "5000"))
 
 # ======================== Helpers ========================
 
@@ -124,20 +127,26 @@ def fetch_fundamentals_yf(ticker):
         return None
 
 
-def load_wrds_sector_pbs(csv_path, gsector="45"):
+def load_wrds_sector_pbs(csv_path, gsector="45", mktcap_floor=PEER_MKTCAP_FLOOR):
     """
-    Load all P/B values for a given GICS sector from WRDS.
+    Load P/B values for a GICS sector from WRDS, used as the percentile peer set.
+    Excludes non-interpretable P/B (<= 0) and very small firms (mktcap < floor, $M).
     Returns dict: {ticker: pb_value} and sorted list of all PBs.
     """
     ticker_pbs = {}
-    all_pbs = []
     with open(csv_path, newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row["gsector"] != gsector:
                 continue
-            pb = float(row["pb_ratio"])
-            if pb <= 0:
+            try:
+                pb = float(row["pb_ratio"])
+                mktcap = float(row["mktcap"])
+            except (TypeError, ValueError):
+                continue
+            if pb <= 0:                  # negative/zero book value -> not interpretable
+                continue
+            if mktcap < mktcap_floor:    # drop very small firms
                 continue
             tic = row["tic"].strip().upper()
             # Keep latest entry per ticker (last row wins)
