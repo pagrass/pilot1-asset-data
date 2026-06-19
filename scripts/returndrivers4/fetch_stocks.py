@@ -55,9 +55,12 @@ WRDS_CSV = os.path.join(
 REPO_ROOT = "/Users/paulgrass/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Git/pilot3-asset-data"
 BASE_DIR  = os.path.join(REPO_ROOT, "returndrivers4")
 
-SLEEP_SEC   = 30
+SLEEP_SEC   = int(os.environ.get("FETCH_SLEEP", "30"))
 MAX_RETRIES = 3
 RETRY_DELAY = 10
+# Auto commit+push at the end (default on, preserving the original workflow).
+# Set FETCH_PUSH=0 to fetch/write only (e.g. for a controlled manual commit).
+PUSH = os.environ.get("FETCH_PUSH", "1") != "0"
 
 # ======================== Helpers ========================
 
@@ -154,6 +157,17 @@ def compute_pb_percentile_sector(stock_ticker, ticker_pbs, all_pbs):
     below = sum(1 for p in peer_vals if p < stock_pb)
     pctile = round(100 * below / len(peer_vals))
     return round(stock_pb, 2), pctile
+
+
+def pctile_of_value(pb_value, ticker_pbs, exclude=None):
+    """Percentile of an arbitrary P/B value (e.g. current Yahoo) vs the WRDS sector peers."""
+    if pb_value is None:
+        return None
+    peer_vals = [p for t, p in ticker_pbs.items() if t != exclude]
+    if not peer_vals:
+        return None
+    below = sum(1 for p in peer_vals if p < pb_value)
+    return round(100 * below / len(peer_vals))
 
 
 def pb_to_valuation_tertile(pctile):
@@ -258,11 +272,7 @@ def main():
     for sym in STOCKS:
         print(f"⏳ {sym}…")
 
-        # P/B from WRDS (sector-level percentile)
-        pb, pb_pctile = compute_pb_percentile_sector(sym, ticker_pbs, all_pbs)
-        valuation = pb_to_valuation_tertile(pb_pctile)
-
-        # Market cap + dividend yield from yfinance
+        # Market cap, dividend yield, current P/B and P/E from yfinance
         raw = fetch_fundamentals_yf(sym)
         pb_yahoo = pe_yahoo = None
         if raw is not None:
@@ -284,18 +294,23 @@ def main():
             div_pct = None
             summary["errors"].append({"symbol": sym, "type": "fundamentals_yf"})
 
+        # pb_current = CURRENT Yahoo priceToBook; percentile = rank that current P/B
+        # against the WRDS GICS-45 sector peer distribution; label via 40/60 tertiles.
+        pb_pctile = pctile_of_value(pb_yahoo, ticker_pbs, exclude=sym)
+        valuation = pb_to_valuation_tertile(pb_pctile)
+
         fundamentals[sym] = {
             "marketcap":         mc_millions,
-            "pb_current":        pb,            # WRDS/Compustat (static snapshot)
-            "pb_current_pctile": pb_pctile,     # percentile vs WRDS sector peers
-            "pb_yahoo":          pb_yahoo,      # current P/B from Yahoo Finance
+            "pb_current":        pb_yahoo,      # current P/B from Yahoo Finance
+            "pb_current_pctile": pb_pctile,     # current P/B ranked vs WRDS sector-45 peers
+            "pb_yahoo":          pb_yahoo,      # (kept for continuity; equals pb_current)
             "pe_yahoo":          pe_yahoo,      # current trailing P/E from Yahoo
             "div_y":             div_pct,
             "valuation":         valuation,
             "sector":            SECTOR_LABEL[sym],
         }
-        print(f"  ✅ {sym}: mcap={mc_millions}M, PB_yahoo={pb_yahoo}, PE_yahoo={pe_yahoo}, "
-              f"PB_wrds={pb} ({pb_pctile}th pctile {valuation}), div={div_pct}%")
+        print(f"  ✅ {sym}: mcap={mc_millions}M, PB={pb_yahoo} ({pb_pctile}th pctile {valuation}), "
+              f"PE={pe_yahoo}, div={div_pct}%")
         time.sleep(SLEEP_SEC)
 
     # Save fundamentals
@@ -318,6 +333,8 @@ def main():
 
     if summary["errors"]:
         print(f"⚠️  {len(summary['errors'])} errors — skipping git commit/push.")
+    elif not PUSH:
+        print("ℹ️  FETCH_PUSH=0 — skipping git commit/push (data written locally).")
     else:
         git_commit_and_push(
             REPO_ROOT,

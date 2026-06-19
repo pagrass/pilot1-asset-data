@@ -34,7 +34,9 @@ BASE_DIR  = os.path.join(REPO_ROOT, "returndrivers4")
 
 MAX_RETRIES  = 3
 RETRY_DELAY  = 10
-SLEEP_SEC    = 2
+SLEEP_SEC    = int(os.environ.get("FETCH_SLEEP", "2"))
+# Auto commit+push at the end (default on). Set FETCH_PUSH=0 to fetch/write only.
+PUSH = os.environ.get("FETCH_PUSH", "1") != "0"
 
 # ======================== Helpers ========================
 
@@ -176,6 +178,8 @@ def main():
 
     if summary["errors"]:
         print(f"⚠️  {len(summary['errors'])} errors — skipping git commit/push.")
+    elif not PUSH:
+        print("ℹ️  FETCH_PUSH=0 — skipping git commit/push (data written locally).")
     else:
         git_commit_and_push(
             REPO_ROOT,
