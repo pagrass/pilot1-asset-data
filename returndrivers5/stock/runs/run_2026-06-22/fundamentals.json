@@ -1,0 +1,62 @@
+{
+  "NVDA": {
+    "marketcap": 5143329.24,
+    "pb_current": 26.31,
+    "pb_current_pctile": 94,
+    "pb_yahoo": 26.31,
+    "pe_yahoo": 32.5,
+    "div_y": 0.47,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "ADSK": {
+    "marketcap": 40860.83,
+    "pb_current": 12.8,
+    "pb_current_pctile": 79,
+    "pb_yahoo": 12.8,
+    "pe_yahoo": 28.3,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "DDOG": {
+    "marketcap": 79674.57,
+    "pb_current": 19.97,
+    "pb_current_pctile": 87,
+    "pb_yahoo": 19.97,
+    "pe_yahoo": 589.0,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "MSFT": {
+    "marketcap": 2817753.87,
+    "pb_current": 6.8,
+    "pb_current_pctile": 56,
+    "pb_yahoo": 6.8,
+    "pe_yahoo": 22.6,
+    "div_y": 0.96,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "ZS": {
+    "marketcap": 20512.85,
+    "pb_current": 8.67,
+    "pb_current_pctile": 63,
+    "pb_yahoo": 8.67,
+    "pe_yahoo": null,
+    "div_y": null,
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "LFUS": {
+    "marketcap": 12158.4,
+    "pb_current": 4.81,
+    "pb_current_pctile": 40,
+    "pb_yahoo": 4.81,
+    "pe_yahoo": null,
+    "div_y": 0.63,
+    "valuation": "Low",
+    "sector": "Technology"
+  }
+}

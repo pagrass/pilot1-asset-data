@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-06-22T15:50:03",
+  "cryptos": [
+    {
+      "symbol": "SOL-USD",
+      "slug": "sol",
+      "points": 366,
+      "return_pct": -43.3
+    },
+    {
+      "symbol": "DEXE-USD",
+      "slug": "dexe",
+      "points": 366,
+      "return_pct": 126.3
+    },
+    {
+      "symbol": "HYPE32196-USD",
+      "slug": "hype",
+      "points": 365,
+      "return_pct": 94.0
+    },
+    {
+      "symbol": "BTC-USD",
+      "slug": "btc",
+      "points": 366,
+      "return_pct": -35.2
+    },
+    {
+      "symbol": "ETH-USD",
+      "slug": "eth",
+      "points": 366,
+      "return_pct": -20.5
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-06-22T15:50:14"
+}
