@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-07-01T10:56:15",
+  "started_at": "2026-07-01T15:20:36",
   "cryptos": [
     {
       "symbol": "SOL-USD",
@@ -11,27 +11,33 @@
       "symbol": "DEXE-USD",
       "slug": "dexe",
       "points": 366,
-      "return_pct": 207.2
+      "return_pct": 208.7
     },
     {
       "symbol": "HYPE32196-USD",
       "slug": "hype",
       "points": 365,
-      "return_pct": 72.4
+      "return_pct": 70.6
     },
     {
       "symbol": "BTC-USD",
       "slug": "btc",
       "points": 366,
-      "return_pct": -44.4
+      "return_pct": -44.5
     },
     {
       "symbol": "ETH-USD",
       "slug": "eth",
       "points": 366,
-      "return_pct": -34.5
+      "return_pct": -34.7
+    },
+    {
+      "symbol": "BNB-USD",
+      "slug": "bnb",
+      "points": 366,
+      "return_pct": -15.9
     }
   ],
   "errors": [],
-  "finished_at": "2026-07-01T10:56:26"
+  "finished_at": "2026-07-01T15:20:49"
 }
