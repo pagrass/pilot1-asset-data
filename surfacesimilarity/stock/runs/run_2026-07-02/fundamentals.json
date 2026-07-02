@@ -1,0 +1,62 @@
+{
+  "MSFT": {
+    "marketcap": 2898241.0,
+    "pb_current": 6.99,
+    "pb_current_pctile": 54,
+    "pb_yahoo": 6.99,
+    "pe_yahoo": 23.2,
+    "div_y": 0.95,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "CRM": {
+    "marketcap": 135880.29,
+    "pb_current": 3.97,
+    "pb_current_pctile": 33,
+    "pb_yahoo": 3.97,
+    "pe_yahoo": 19.2,
+    "div_y": 1.08,
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "ZS": {
+    "marketcap": 23512.56,
+    "pb_current": 9.94,
+    "pb_current_pctile": 64,
+    "pb_yahoo": 9.94,
+    "pe_yahoo": null,
+    "div_y": null,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "CSCO": {
+    "marketcap": 443056.69,
+    "pb_current": 9.06,
+    "pb_current_pctile": 58,
+    "pb_yahoo": 9.06,
+    "pe_yahoo": 37.5,
+    "div_y": 1.44,
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "AKAM": {
+    "marketcap": 16020.75,
+    "pb_current": 3.27,
+    "pb_current_pctile": 28,
+    "pb_yahoo": 3.27,
+    "pe_yahoo": 37.2,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "TWLO": {
+    "marketcap": 31386.83,
+    "pb_current": 4.04,
+    "pb_current_pctile": 33,
+    "pb_yahoo": 4.04,
+    "pe_yahoo": 308.7,
+    "div_y": null,
+    "valuation": "Low",
+    "sector": "Technology"
+  }
+}
