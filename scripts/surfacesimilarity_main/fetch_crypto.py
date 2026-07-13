@@ -3,7 +3,7 @@
 Fetch crypto data for the Surface Similarity MAIN study (Wave 1 + pre-study).
 
 Cryptos:
-  Stage 1 (replication, also shown in pre-study): ETH, DEXE, SOL
+  Stage 1 (replication, also shown in pre-study): ETH, JST, SOL
   Stage 2 (own beliefs):                          BTC, HYPE, BNB
 
 Series end at the last COMPLETED UTC day (yesterday's close == today's
@@ -30,7 +30,7 @@ from datetime import datetime, timezone
 
 CRYPTOS = {
     "ETH-USD": "eth",
-    "DEXE-USD": "dexe",
+    "JST-USD": "jst",
     "SOL-USD": "sol",
     "BTC-USD": "btc",
     "HYPE32196-USD": "hype",
@@ -91,7 +91,10 @@ def fetch_price_data(yahoo_ticker, max_retries=MAX_RETRIES):
             for ts, c in zip(timestamps, closes):
                 ts_ms = int(ts * 1000)
                 if c is not None and ts_ms < today_utc_ms:
-                    pts.append([ts_ms, round(float(c), 2)])
+                    c = float(c)
+                    # sub-$1 assets (e.g. JST) need finer precision, else the
+                    # chart quantizes into visible price steps
+                    pts.append([ts_ms, round(c, 2 if c >= 1 else 4)])
 
             if not pts:
                 raise ValueError("No valid close prices.")

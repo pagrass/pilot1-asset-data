@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-07-13T12:09:18",
+  "started_at": "2026-07-13T12:34:58",
   "data_note": "series end at last completed UTC day; in-progress bar dropped",
   "cryptos": [
     {
@@ -11,12 +11,12 @@
       "last_close": 1805.79
     },
     {
-      "symbol": "DEXE-USD",
-      "slug": "dexe",
+      "symbol": "JST-USD",
+      "slug": "jst",
       "points": 365,
-      "return_pct": 535.1,
+      "return_pct": 176.8,
       "last_day_utc": "2026-07-12",
-      "last_close": 47.89
+      "last_close": 0.1013
     },
     {
       "symbol": "SOL-USD",
@@ -52,5 +52,5 @@
     }
   ],
   "errors": [],
-  "finished_at": "2026-07-13T12:09:31"
+  "finished_at": "2026-07-13T12:35:11"
 }
