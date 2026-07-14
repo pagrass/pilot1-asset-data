@@ -1,0 +1,99 @@
+{
+  "started_at": "2026-07-14T16:36:07",
+  "stocks": [
+    {
+      "symbol": "MSFT",
+      "points": 252,
+      "return_pct": -23.3
+    },
+    {
+      "symbol": "CRM",
+      "points": 252,
+      "return_pct": -35.4
+    },
+    {
+      "symbol": "ZS",
+      "points": 252,
+      "return_pct": -47.5
+    },
+    {
+      "symbol": "CSCO",
+      "points": 252,
+      "return_pct": 75.7
+    },
+    {
+      "symbol": "AKAM",
+      "points": 252,
+      "return_pct": 63.6
+    },
+    {
+      "symbol": "TWLO",
+      "points": 252,
+      "return_pct": 86.1
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "MSFT": {
+      "marketcap": 2864033.04,
+      "pb_current": 6.91,
+      "pb_current_pctile": 53,
+      "pb_yahoo": 6.91,
+      "pe_yahoo": 23.0,
+      "div_y": 0.93,
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "CRM": {
+      "marketcap": 137370.87,
+      "pb_current": 4.01,
+      "pb_current_pctile": 33,
+      "pb_yahoo": 4.01,
+      "pe_yahoo": 19.4,
+      "div_y": 1.03,
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "ZS": {
+      "marketcap": 24720.53,
+      "pb_current": 10.45,
+      "pb_current_pctile": 66,
+      "pb_yahoo": 10.45,
+      "pe_yahoo": null,
+      "div_y": null,
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "CSCO": {
+      "marketcap": 469385.45,
+      "pb_current": 9.6,
+      "pb_current_pctile": 60,
+      "pb_yahoo": 9.6,
+      "pe_yahoo": 40.4,
+      "div_y": 1.38,
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "AKAM": {
+      "marketcap": 18406.53,
+      "pb_current": 3.75,
+      "pb_current_pctile": 32,
+      "pb_yahoo": 3.75,
+      "pe_yahoo": 42.6,
+      "div_y": null,
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "TWLO": {
+      "marketcap": 33504.08,
+      "pb_current": 4.31,
+      "pb_current_pctile": 34,
+      "pb_yahoo": 4.31,
+      "pe_yahoo": 339.6,
+      "div_y": null,
+      "valuation": "Mid",
+      "sector": "Technology"
+    }
+  },
+  "finished_at": "2026-07-14T16:37:57"
+}
