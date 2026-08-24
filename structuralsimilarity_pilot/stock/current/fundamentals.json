@@ -1,0 +1,74 @@
+{
+  "MSFT": {
+    "marketcap": 3588320.66,
+    "pb_current": 8.11,
+    "pb_current_pctile": 56,
+    "pb_yahoo": 8.11,
+    "pe_yahoo": 27.0,
+    "div_y": 0.75,
+    "netprofit": 133749,
+    "netprofit_src": "quarterly_sum",
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "INTU": {
+    "marketcap": 100388.08,
+    "pb_current": 4.88,
+    "pb_current_pctile": 38,
+    "pb_yahoo": 4.88,
+    "pe_yahoo": 22.4,
+    "div_y": 1.31,
+    "netprofit": 4584,
+    "netprofit_src": "quarterly_sum",
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "NOW": {
+    "marketcap": 132830.58,
+    "pb_current": 10.61,
+    "pb_current_pctile": 66,
+    "pb_yahoo": 10.61,
+    "pe_yahoo": 79.8,
+    "div_y": null,
+    "netprofit": 1670,
+    "netprofit_src": "quarterly_sum",
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "CSCO": {
+    "marketcap": 437656.91,
+    "pb_current": 8.72,
+    "pb_current_pctile": 57,
+    "pb_yahoo": 8.72,
+    "pe_yahoo": 33.3,
+    "div_y": 1.51,
+    "netprofit": 11958,
+    "netprofit_src": "quarterly_sum",
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "AKAM": {
+    "marketcap": 15869.19,
+    "pb_current": 3.34,
+    "pb_current_pctile": 29,
+    "pb_yahoo": 3.34,
+    "pe_yahoo": 40.0,
+    "div_y": null,
+    "netprofit": 411,
+    "netprofit_src": "quarterly_sum",
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "FFIV": {
+    "marketcap": 21780.51,
+    "pb_current": 5.67,
+    "pb_current_pctile": 45,
+    "pb_yahoo": 5.67,
+    "pe_yahoo": 30.7,
+    "div_y": null,
+    "netprofit": 727,
+    "netprofit_src": "quarterly_sum",
+    "valuation": "Mid",
+    "sector": "Technology"
+  }
+}

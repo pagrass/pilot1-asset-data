@@ -1,0 +1,111 @@
+{
+  "started_at": "2026-08-21T16:10:15",
+  "stocks": [
+    {
+      "symbol": "MSFT",
+      "points": 251,
+      "return_pct": -4.6
+    },
+    {
+      "symbol": "INTU",
+      "points": 251,
+      "return_pct": -48.1
+    },
+    {
+      "symbol": "NOW",
+      "points": 251,
+      "return_pct": -26.0
+    },
+    {
+      "symbol": "CSCO",
+      "points": 251,
+      "return_pct": 63.5
+    },
+    {
+      "symbol": "AKAM",
+      "points": 251,
+      "return_pct": 44.2
+    },
+    {
+      "symbol": "FFIV",
+      "points": 251,
+      "return_pct": 20.2
+    }
+  ],
+  "errors": [],
+  "fundamentals": {
+    "MSFT": {
+      "marketcap": 3594881.34,
+      "pb_current": 8.13,
+      "pb_current_pctile": 56,
+      "pb_yahoo": 8.13,
+      "pe_yahoo": 27.0,
+      "div_y": 0.76,
+      "netprofit": 133749,
+      "netprofit_src": "quarterly_sum",
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "INTU": {
+      "marketcap": 99871.09,
+      "pb_current": 4.85,
+      "pb_current_pctile": 37,
+      "pb_yahoo": 4.85,
+      "pe_yahoo": 22.3,
+      "div_y": 1.33,
+      "netprofit": 4584,
+      "netprofit_src": "quarterly_sum",
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "NOW": {
+      "marketcap": 134164.28,
+      "pb_current": 10.72,
+      "pb_current_pctile": 66,
+      "pb_yahoo": 10.72,
+      "pe_yahoo": 81.1,
+      "div_y": null,
+      "netprofit": 1670,
+      "netprofit_src": "quarterly_sum",
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "CSCO": {
+      "marketcap": 439568.5,
+      "pb_current": 8.76,
+      "pb_current_pctile": 57,
+      "pb_yahoo": 8.76,
+      "pe_yahoo": 33.5,
+      "div_y": 1.53,
+      "netprofit": 11958,
+      "netprofit_src": "quarterly_sum",
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "AKAM": {
+      "marketcap": 15961.17,
+      "pb_current": 3.36,
+      "pb_current_pctile": 30,
+      "pb_yahoo": 3.36,
+      "pe_yahoo": 40.2,
+      "div_y": null,
+      "netprofit": 411,
+      "netprofit_src": "quarterly_sum",
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "FFIV": {
+      "marketcap": 21548.63,
+      "pb_current": 5.61,
+      "pb_current_pctile": 45,
+      "pb_yahoo": 5.61,
+      "pe_yahoo": 30.3,
+      "div_y": null,
+      "netprofit": 727,
+      "netprofit_src": "quarterly_sum",
+      "valuation": "Mid",
+      "sector": "Technology"
+    }
+  },
+  "finished_at": "2026-08-21T16:11:10"
+}

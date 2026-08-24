@@ -1,0 +1,56 @@
+{
+  "started_at": "2026-08-24T12:01:06",
+  "data_note": "series end at last completed UTC day; in-progress bar dropped",
+  "cryptos": [
+    {
+      "symbol": "ETH-USD",
+      "slug": "eth",
+      "points": 365,
+      "return_pct": -48.5,
+      "last_day_utc": "2026-08-23",
+      "last_close": 2463.82
+    },
+    {
+      "symbol": "XMR-USD",
+      "slug": "xmr",
+      "points": 365,
+      "return_pct": 52.9,
+      "last_day_utc": "2026-08-23",
+      "last_close": 421.83
+    },
+    {
+      "symbol": "BNB-USD",
+      "slug": "bnb",
+      "points": 365,
+      "return_pct": -19.9,
+      "last_day_utc": "2026-08-23",
+      "last_close": 701.85
+    },
+    {
+      "symbol": "BTC-USD",
+      "slug": "btc",
+      "points": 365,
+      "return_pct": -31.5,
+      "last_day_utc": "2026-08-23",
+      "last_close": 77755.27
+    },
+    {
+      "symbol": "HYPE32196-USD",
+      "slug": "hype",
+      "points": 364,
+      "return_pct": 78.8,
+      "last_day_utc": "2026-08-23",
+      "last_close": 82.17
+    },
+    {
+      "symbol": "TRX-USD",
+      "slug": "trx",
+      "points": 365,
+      "return_pct": -4.8,
+      "last_day_utc": "2026-08-23",
+      "last_close": 0.344
+    }
+  ],
+  "errors": [],
+  "finished_at": "2026-08-24T12:01:19"
+}
