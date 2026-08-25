@@ -19,10 +19,10 @@ Fundamentals:
   - P/B percentile computed at SECTOR level (gsec=45, IT/Technology)
   - Valuation labels via tertiles: Low (<=33rd), Mid (33-67th), High (>=67th)
   - Market cap and dividend yield from yfinance
-  - NEW (structural sim): net profit = TTM GAAP net income, in $M — sum of the
-    last four reported quarters (yfinance quarterly income statement), with
-    info["netIncomeToCommon"] as fallback. Displayed in the survey panel as
-    "Net profit (last 12 mo): $X.XB" (replaces the dividend-yield row).
+  - NEW (structural sim): net profit = TTM GAAP net income, in $M — Yahoo's
+    TTM field (netIncomeToCommon; rolls promptly after earnings), with the sum
+    of the last four table quarters as fallback. Displayed in the survey panel
+    as "Net profit (last 12 mo): $X.XB" (replaces the dividend-yield row).
   - P/B ratio peer set from Compustat (WRDS)
 
 Output: structuralsimilarity_pilot/stock/current/ + structuralsimilarity_pilot/stock/runs/run_YYYY-MM-DD/
@@ -140,24 +140,30 @@ def fetch_fundamentals_yf(ticker):
     try:
         t = yf.Ticker(ticker, session=_YF_SESSION)
         info = t.info
-        # --- TTM net profit ($M): sum of the last four reported quarters ---
+        # --- TTM net profit ($M) ---
+        # Primary: Yahoo's own TTM figure (netIncomeToCommon). It rolls promptly
+        # after an earnings release, while the quarterly income-statement table
+        # can lag a new report by weeks (seen 2026-08: CSCO's FY26-Q4, reported
+        # Aug 13, was in the TTM field but absent from the quarterly table 10+
+        # days later). Fallback: sum of the last four table quarters.
         netprofit_m = None
         netprofit_src = None
-        try:
-            q = t.quarterly_income_stmt
-            row = None
-            for label in ("Net Income", "Net Income Common Stockholders"):
-                if label in q.index:
-                    row = q.loc[label].dropna()
-                    break
-            if row is not None and len(row) >= 4:
-                netprofit_m = round(float(row.iloc[:4].sum()) / 1_000_000)
-                netprofit_src = "quarterly_sum"
-        except Exception:
-            pass
-        if netprofit_m is None and info.get("netIncomeToCommon") is not None:
+        if info.get("netIncomeToCommon") is not None:
             netprofit_m = round(info["netIncomeToCommon"] / 1_000_000)
             netprofit_src = "netIncomeToCommon"
+        if netprofit_m is None:
+            try:
+                q = t.quarterly_income_stmt
+                row = None
+                for label in ("Net Income", "Net Income Common Stockholders"):
+                    if label in q.index:
+                        row = q.loc[label].dropna()
+                        break
+                if row is not None and len(row) >= 4:
+                    netprofit_m = round(float(row.iloc[:4].sum()) / 1_000_000)
+                    netprofit_src = "quarterly_sum"
+            except Exception:
+                pass
         return {
             "marketcap_raw": info.get("marketCap"),
             "div_y_raw":     info.get("dividendYield"),
