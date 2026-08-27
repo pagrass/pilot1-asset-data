@@ -9,7 +9,8 @@
     "netprofit": 133749,
     "netprofit_src": "netIncomeToCommon",
     "valuation": "Mid",
-    "sector": "Technology"
+    "sector": "Technology",
+    "netprofit_growth": 31.3
   },
   "INTU": {
     "marketcap": 101186.81,
@@ -21,7 +22,8 @@
     "netprofit": 4584,
     "netprofit_src": "netIncomeToCommon",
     "valuation": "Mid",
-    "sector": "Technology"
+    "sector": "Technology",
+    "netprofit_growth": 18.0
   },
   "NOW": {
     "marketcap": 132386.04,
@@ -33,7 +35,8 @@
     "netprofit": 1670,
     "netprofit_src": "netIncomeToCommon",
     "valuation": "Mid",
-    "sector": "Technology"
+    "sector": "Technology",
+    "netprofit_growth": 22.7
   },
   "CSCO": {
     "marketcap": 434464.36,
@@ -45,7 +48,8 @@
     "netprofit": 13267,
     "netprofit_src": "netIncomeToCommon",
     "valuation": "Mid",
-    "sector": "Technology"
+    "sector": "Technology",
+    "netprofit_growth": 30.3
   },
   "AKAM": {
     "marketcap": 15185.1,
@@ -57,7 +61,8 @@
     "netprofit": 411,
     "netprofit_src": "netIncomeToCommon",
     "valuation": "Low",
-    "sector": "Technology"
+    "sector": "Technology",
+    "netprofit_growth": -10.5
   },
   "FFIV": {
     "marketcap": 21463.97,
@@ -69,6 +74,7 @@
     "netprofit": 727,
     "netprofit_src": "netIncomeToCommon",
     "valuation": "Mid",
-    "sector": "Technology"
+    "sector": "Technology",
+    "netprofit_growth": 22.2
   }
 }
