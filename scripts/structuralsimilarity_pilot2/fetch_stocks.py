@@ -5,8 +5,8 @@ Fetch stock data for the Structural Similarity experiment — Wave 2 (pilot).
 Slate (2026-08-27, pilot 2 = main design; quadrant logic on
 (12-mo return sign x 12-mo profit-growth sign)):
   (+ret,+growth): CSCO, FFIV     (+ret,-growth): AKAM
-  (-ret,+growth): MSFT, INTU     (-ret,-growth): EPAM
-EPAM (EPAM Systems) replaces NOW vs pilot 1: fills the empty (-,-) quadrant
+  (-ret,+growth): ORCL, INTU     (-ret,-growth): EPAM
+EPAM replaces NOW, ORCL replaces MSFT vs pilot 1 (MSFT return drifted to ~0 = zero-leverage point): fills the empty (-,-) quadrant
 and gives the profit-growth regressor a second negative value.
 
 NOTE: for a LAUNCH-DAY refresh use fetch_stocks_prices_only.py —
@@ -47,10 +47,10 @@ except Exception:  # yfinance/curl_cffi not installed -> P/B (WRDS) + returns st
 
 # ======================== Config ========================
 
-STOCKS = ["MSFT", "INTU", "CSCO", "AKAM", "FFIV", "EPAM"]
+STOCKS = ["ORCL", "INTU", "CSCO", "AKAM", "FFIV", "EPAM"]
 
 SECTOR_LABEL = {
-    "MSFT": "Technology",
+    "ORCL": "Technology",
     "INTU": "Technology",
     "EPAM": "Technology",
     "CSCO": "Technology",

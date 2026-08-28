@@ -76,5 +76,18 @@
     "valuation": "Low",
     "sector": "Technology",
     "netprofit_growth": -16.9
+  },
+  "ORCL": {
+    "marketcap": 437658.78,
+    "pb_current": 11.65,
+    "pb_current_pctile": 70,
+    "pb_yahoo": 11.65,
+    "pe_yahoo": 26.1,
+    "div_y": 1.32,
+    "netprofit": 16984,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "High",
+    "sector": "Technology",
+    "netprofit_growth": 37.3
   }
 }

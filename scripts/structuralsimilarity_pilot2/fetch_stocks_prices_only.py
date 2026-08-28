@@ -10,7 +10,7 @@ full fetch_stocks.py on launch day.
 
 Slate (2026-08-27, pilot 2):
   (+ret,+growth): CSCO (Cisco), FFIV (F5)   (+ret,-growth): AKAM (Akamai)
-  (-ret,+growth): MSFT (Microsoft), INTU (Intuit)   (-ret,-growth): EPAM (EPAM Systems)
+  (-ret,+growth): ORCL (Oracle), INTU (Intuit)   (-ret,-growth): EPAM (EPAM Systems)
 
 Output: structuralsimilarity_pilot2/stock/current/ + structuralsimilarity_pilot2/stock/runs/run_YYYY-MM-DD/
 """
@@ -25,7 +25,7 @@ from zoneinfo import ZoneInfo
 
 # ======================== Config ========================
 
-STOCKS = ["MSFT", "INTU", "CSCO", "AKAM", "FFIV", "EPAM"]
+STOCKS = ["ORCL", "INTU", "CSCO", "AKAM", "FFIV", "EPAM"]
 
 REPO_ROOT = "/Users/paulgrass/Documents/Programming/Git/pilot3-asset-data"
 BASE_DIR  = os.path.join(REPO_ROOT, "structuralsimilarity_pilot2")
