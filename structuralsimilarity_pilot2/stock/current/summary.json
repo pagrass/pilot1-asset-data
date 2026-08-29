@@ -1,37 +1,88 @@
 {
-  "started_at": "2026-08-28T10:16:37",
+  "started_at": "2026-08-29T13:51:28",
   "stocks": [
     {
-      "symbol": "MSFT",
+      "symbol": "ORCL",
       "points": 251,
-      "return_pct": -0.9
+      "return_pct": -33.3
     },
     {
       "symbol": "INTU",
       "points": 251,
-      "return_pct": -47.9
+      "return_pct": -46.3
     },
     {
       "symbol": "CSCO",
       "points": 251,
-      "return_pct": 61.5
+      "return_pct": 59.1
     },
     {
       "symbol": "AKAM",
       "points": 251,
-      "return_pct": 41.9
+      "return_pct": 35.8
     },
     {
       "symbol": "FFIV",
       "points": 251,
-      "return_pct": 28.8
+      "return_pct": 25.9
     },
     {
       "symbol": "EPAM",
       "points": 251,
-      "return_pct": -35.3
+      "return_pct": -34.9
     }
   ],
   "errors": [],
-  "finished_at": "2026-08-28T10:19:38"
+  "filled_bars": [
+    {
+      "ticker": "ORCL",
+      "date": "2026-08-28",
+      "close": 150.85,
+      "meta": 150.85,
+      "intraday_5m": 150.85000610351562,
+      "spread_pct": 0.0
+    },
+    {
+      "ticker": "INTU",
+      "date": "2026-08-28",
+      "close": 358.06,
+      "meta": 358.06,
+      "intraday_5m": 358.05999755859375,
+      "spread_pct": 0.0
+    },
+    {
+      "ticker": "CSCO",
+      "date": "2026-08-28",
+      "close": 109.93,
+      "meta": 109.93,
+      "intraday_5m": 109.93000030517578,
+      "spread_pct": 0.0
+    },
+    {
+      "ticker": "AKAM",
+      "date": "2026-08-28",
+      "close": 107.47,
+      "meta": 107.47,
+      "intraday_5m": 107.47000122070312,
+      "spread_pct": 0.0
+    },
+    {
+      "ticker": "FFIV",
+      "date": "2026-08-28",
+      "close": 394.24,
+      "meta": 394.24,
+      "intraday_5m": 394.239990234375,
+      "spread_pct": 0.0
+    },
+    {
+      "ticker": "EPAM",
+      "date": "2026-08-28",
+      "close": 114.8,
+      "meta": 114.8,
+      "intraday_5m": 114.80000305175781,
+      "spread_pct": 0.0
+    }
+  ],
+  "fill_unconsolidated": true,
+  "finished_at": "2026-08-29T13:54:40"
 }
