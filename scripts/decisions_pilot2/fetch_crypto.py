@@ -62,7 +62,13 @@ CRYPTOS = {
 
 REPO_ROOT = "/Users/paulgrass/Documents/Programming/Git/pilot3-asset-data"
 BASE_DIR  = os.path.join(REPO_ROOT, "decisions_pilot2")
-CDN_BASE  = "https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/decisions_pilot2/crypto/current/"
+CDN_BASE  = "https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@main/decisions_pilot2/crypto/current/"
+
+# CDN alias: @main, NOT @latest. This repo has no git tags, so jsDelivr
+# resolves "@latest" to version:null and falls back to the default branch
+# with sticky per-file caching -- on 2026-08-31 that served two different
+# price vintages across the six files at the same time, through repeated
+# purges. Branch URLs purge reliably. Keep @main in the QSF too.
 
 MAX_RETRIES  = 3
 RETRY_DELAY  = 10
@@ -312,7 +318,7 @@ def main():
     print(f"  {CDN_BASE}")
     print(f"\nTo purge the jsDelivr cache after an update:")
     for slug in CRYPTOS.values():
-        print(f"  curl -s https://purge.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/decisions_pilot2/crypto/current/{slug}_365d.json")
+        print(f"  curl -s https://purge.jsdelivr.net/gh/pagrass/pilot1-asset-data@main/decisions_pilot2/crypto/current/{slug}_365d.json")
 
 
 if __name__ == "__main__":
