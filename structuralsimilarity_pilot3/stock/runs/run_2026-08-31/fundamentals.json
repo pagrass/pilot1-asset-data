@@ -1,0 +1,74 @@
+{
+  "ORCL": {
+    "marketcap": 434519.08,
+    "pb_current": 11.57,
+    "pb_current_pctile": 70,
+    "pb_yahoo": 11.57,
+    "pe_yahoo": 25.9,
+    "div_y": 1.33,
+    "netprofit": 16984,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "INTU": {
+    "marketcap": 97942.65,
+    "pb_current": 4.76,
+    "pb_current_pctile": 37,
+    "pb_yahoo": 4.76,
+    "pe_yahoo": 21.7,
+    "div_y": 1.54,
+    "netprofit": 4566,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "CSCO": {
+    "marketcap": 433281.93,
+    "pb_current": 8.63,
+    "pb_current_pctile": 57,
+    "pb_yahoo": 8.63,
+    "pe_yahoo": 33.0,
+    "div_y": 1.5,
+    "netprofit": 13267,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "Mid",
+    "sector": "Technology"
+  },
+  "SNPS": {
+    "marketcap": 84820.29,
+    "pb_current": 2.72,
+    "pb_current_pctile": 22,
+    "pb_yahoo": 2.72,
+    "pe_yahoo": 77.5,
+    "div_y": null,
+    "netprofit": 1077,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "Low",
+    "sector": "Technology"
+  },
+  "FTNT": {
+    "marketcap": 121796.47,
+    "pb_current": 78.52,
+    "pb_current_pctile": 99,
+    "pb_yahoo": 78.52,
+    "pe_yahoo": 58.9,
+    "div_y": null,
+    "netprofit": 2121,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "High",
+    "sector": "Technology"
+  },
+  "PANW": {
+    "marketcap": 302845.85,
+    "pb_current": 10.92,
+    "pb_current_pctile": 68,
+    "pb_yahoo": 10.92,
+    "pe_yahoo": 323.1,
+    "div_y": null,
+    "netprofit": 843,
+    "netprofit_src": "netIncomeToCommon",
+    "valuation": "High",
+    "sector": "Technology"
+  }
+}
