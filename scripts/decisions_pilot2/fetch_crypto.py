@@ -15,7 +15,17 @@ design says they must. Do not swap it for another decliner.
 Series end at the last COMPLETED UTC day (yesterday's close == today's
 00:00 UTC open; crypto trades 24/7 so these are the same number).
 The in-progress "today" bar is always dropped, so a fetch returns identical
-data no matter what hour it runs. Do NOT re-fetch between the pre-study and
+data no matter what hour it runs.
+
+TRAILING-GAP BACKFILL (added 2026-08-31): Yahoo's DAILY crypto series
+sometimes omits recent days even though the data exists at 1h granularity
+(observed for Sat 2026-08-29 / Sun 2026-08-30 on all six tickers). Any
+completed UTC day missing from the tail of the daily series is therefore
+refilled from the 1h series (range=7d), using that day's last hourly close
+-- the same quantity Yahoo records as the daily close, agreeing to ~0.02%
+on days where both exist. Backfilled days are listed in summary.json.
+The 1h window only reaches 7 days back, so this covers trailing holes only;
+the run warns loudly if a gap survives. Do NOT re-fetch between the pre-study and
 the main Wave 1 launch: replication screens must show the pre-study
 participants' exact information.
 
@@ -30,7 +40,7 @@ import sys
 import time
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 # ======================== Config ========================
 
@@ -114,6 +124,59 @@ def fetch_price_data(yahoo_ticker, max_retries=MAX_RETRIES):
     return None
 
 
+def fetch_hourly_daily_closes(yahoo_ticker):
+    """Daily closes derived from the 1h series (last hourly bar of each UTC day).
+    Used only to refill trailing days the daily series omits."""
+    url = (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{yahoo_ticker}"
+        f"?range=7d&interval=1h"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode())
+        result = data["chart"]["result"][0]
+        out = {}
+        for ts, c in zip(result["timestamp"],
+                         result["indicators"]["quote"][0]["close"]):
+            if c is None:
+                continue
+            dt = datetime.fromtimestamp(ts, timezone.utc)
+            out[dt.strftime("%Y-%m-%d")] = float(c)   # later bars overwrite earlier
+        return out
+    except Exception as e:
+        print(f"   \u26a0\ufe0f  hourly backfill fetch failed for {yahoo_ticker}: {e}")
+        return {}
+
+
+def backfill_trailing_days(yahoo_ticker, pts):
+    """Append any completed UTC days missing from the tail of the daily series."""
+    today_utc = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    last_have = datetime.fromtimestamp(pts[-1][0] / 1000, timezone.utc).replace(
+        hour=0, minute=0, second=0, microsecond=0)
+    missing, d = [], last_have + timedelta(days=1)
+    while d < today_utc:
+        missing.append(d)
+        d += timedelta(days=1)
+    if not missing:
+        return pts, []
+
+    hourly = fetch_hourly_daily_closes(yahoo_ticker)
+    added = []
+    for d in missing:
+        key = d.strftime("%Y-%m-%d")
+        if key in hourly:
+            c = hourly[key]
+            pts.append([int(d.timestamp() * 1000), round(c, 2 if c >= 1 else 4)])
+            added.append(key)
+    still = [d.strftime("%Y-%m-%d") for d in missing if d.strftime("%Y-%m-%d") not in added]
+    if added:
+        print(f"   \U0001f527 backfilled from 1h series: {', '.join(added)}")
+    if still:
+        print(f"   \u26a0\ufe0f  STILL MISSING (no 1h data either): {', '.join(still)}")
+    return pts, added
+
+
 def git_commit_and_push(repo_root, paths_to_add, branch="main"):
     """Stage specific paths, commit, and push."""
     cwd_before = os.getcwd()
@@ -171,7 +234,9 @@ def main():
     for yahoo_ticker, slug in CRYPTOS.items():
         print(f"⏳ {yahoo_ticker}…")
         pts = fetch_price_data(yahoo_ticker)
+        backfilled = []
         if pts:
+            pts, backfilled = backfill_trailing_days(yahoo_ticker, pts)
             out_name = slug + "_365d.json"
             out_path = os.path.join(crypto_run_dir, out_name)
             write_json(out_path, {"prices": pts})
@@ -188,6 +253,7 @@ def main():
                 "symbol": yahoo_ticker, "slug": slug,
                 "points": len(pts), "return_pct": ret,
                 "last_day_utc": last_day, "last_close": last_price,
+                "backfilled_from_1h": backfilled,
             })
         else:
             print(f"  ❌ Failed: {yahoo_ticker}")
@@ -198,6 +264,19 @@ def main():
     summary["finished_at"] = datetime.now().isoformat(timespec="seconds")
     write_json(os.path.join(crypto_run_dir, "summary.json"), summary)
     write_json(os.path.join(crypto_cur_dir, "summary.json"), summary)
+
+    # Staleness check: every series must end on the last completed UTC day
+    expected = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
+    stale = [c for c in summary["cryptos"] if c["last_day_utc"] != expected]
+    summary["expected_last_day_utc"] = expected
+    summary["stale"] = [{"slug": c["slug"], "last_day_utc": c["last_day_utc"]} for c in stale]
+    write_json(os.path.join(crypto_run_dir, "summary.json"), summary)
+    write_json(os.path.join(crypto_cur_dir, "summary.json"), summary)
+    if stale:
+        print("\n\u26a0\ufe0f  STALE: expected all series to end " + expected + "; "
+              + ", ".join(f"{c['slug']}={c['last_day_utc']}" for c in stale))
+    else:
+        print("\n\u2705 all series end on " + expected + " (last completed UTC day)")
 
     # Git commit & push
     print("\n" + "=" * 50)
