@@ -205,14 +205,14 @@
   },
   "GDDY": {
     "marketcap": 12243.67,
-    "pb_current": 1824.06,
-    "pb_current_pctile": 100,
+    "pb_current": null,
+    "pb_current_pctile": null,
     "pb_yahoo": 1824.06,
     "pe_yahoo": 14.4,
     "div_y": null,
     "netprofit": 910,
     "netprofit_src": "netIncomeToCommon",
-    "valuation": "High",
+    "valuation": null,
     "sector": "Technology"
   }
 }
