@@ -1,56 +1,80 @@
 {
-  "started_at": "2026-08-31T14:07:57",
+  "started_at": "2026-08-31T14:33:23",
   "data_note": "series end at last completed UTC day; in-progress bar dropped",
   "cryptos": [
     {
       "symbol": "ETH-USD",
       "slug": "eth",
-      "points": 363,
-      "return_pct": -44.4,
-      "last_day_utc": "2026-08-28",
-      "last_close": 2442.54
+      "points": 365,
+      "return_pct": -44.9,
+      "last_day_utc": "2026-08-30",
+      "last_close": 2417.81,
+      "backfilled_from_1h": [
+        "2026-08-29",
+        "2026-08-30"
+      ]
     },
     {
       "symbol": "XMR-USD",
       "slug": "xmr",
-      "points": 363,
-      "return_pct": 80.1,
-      "last_day_utc": "2026-08-28",
-      "last_close": 471.94
+      "points": 365,
+      "return_pct": 85.6,
+      "last_day_utc": "2026-08-30",
+      "last_close": 486.11,
+      "backfilled_from_1h": [
+        "2026-08-29",
+        "2026-08-30"
+      ]
     },
     {
       "symbol": "BNB-USD",
       "slug": "bnb",
-      "points": 363,
-      "return_pct": -19.4,
-      "last_day_utc": "2026-08-28",
-      "last_close": 691.12
+      "points": 365,
+      "return_pct": -20.1,
+      "last_day_utc": "2026-08-30",
+      "last_close": 685.33,
+      "backfilled_from_1h": [
+        "2026-08-29",
+        "2026-08-30"
+      ]
     },
     {
       "symbol": "BTC-USD",
       "slug": "btc",
-      "points": 363,
-      "return_pct": -28.1,
-      "last_day_utc": "2026-08-28",
-      "last_close": 77830.29
+      "points": 365,
+      "return_pct": -28.2,
+      "last_day_utc": "2026-08-30",
+      "last_close": 77683.5,
+      "backfilled_from_1h": [
+        "2026-08-29",
+        "2026-08-30"
+      ]
     },
     {
       "symbol": "HYPE32196-USD",
       "slug": "hype",
-      "points": 362,
-      "return_pct": 82.6,
-      "last_day_utc": "2026-08-28",
-      "last_close": 80.89
+      "points": 364,
+      "return_pct": 80.8,
+      "last_day_utc": "2026-08-30",
+      "last_close": 80.07,
+      "backfilled_from_1h": [
+        "2026-08-29",
+        "2026-08-30"
+      ]
     },
     {
       "symbol": "TRX-USD",
       "slug": "trx",
-      "points": 363,
-      "return_pct": 0.2,
-      "last_day_utc": "2026-08-28",
-      "last_close": 0.3414
+      "points": 365,
+      "return_pct": -1.4,
+      "last_day_utc": "2026-08-30",
+      "last_close": 0.336,
+      "backfilled_from_1h": [
+        "2026-08-29",
+        "2026-08-30"
+      ]
     }
   ],
   "errors": [],
-  "finished_at": "2026-08-31T14:08:11"
+  "finished_at": "2026-08-31T14:33:39"
 }
