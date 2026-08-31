@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-08-31T14:33:23",
+  "started_at": "2026-08-31T14:33:55",
   "data_note": "series end at last completed UTC day; in-progress bar dropped",
   "cryptos": [
     {
@@ -76,5 +76,7 @@
     }
   ],
   "errors": [],
-  "finished_at": "2026-08-31T14:33:39"
+  "finished_at": "2026-08-31T14:34:10",
+  "expected_last_day_utc": "2026-08-30",
+  "stale": []
 }
