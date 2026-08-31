@@ -1,5 +1,5 @@
 {
-  "started_at": "2026-08-31T14:37:39",
+  "started_at": "2026-08-31T14:38:18",
   "data_note": "series end at last completed UTC day; in-progress bar dropped",
   "cryptos": [
     {
@@ -63,12 +63,12 @@
       ]
     },
     {
-      "symbol": "TRX-USD",
-      "slug": "trx",
+      "symbol": "XRP-USD",
+      "slug": "xrp",
       "points": 365,
-      "return_pct": -1.4,
+      "return_pct": -51.1,
       "last_day_utc": "2026-08-30",
-      "last_close": 0.336,
+      "last_close": 1.36,
       "backfilled_from_1h": [
         "2026-08-29",
         "2026-08-30"
@@ -76,7 +76,7 @@
     }
   ],
   "errors": [],
-  "finished_at": "2026-08-31T14:37:54",
+  "finished_at": "2026-08-31T14:38:32",
   "expected_last_day_utc": "2026-08-30",
   "stale": []
 }

@@ -5,12 +5,19 @@ Fetch crypto data for the Investment Decisions PILOT 2 (Wave 1).
 Cryptos (slate unchanged from pilot 1 — W1 is held fixed as the instrument;
 the pilot-2 change is entirely on the W2 two-stock side):
   Stage 1 (replication, also shown in pre-study): ETH, XMR, BNB
-  Stage 2 (own beliefs):                          BTC, HYPE, TRX
+  Stage 2 (own beliefs):                          BTC, HYPE, XRP
 
-TRX is the near-zero-return anchor and is load-bearing: in pilot-1 W1 the
-momentum-contrarian gap was -17.5pp at BTC (-28%), +41.5pp at HYPE (+82%),
-and +1.8pp (p=.45) at TRX (+0.8%) — the arms coincide exactly where the
-design says they must. Do not swap it for another decliner.
+SLATE CHANGE 2026-08-31 (pilot 2): TRX -> XRP. TRX had drifted to a ~0%
+12-month return, and in pilot-1 W1 it barely discriminated the two arms
+(AUC 0.574, d=+0.10, p=.06, vs 0.294/0.780 for BTC/HYPE; 22% of
+participants answered |x|<2 there vs 1-2% on the other two) and carried no
+information about the internalised model (adding it to the W1 own-slope
+does not improve prediction of the W2 stock slope: R2 0.287 with vs 0.291
+without; horse-race t=-0.99, p=.32). Wave 1's job is to INDUCE a strong,
+reusable model, so a third strong application beats a flat one; XRP (-51%)
+roughly doubles the negative-side dose. No fielded collection has ever had
+a near-zero asset (baseline main: flattest TRX +7.7; surface-sim main:
+flattest BNB -17.8).
 
 Series end at the last COMPLETED UTC day (yesterday's close == today's
 00:00 UTC open; crypto trades 24/7 so these are the same number).
@@ -50,7 +57,7 @@ CRYPTOS = {
     "BNB-USD": "bnb",
     "BTC-USD": "btc",
     "HYPE32196-USD": "hype",
-    "TRX-USD": "trx",
+    "XRP-USD": "xrp",
 }
 
 REPO_ROOT = "/Users/paulgrass/Documents/Programming/Git/pilot3-asset-data"
