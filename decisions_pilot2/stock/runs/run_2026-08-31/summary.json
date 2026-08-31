@@ -1,95 +1,105 @@
 {
-  "started_at": "2026-08-31T11:59:48",
+  "started_at": "2026-08-31T16:15:54",
   "stocks": [
     {
       "symbol": "CSCO",
-      "points": 251,
-      "return_pct": 59.1
+      "points": 250,
+      "return_pct": 62.1
     },
     {
       "symbol": "INTU",
-      "points": 251,
-      "return_pct": -46.3
+      "points": 250,
+      "return_pct": -45.9
     },
     {
       "symbol": "NTAP",
-      "points": 251,
-      "return_pct": 65.8
+      "points": 250,
+      "return_pct": 62.1
     },
     {
       "symbol": "EPAM",
-      "points": 251,
-      "return_pct": -34.9
+      "points": 250,
+      "return_pct": -34.3
     },
     {
       "symbol": "JBL",
-      "points": 251,
-      "return_pct": 47.2
+      "points": 250,
+      "return_pct": 49.2
     },
     {
       "symbol": "TYL",
-      "points": 251,
-      "return_pct": -32.9
+      "points": 250,
+      "return_pct": -31.6
     },
     {
       "symbol": "ADI",
-      "points": 251,
-      "return_pct": 44.0
+      "points": 250,
+      "return_pct": 45.7
     },
     {
       "symbol": "ACN",
-      "points": 251,
-      "return_pct": -27.1
+      "points": 250,
+      "return_pct": -26.0
     },
     {
       "symbol": "AKAM",
-      "points": 251,
-      "return_pct": 35.8
+      "points": 250,
+      "return_pct": 39.6
     },
     {
       "symbol": "NOW",
-      "points": 251,
-      "return_pct": -21.1
+      "points": 250,
+      "return_pct": -20.6
     },
     {
       "symbol": "FFIV",
-      "points": 251,
-      "return_pct": 25.9
+      "points": 250,
+      "return_pct": 28.5
     },
     {
       "symbol": "CHKP",
-      "points": 251,
-      "return_pct": -28.4
+      "points": 250,
+      "return_pct": -27.3
     },
     {
       "symbol": "ZM",
-      "points": 251,
-      "return_pct": 20.9
+      "points": 250,
+      "return_pct": 20.1
     },
     {
       "symbol": "ADBE",
-      "points": 251,
-      "return_pct": -18.3
+      "points": 250,
+      "return_pct": -15.7
     },
     {
       "symbol": "TXN",
-      "points": 251,
-      "return_pct": 27.7
+      "points": 250,
+      "return_pct": 29.4
     },
     {
       "symbol": "QCOM",
-      "points": 251,
-      "return_pct": 2.2
+      "points": 250,
+      "return_pct": 3.4
+    },
+    {
+      "symbol": "DOCU",
+      "points": 250,
+      "return_pct": -13.6
+    },
+    {
+      "symbol": "GDDY",
+      "points": 250,
+      "return_pct": -32.3
     }
   ],
   "errors": [],
   "fundamentals": {
     "CSCO": {
-      "marketcap": 433281.93,
-      "pb_current": 8.63,
+      "marketcap": 434897.88,
+      "pb_current": 8.66,
       "pb_current_pctile": 57,
-      "pb_yahoo": 8.63,
-      "pe_yahoo": 33.0,
+      "pb_yahoo": 8.66,
+      "pe_yahoo": 33.1,
       "div_y": 1.5,
       "netprofit": 13267,
       "netprofit_src": "netIncomeToCommon",
@@ -97,7 +107,7 @@
       "sector": "Technology"
     },
     "INTU": {
-      "marketcap": 97942.65,
+      "marketcap": 97974.11,
       "pb_current": 4.76,
       "pb_current_pctile": 37,
       "pb_yahoo": 4.76,
@@ -109,11 +119,11 @@
       "sector": "Technology"
     },
     "NTAP": {
-      "marketcap": 36699.73,
-      "pb_current": 27.13,
+      "marketcap": 36858.68,
+      "pb_current": 27.25,
       "pb_current_pctile": 91,
-      "pb_yahoo": 27.13,
-      "pe_yahoo": 29.5,
+      "pb_yahoo": 27.25,
+      "pe_yahoo": 29.6,
       "div_y": 1.11,
       "netprofit": 1276,
       "netprofit_src": "netIncomeToCommon",
@@ -121,11 +131,11 @@
       "sector": "Technology"
     },
     "EPAM": {
-      "marketcap": 5922.19,
-      "pb_current": 1.68,
+      "marketcap": 6105.84,
+      "pb_current": 1.74,
       "pb_current_pctile": 10,
-      "pb_yahoo": 1.68,
-      "pe_yahoo": 15.6,
+      "pb_yahoo": 1.74,
+      "pe_yahoo": 16.1,
       "div_y": null,
       "netprofit": 402,
       "netprofit_src": "netIncomeToCommon",
@@ -133,11 +143,11 @@
       "sector": "Technology"
     },
     "JBL": {
-      "marketcap": 31588.07,
-      "pb_current": 23.88,
+      "marketcap": 31747.87,
+      "pb_current": 24.01,
       "pb_current_pctile": 88,
-      "pb_yahoo": 23.88,
-      "pe_yahoo": 37.7,
+      "pb_yahoo": 24.01,
+      "pe_yahoo": 37.9,
       "div_y": 0.11,
       "netprofit": 862,
       "netprofit_src": "netIncomeToCommon",
@@ -145,11 +155,11 @@
       "sector": "Technology"
     },
     "TYL": {
-      "marketcap": 15477.5,
-      "pb_current": 5.09,
+      "marketcap": 15444.74,
+      "pb_current": 5.08,
       "pb_current_pctile": 38,
-      "pb_yahoo": 5.09,
-      "pe_yahoo": 49.7,
+      "pb_yahoo": 5.08,
+      "pe_yahoo": 49.6,
       "div_y": null,
       "netprofit": 325,
       "netprofit_src": "netIncomeToCommon",
@@ -157,11 +167,11 @@
       "sector": "Technology"
     },
     "ADI": {
-      "marketcap": 175306.1,
-      "pb_current": 5.23,
+      "marketcap": 177273.39,
+      "pb_current": 5.28,
       "pb_current_pctile": 40,
-      "pb_yahoo": 5.23,
-      "pe_yahoo": 42.9,
+      "pb_yahoo": 5.28,
+      "pe_yahoo": 43.4,
       "div_y": 1.22,
       "netprofit": 4135,
       "netprofit_src": "netIncomeToCommon",
@@ -169,11 +179,11 @@
       "sector": "Technology"
     },
     "ACN": {
-      "marketcap": 116030.34,
-      "pb_current": 3.64,
+      "marketcap": 115546.91,
+      "pb_current": 3.62,
       "pb_current_pctile": 32,
-      "pb_yahoo": 3.64,
-      "pe_yahoo": 15.2,
+      "pb_yahoo": 3.62,
+      "pe_yahoo": 15.1,
       "div_y": 3.48,
       "netprofit": 7790,
       "netprofit_src": "netIncomeToCommon",
@@ -181,11 +191,11 @@
       "sector": "Technology"
     },
     "AKAM": {
-      "marketcap": 15445.22,
-      "pb_current": 3.25,
+      "marketcap": 15499.84,
+      "pb_current": 3.26,
       "pb_current_pctile": 28,
-      "pb_yahoo": 3.25,
-      "pe_yahoo": 38.9,
+      "pb_yahoo": 3.26,
+      "pe_yahoo": 39.1,
       "div_y": null,
       "netprofit": 411,
       "netprofit_src": "netIncomeToCommon",
@@ -193,11 +203,11 @@
       "sector": "Technology"
     },
     "NOW": {
-      "marketcap": 149610.18,
-      "pb_current": 11.95,
+      "marketcap": 150209.71,
+      "pb_current": 12.0,
       "pb_current_pctile": 70,
-      "pb_yahoo": 11.95,
-      "pe_yahoo": 89.9,
+      "pb_yahoo": 12.0,
+      "pe_yahoo": 90.2,
       "div_y": null,
       "netprofit": 1670,
       "netprofit_src": "netIncomeToCommon",
@@ -205,11 +215,11 @@
       "sector": "Technology"
     },
     "FFIV": {
-      "marketcap": 22324.7,
-      "pb_current": 5.81,
-      "pb_current_pctile": 46,
-      "pb_yahoo": 5.81,
-      "pe_yahoo": 31.4,
+      "marketcap": 22443.35,
+      "pb_current": 5.84,
+      "pb_current_pctile": 47,
+      "pb_yahoo": 5.84,
+      "pe_yahoo": 31.6,
       "div_y": null,
       "netprofit": 727,
       "netprofit_src": "netIncomeToCommon",
@@ -217,10 +227,10 @@
       "sector": "Technology"
     },
     "CHKP": {
-      "marketcap": 14122.56,
-      "pb_current": 5.2,
+      "marketcap": 14174.63,
+      "pb_current": 5.22,
       "pb_current_pctile": 40,
-      "pb_yahoo": 5.2,
+      "pb_yahoo": 5.22,
       "pe_yahoo": 14.2,
       "div_y": null,
       "netprofit": 1049,
@@ -229,11 +239,11 @@
       "sector": "Technology"
     },
     "ZM": {
-      "marketcap": 28720.27,
-      "pb_current": 2.9,
+      "marketcap": 28246.12,
+      "pb_current": 2.85,
       "pb_current_pctile": 23,
-      "pb_yahoo": 2.9,
-      "pe_yahoo": 9.1,
+      "pb_yahoo": 2.85,
+      "pe_yahoo": 9.0,
       "div_y": null,
       "netprofit": 3255,
       "netprofit_src": "netIncomeToCommon",
@@ -241,11 +251,11 @@
       "sector": "Technology"
     },
     "ADBE": {
-      "marketcap": 115879.2,
-      "pb_current": 10.1,
+      "marketcap": 115259.9,
+      "pb_current": 10.04,
       "pb_current_pctile": 64,
-      "pb_yahoo": 10.1,
-      "pe_yahoo": 16.7,
+      "pb_yahoo": 10.04,
+      "pe_yahoo": 16.6,
       "div_y": null,
       "netprofit": 7229,
       "netprofit_src": "netIncomeToCommon",
@@ -253,11 +263,11 @@
       "sector": "Technology"
     },
     "TXN": {
-      "marketcap": 236202.39,
-      "pb_current": 13.11,
+      "marketcap": 238768.62,
+      "pb_current": 13.26,
       "pb_current_pctile": 75,
-      "pb_yahoo": 13.11,
-      "pe_yahoo": 39.4,
+      "pb_yahoo": 13.26,
+      "pe_yahoo": 39.8,
       "div_y": 2.2,
       "netprofit": 6017,
       "netprofit_src": "netIncomeToCommon",
@@ -265,17 +275,41 @@
       "sector": "Technology"
     },
     "QCOM": {
-      "marketcap": 175364.85,
-      "pb_current": 6.27,
-      "pb_current_pctile": 50,
-      "pb_yahoo": 6.27,
-      "pe_yahoo": 18.8,
+      "marketcap": 179690.5,
+      "pb_current": 6.43,
+      "pb_current_pctile": 51,
+      "pb_yahoo": 6.43,
+      "pe_yahoo": 19.2,
       "div_y": 2.23,
       "netprofit": 9260,
       "netprofit_src": "netIncomeToCommon",
       "valuation": "Mid",
       "sector": "Technology"
+    },
+    "DOCU": {
+      "marketcap": 12346.48,
+      "pb_current": 6.86,
+      "pb_current_pctile": 53,
+      "pb_yahoo": 6.86,
+      "pe_yahoo": 42.0,
+      "div_y": null,
+      "netprofit": 315,
+      "netprofit_src": "netIncomeToCommon",
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "GDDY": {
+      "marketcap": 12243.67,
+      "pb_current": 1824.06,
+      "pb_current_pctile": 100,
+      "pb_yahoo": 1824.06,
+      "pe_yahoo": 14.4,
+      "div_y": null,
+      "netprofit": 910,
+      "netprofit_src": "netIncomeToCommon",
+      "valuation": "High",
+      "sector": "Technology"
     }
   },
-  "finished_at": "2026-08-31T12:01:40"
+  "finished_at": "2026-08-31T16:17:59"
 }
