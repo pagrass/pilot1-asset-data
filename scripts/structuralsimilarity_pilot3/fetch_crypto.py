@@ -1,16 +1,38 @@
 #!/usr/bin/env python3
 """
-Fetch crypto data for the Structural Similarity Pilot 2 (Wave 1).
+Fetch crypto data for the Structural Similarity PILOT 3 (Wave 1).
 
-Cryptos (slate unchanged from structural-similarity pilot 1 / decisions pilot):
+Wave 1 is the same survey as the Investment Decisions Pilot 2 Wave 1
+(pure copy: survey name + data folder swapped, design untouched), so the
+slate is that survey's slate:
   Stage 1 (replication, also shown in pre-study): ETH, XMR, BNB
-  Stage 2 (own beliefs):                          BTC, HYPE, TRX
+  Stage 2 (own beliefs):                          BTC, HYPE, XRP
+
+SLATE NOTE 2026-09-08 (pilot 3): the pilot-3 folder was first created on
+2026-08-31 with the pilot-1/2 slate (TRX in stage 2). TRX -> XRP is carried
+over from the decisions pilot 2 (2026-08-31): TRX had drifted to a ~0%
+12-month return (+1.0% on 2026-09-07) and in pilot-1 W1 barely discriminated
+the two arms (AUC 0.574, d=+0.10 vs 0.294/0.780 for BTC/HYPE; 22% of
+participants answered |x|<2 there) and carried no information about the
+internalised model. Re-screened ~80 candidates on 2026-09-07 data: market
+still bear; XMR (+95) and HYPE (+68) remain the only non-fringe up-assets
+(ZEC +2146, JST +215, DASH +151 w/ 41 days >10% are ludicrous/fringe);
+XRP -53 is a clean, well-known negative. Slate span -53 .. +95.
 
 Series end at the last COMPLETED UTC day (yesterday's close == today's
 00:00 UTC open; crypto trades 24/7 so these are the same number).
 The in-progress "today" bar is always dropped, so a fetch returns identical
 data no matter what hour it runs. Pin at Wave 1 launch; do NOT re-fetch
 while Wave 1 is in the field (all participants must see identical charts).
+
+TRAILING-GAP BACKFILL: Yahoo's DAILY crypto series sometimes omits recent
+days even though the data exists at 1h granularity (observed for Sat/Sun
+2026-08-29/30 on all six tickers). Any completed UTC day missing from the
+tail of the daily series is refilled from the 1h series (range=7d), using
+that day's last hourly close -- the same quantity Yahoo records as the
+daily close, agreeing to ~0.02% on days where both exist. Backfilled days
+are listed in summary.json. The 1h window only reaches 7 days back, so this
+covers trailing holes only; the run warns loudly if a gap survives.
 
 Output structure under structuralsimilarity_pilot3/:
   crypto/current/   + crypto/runs/run_YYYY-MM-DD/
@@ -23,7 +45,7 @@ import sys
 import time
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 # ======================== Config ========================
 
@@ -33,12 +55,18 @@ CRYPTOS = {
     "BNB-USD": "bnb",
     "BTC-USD": "btc",
     "HYPE32196-USD": "hype",
-    "TRX-USD": "trx",
+    "XRP-USD": "xrp",
 }
 
 REPO_ROOT = "/Users/paulgrass/Documents/Programming/Git/pilot3-asset-data"
 BASE_DIR  = os.path.join(REPO_ROOT, "structuralsimilarity_pilot3")
-CDN_BASE  = "https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/structuralsimilarity_pilot3/crypto/current/"
+CDN_BASE  = "https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@main/structuralsimilarity_pilot3/crypto/current/"
+
+# CDN alias: @main, NOT @latest. This repo has no git tags, so jsDelivr
+# resolves "@latest" to version:null and falls back to the default branch
+# with sticky per-file caching -- on 2026-08-31 that served two different
+# price vintages across the six files at the same time, through repeated
+# purges. Branch URLs purge reliably. Keep @main in the QSF too.
 
 MAX_RETRIES  = 3
 RETRY_DELAY  = 10
@@ -107,6 +135,59 @@ def fetch_price_data(yahoo_ticker, max_retries=MAX_RETRIES):
     return None
 
 
+def fetch_hourly_daily_closes(yahoo_ticker):
+    """Daily closes derived from the 1h series (last hourly bar of each UTC day).
+    Used only to refill trailing days the daily series omits."""
+    url = (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{yahoo_ticker}"
+        f"?range=7d&interval=1h"
+    )
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode())
+        result = data["chart"]["result"][0]
+        out = {}
+        for ts, c in zip(result["timestamp"],
+                         result["indicators"]["quote"][0]["close"]):
+            if c is None:
+                continue
+            dt = datetime.fromtimestamp(ts, timezone.utc)
+            out[dt.strftime("%Y-%m-%d")] = float(c)   # later bars overwrite earlier
+        return out
+    except Exception as e:
+        print(f"   \u26a0\ufe0f  hourly backfill fetch failed for {yahoo_ticker}: {e}")
+        return {}
+
+
+def backfill_trailing_days(yahoo_ticker, pts):
+    """Append any completed UTC days missing from the tail of the daily series."""
+    today_utc = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    last_have = datetime.fromtimestamp(pts[-1][0] / 1000, timezone.utc).replace(
+        hour=0, minute=0, second=0, microsecond=0)
+    missing, d = [], last_have + timedelta(days=1)
+    while d < today_utc:
+        missing.append(d)
+        d += timedelta(days=1)
+    if not missing:
+        return pts, []
+
+    hourly = fetch_hourly_daily_closes(yahoo_ticker)
+    added = []
+    for d in missing:
+        key = d.strftime("%Y-%m-%d")
+        if key in hourly:
+            c = hourly[key]
+            pts.append([int(d.timestamp() * 1000), round(c, 2 if c >= 1 else 4)])
+            added.append(key)
+    still = [d.strftime("%Y-%m-%d") for d in missing if d.strftime("%Y-%m-%d") not in added]
+    if added:
+        print(f"   \U0001f527 backfilled from 1h series: {', '.join(added)}")
+    if still:
+        print(f"   \u26a0\ufe0f  STILL MISSING (no 1h data either): {', '.join(still)}")
+    return pts, added
+
+
 def git_commit_and_push(repo_root, paths_to_add, branch="main"):
     """Stage specific paths, commit, and push."""
     cwd_before = os.getcwd()
@@ -164,7 +245,9 @@ def main():
     for yahoo_ticker, slug in CRYPTOS.items():
         print(f"⏳ {yahoo_ticker}…")
         pts = fetch_price_data(yahoo_ticker)
+        backfilled = []
         if pts:
+            pts, backfilled = backfill_trailing_days(yahoo_ticker, pts)
             out_name = slug + "_365d.json"
             out_path = os.path.join(crypto_run_dir, out_name)
             write_json(out_path, {"prices": pts})
@@ -181,6 +264,7 @@ def main():
                 "symbol": yahoo_ticker, "slug": slug,
                 "points": len(pts), "return_pct": ret,
                 "last_day_utc": last_day, "last_close": last_price,
+                "backfilled_from_1h": backfilled,
             })
         else:
             print(f"  ❌ Failed: {yahoo_ticker}")
@@ -191,6 +275,19 @@ def main():
     summary["finished_at"] = datetime.now().isoformat(timespec="seconds")
     write_json(os.path.join(crypto_run_dir, "summary.json"), summary)
     write_json(os.path.join(crypto_cur_dir, "summary.json"), summary)
+
+    # Staleness check: every series must end on the last completed UTC day
+    expected = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
+    stale = [c for c in summary["cryptos"] if c["last_day_utc"] != expected]
+    summary["expected_last_day_utc"] = expected
+    summary["stale"] = [{"slug": c["slug"], "last_day_utc": c["last_day_utc"]} for c in stale]
+    write_json(os.path.join(crypto_run_dir, "summary.json"), summary)
+    write_json(os.path.join(crypto_cur_dir, "summary.json"), summary)
+    if stale:
+        print("\n\u26a0\ufe0f  STALE: expected all series to end " + expected + "; "
+              + ", ".join(f"{c['slug']}={c['last_day_utc']}" for c in stale))
+    else:
+        print("\n\u2705 all series end on " + expected + " (last completed UTC day)")
 
     # Git commit & push
     print("\n" + "=" * 50)
@@ -219,7 +316,7 @@ def main():
     print(f"  {CDN_BASE}")
     print(f"\nTo purge the jsDelivr cache after an update:")
     for slug in CRYPTOS.values():
-        print(f"  curl -s https://purge.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/structuralsimilarity_pilot3/crypto/current/{slug}_365d.json")
+        print(f"  curl -s https://purge.jsdelivr.net/gh/pagrass/pilot1-asset-data@main/structuralsimilarity_pilot3/crypto/current/{slug}_365d.json")
 
 
 if __name__ == "__main__":
