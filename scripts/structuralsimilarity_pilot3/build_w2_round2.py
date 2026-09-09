@@ -13,19 +13,18 @@ Edits:
      the JS validator accepts 0 -> a "no change" respondent was stuck behind
      an invisible forced-response slider. 0 is now a valid estimate in both
      directions: feedback reads "$100", step 3 shows.
-  2. INSTRUCTIONS. (a) New arm-specific pipe obj_measure right after the task
-     sentence, defining the forecast object precisely and in parallel:
-       returns: "A stock's return over the next 12 months is the percentage
-                 change from its current price to its price in 12 months."
-       profits: "A company's change in profits over the next 12 months
-                 compares its total net profit over its next four reported
-                 quarters with its net profit in its last fiscal year, as
-                 shown on each page."
-     (b) Definitions box stays object-neutral (explains the data both arms
-     see): "over some period" -> "over a period ... over that period";
-     "earnings" kept once as an unbolded synonym. Distinction sentence
-     unchanged. The page now carries three pipes (obj_gate_teach,
-     obj_measure, obj_bonus_actual) -- still a minimal pair across arms.
+  2. INSTRUCTIONS BOX, identical across arms (Paul 2026-09-09: no treatment
+     differences in the box -- returns-arm participants see the profit data
+     too and may want its definition). Both forecast objects are defined
+     fully, with their measurement rules, for everybody:
+       "A stock's return over the next 12 months is the percentage change
+        from its current price to its price in 12 months."
+       "A company's profit (net profit, also called earnings) is what it
+        earns after subtracting all costs. Its change in profits over the
+        next 12 months compares its total net profit over the next four
+        reported quarters with its net profit in the last fiscal year shown."
+     "earnings" kept once as an unbolded synonym; distinction sentence and
+     task sentence unchanged; the page keeps its two pipes.
   3. COMP QUESTION 1: choice 2 "How each company's profits will change (its
      earnings)" -> "How each company's profits (net profit) will change";
      profit vocabulary is now profits / net profit everywhere, "earnings"
@@ -46,17 +45,12 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.expanduser(
 
 RANDOMIZE_COMP = True
 
-OBJ_MEASURE = {
-    "returns": "A stock's return over the next 12 months is the percentage change from its current price to its price in 12 months.",
-    "profits": "A company's change in profits over the next 12 months compares its total net profit over its next four reported quarters with its net profit in its last fiscal year, as shown on each page.",
-}
-
-TASK_OLD = "Your task is to predict <strong>${e://Field/obj_gate_teach}</strong>. You will form your expectations for each of the seven stocks independently."
-TASK_NEW = "Your task is to predict <strong>${e://Field/obj_gate_teach}</strong>. ${e://Field/obj_measure} You will form your expectations for each of the seven stocks independently."
 DEF_RET_OLD = "A stock&rsquo;s <strong>return</strong> is the percentage change in its price over some period."
-DEF_RET_NEW = "A stock&rsquo;s <strong>return</strong> over a period is the percentage change in its price over that period."
+DEF_RET_NEW = "A stock&rsquo;s <strong>return</strong> over the next 12 months is the percentage change from its current price to its price in 12 months."
 DEF_PROF_OLD = "A company&rsquo;s <strong>profit</strong> (net profit, also called <strong>earnings</strong>) is what it earns over some period after subtracting all costs, as reported in its financial statements."
-DEF_PROF_NEW = "A company&rsquo;s <strong>profit</strong> (net profit, also called earnings) is what it earns over a period after subtracting all costs, as reported in its financial statements."
+DEF_PROF_NEW = ("A company&rsquo;s <strong>profit</strong> (net profit, also called earnings) is what it earns after subtracting all costs. "
+                "Its <strong>change in profits</strong> over the next 12 months compares its total net profit over the next four reported quarters "
+                "with its net profit in the last fiscal year shown.")
 
 COMP1_CHOICE2_OLD = "How each company's <b>profits</b> will change (its earnings)"
 COMP1_CHOICE2_NEW = "How each company's <b>profits</b> (net profit) will change"
@@ -108,30 +102,11 @@ check(n_zero == 7, "zero guard removed in 7 questions")
 
 # ---------------- 2. instructions ----------------
 ins = by_tag["instructions"]
-for old, new in ((TASK_OLD, TASK_NEW), (DEF_RET_OLD, DEF_RET_NEW), (DEF_PROF_OLD, DEF_PROF_NEW)):
+for old, new in ((DEF_RET_OLD, DEF_RET_NEW), (DEF_PROF_OLD, DEF_PROF_NEW)):
     check(ins["QuestionText"].count(old) == 1, "instructions string found once: " + old[:50])
     ins["QuestionText"] = ins["QuestionText"].replace(old, new)
-check(ins["QuestionText"].count("${e://Field/") == 3, "instructions page carries exactly 3 pipes")
-
-# obj_measure: declare in FL_744 (Recipient, no value) and set per arm in FL_746 / FL_748 (Custom)
-decl = [el for el in walk(FL) if el.get("FlowID") == "FL_744"][0]
-tmpl = [x for x in decl["EmbeddedData"] if x.get("Field") == "obj_gate_teach"][0]
-check("Value" not in tmpl and tmpl.get("Type") == "Recipient", "declaration template shape")
-check(not any(x.get("Field") == "obj_measure" for el in walk(FL) if el.get("Type") == "EmbeddedData" for x in el["EmbeddedData"]), "obj_measure not yet used")
-d = copy.deepcopy(tmpl); d["Field"] = d["Description"] = "obj_measure"
-decl["EmbeddedData"].append(d)
-n_arm = 0
-for el in walk(FL):
-    if el.get("Type") != "EmbeddedData":
-        continue
-    arm = [x.get("Value") for x in el["EmbeddedData"] if x.get("Field") == "structuralsim" and x.get("Value")]
-    if arm and arm[0] in OBJ_MEASURE:
-        vt = [x for x in el["EmbeddedData"] if x.get("Field") == "obj_gate_teach"][0]
-        check(vt.get("Type") == "Custom" and vt.get("Value"), "arm entry template is Custom with Value")
-        v = copy.deepcopy(vt); v["Field"] = v["Description"] = "obj_measure"; v["Value"] = OBJ_MEASURE[arm[0]]
-        el["EmbeddedData"].append(v)
-        n_arm += 1
-check(n_arm == 2, "obj_measure set in both arm entries")
+check(ins["QuestionText"].count("${e://Field/") == 2, "instructions page keeps exactly 2 pipes (obj_gate_teach, obj_bonus_actual)")
+check("obj_measure" not in json.dumps(q), "no arm-specific measurement pipe")
 
 # ---------------- 3. comp question 1 wording ----------------
 c1 = by_tag["compquestion"]
@@ -150,8 +125,7 @@ if RANDOMIZE_COMP:
 # ---------------- global checks ----------------
 s = json.dumps(q)
 check(ZERO_OLD not in s, "no zero guard left")
-check(s.count("${e://Field/obj_measure}") == 1, "obj_measure piped once")
-check(s.count(OBJ_MEASURE["returns"]) == 1 and s.count(OBJ_MEASURE["profits"]) == 1, "both obj_measure values present once")
+check(s.count(DEF_RET_NEW) == 1 and s.count(DEF_PROF_NEW) == 1, "both common definitions present once")
 check("(its earnings)" not in s, "'(its earnings)' gone")
 check(s.count("earnings") == 1, "'earnings' appears exactly once (definition synonym)")
 src = json.loads(src_dump)
