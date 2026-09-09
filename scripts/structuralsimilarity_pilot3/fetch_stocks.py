@@ -2,12 +2,17 @@
 """
 Fetch stock data for the Structural Similarity experiment — Wave 2 (pilot).
 
-Slate (2026-08-31, pilot 3 = profit-chart redesign; quadrant logic on
-(12-mo return sign x 12-mo profit-growth sign)):
-  (+ret,+growth): CSCO, FFIV     (+ret,-growth): AKAM
-  (-ret,+growth): ORCL, INTU     (-ret,-growth): EPAM
-EPAM replaces NOW, ORCL replaces MSFT vs pilot 1 (MSFT return drifted to ~0 = zero-leverage point): fills the empty (-,-) quadrant
-and gives the profit-growth regressor a second negative value.
+Slate (2026-09-09, pilot 3 = profit-chart redesign; quadrant logic on
+(12-mo return sign x last-FY profit-change sign)); fielded six + two spares:
+  (+ret,+chg): CSCO (rebound path), ANET (mono-up)   (+ret,-chg): AKAM (decline)
+  (-ret,+chg): ORCL (mono-up), INTU (mono-up)        (-ret,-chg): SNPS (rise-fall)
+  spares (fetched, not wired in the W2 QSF): FTNT (+ret, mono-up, weak +chg),
+  TXN (+ret, vivid 3-yr decline, flat last FY).
+Matched pairs: ANET/AKAM (high side, returns within ~2pp, opposite profit
+paths) and ORCL/SNPS (low side). PANW dropped 2026-09-09: its FY2026 (Jul)
+net income came in at ~$0.31B (-73% y/y, loss quarter inside the window) =
+not a comfortably positive base. FTNT demoted: +97% return with no partner
+once PANW left.
 
 NOTE: for a LAUNCH-DAY refresh use fetch_stocks_prices_only.py —
 fundamentals.json (valuation tiers + net profit) should be PINNED from the
@@ -47,16 +52,9 @@ except Exception:  # yfinance/curl_cffi not installed -> P/B (WRDS) + returns st
 
 # ======================== Config ========================
 
-STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "FTNT", "PANW"]
+STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "ANET", "AKAM", "FTNT", "TXN"]
 
-SECTOR_LABEL = {
-    "ORCL": "Technology",
-    "INTU": "Technology",
-    "CSCO": "Technology",
-    "SNPS": "Technology",
-    "FTNT": "Technology",
-    "PANW": "Technology",
-}
+SECTOR_LABEL = {t: "Technology" for t in STOCKS}
 
 WRDS_CSV = os.path.join(
     os.path.dirname(os.path.abspath(__file__)), "..", "..", "WRDS",
@@ -415,7 +413,7 @@ def main():
 
     print(f"\nStock data: {stock_cur_dir}")
     print(f"\nCDN base URL (after push):")
-    print(f"  https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@latest/structuralsimilarity_pilot3/stock/current/fundamentals.json")
+    print(f"  https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@main/structuralsimilarity_pilot3/stock/current/fundamentals.json")
 
 
 if __name__ == "__main__":

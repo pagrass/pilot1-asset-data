@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Fetch stock PRICE data only for Structural Similarity — Wave 2 (pilot 2).
+Fetch stock PRICE data only for Structural Similarity — Wave 2 (pilot 3).
 
 *** THIS is the launch-day script for W2. ***
 fundamentals.json is PINNED from the last full fetch (valuation tiers and
@@ -8,9 +8,17 @@ net profit must not flap between now and launch) — this script refreshes
 ONLY the price series and never touches fundamentals.json. Do NOT run the
 full fetch_stocks.py on launch day.
 
-Slate (2026-08-27, pilot 2):
-  (+ret,+growth): CSCO (Cisco), FFIV (F5)   (+ret,-growth): AKAM (Akamai)
-  (-ret,+growth): ORCL (Oracle), INTU (Intuit)   (-ret,-growth): EPAM (EPAM Systems)
+Slate (2026-09-09, pilot 3 = profit-chart redesign; quadrant logic on
+(12-mo return sign x last-FY profit-change sign)); fielded six + two spares:
+  (+ret,+chg): CSCO (rebound path), ANET (mono-up)   (+ret,-chg): AKAM (decline)
+  (-ret,+chg): ORCL (mono-up), INTU (mono-up)        (-ret,-chg): SNPS (rise-fall)
+  spares (fetched, not wired in the W2 QSF): FTNT (+ret, mono-up, weak +chg),
+  TXN (+ret, vivid 3-yr decline, flat last FY).
+Matched pairs: ANET/AKAM (high side, returns within ~2pp, opposite profit
+paths) and ORCL/SNPS (low side). PANW dropped 2026-09-09: its FY2026 (Jul)
+net income came in at ~$0.31B (-73% y/y, loss quarter inside the window) =
+not a comfortably positive base. FTNT demoted: +97% return with no partner
+once PANW left.
 
 Output: structuralsimilarity_pilot3/stock/current/ + structuralsimilarity_pilot3/stock/runs/run_YYYY-MM-DD/
 
@@ -43,7 +51,7 @@ from zoneinfo import ZoneInfo
 
 # ======================== Config ========================
 
-STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "FTNT", "PANW"]
+STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "ANET", "AKAM", "FTNT", "TXN"]
 
 # Opt-in: fill a trailing unconsolidated (close=null) trading day. See docstring.
 FILL_UNCONSOLIDATED = os.environ.get("FILL_UNCONSOLIDATED", "0") == "1"

@@ -18,6 +18,16 @@ netIncomeToCommon (quoteSummary TTM == the just-ended FY for these names; the
 same source as the fielded pilot-2 "netprofit" stat, rolls promptly after
 earnings). Record fill provenance; verify once Yahoo's annual table rolls.
 
+Also writes netprofit_growth (= fychange_pct) into fundamentals.json so the
+legacy <t>_profitgrowth embedded-data field keeps carrying the displayed
+profit change (replaces the old add_profit_growth.py hand-pin). Run this
+AFTER fetch_stocks.py / fetch_stocks_prices_only.py.
+
+Selection rule reminder (2026-08-31/09-09): every FY in the 4-year window
+must be comfortably positive. PANW was dropped on 2026-09-09 when its FY2026
+came in at ~$0.31B (-73%, with a loss quarter) -- the assert below would
+pass on the sign alone, so eyeball the printed series before pushing.
+
 Output: structuralsimilarity_pilot3/stock/current/profits.json (+ runs/ copy)
 """
 import json, os, time, urllib.request
@@ -27,7 +37,7 @@ import yfinance as yf
 from curl_cffi import requests as curl_requests
 _YF_SESSION = curl_requests.Session(impersonate="chrome")
 
-STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "FTNT", "PANW"]
+STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "ANET", "AKAM", "FTNT", "TXN"]
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 CUR = os.path.join(REPO_ROOT, "structuralsimilarity_pilot3", "stock", "current")
@@ -87,3 +97,15 @@ payload = {"fetched_at": datetime.now().isoformat(timespec="seconds"), "stocks":
 for d in (CUR, RUN):
     json.dump(payload, open(os.path.join(d, "profits.json"), "w"), indent=1)
 print("wrote", os.path.join(CUR, "profits.json"))
+
+# mirror the displayed change into fundamentals.json (legacy <t>_profitgrowth ED)
+for d in (CUR, RUN):
+    fp = os.path.join(d, "fundamentals.json")
+    if not os.path.exists(fp):
+        continue
+    f = json.load(open(fp))
+    for t, rec in out.items():
+        if t in f:
+            f[t]["netprofit_growth"] = rec["fychange_pct"]
+    json.dump(f, open(fp, "w"), indent=2)
+    print("netprofit_growth written into", fp)
