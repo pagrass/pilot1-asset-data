@@ -9,18 +9,18 @@ ONLY the price series and never touches fundamentals.json. Do NOT run the
 full fetch_stocks.py on launch day.
 
 Slate (2026-09-09, pilot 3 = profit-chart redesign; quadrant logic on
-(12-mo return sign x last-FY profit-change sign)); fielded six + spares.
+(12-mo return sign x last-FY profit-change sign)); fielded SEVEN + spares.
 Returns quoted for a window starting 2025-09-16 (stable after the 09-10-2025
 earnings shocks roll out):
   (+ret,+chg): CSCO +63 (rebound path), ANET +37 (mono-up)
   (+ret,-chg): AKAM +38 (decline)
-  (-ret,+chg): ADBE -27 (mono-up), INTU -51 (mono-up)
+  (-ret,+chg): ADBE -27 (mono-up), INTU -51 (mono-up), ORCL -47 (mono-up; 7th
+               stock added 2026-09-09: +24% slope precision per person)
   (-ret,-chg): EPAM -25 (flat-then-decline)
 Matched pairs: ANET/AKAM (high side) and ADBE/EPAM (low side), each within
 ~2pp of return with opposite profit paths.
-Spares (fetched, not wired in the W2 QSF): ORCL (-47 after the roll, mono-up;
-optional 7th / swap for INTU), FTNT (+97, mono-up, weak +chg), TXN (+46,
-vivid 3-yr decline, flat last FY).
+Spares (fetched, not wired in the W2 QSF): FTNT (+97, mono-up, weak +chg),
+TXN (+46, vivid 3-yr decline, flat last FY).
 Dropped 2026-09-09: PANW (FY2026 net income ~$0.31B, -73% y/y, loss quarter
 -> not a comfortably positive base); SNPS (its -35% return was entirely the
 2025-09-10 crash at the window start -> -10% once that day rolls out).
