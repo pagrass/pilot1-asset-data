@@ -10,9 +10,12 @@ Draft 2 applies, on top of draft 1:
      no git tags; @latest resolves to HEAD with sticky per-file caching and
      served mixed vintages on 2026-08-31 -- see commit 4d36932). W1 already
      uses @main.
-  2. Slate swap (PANW -> AKAM, FTNT -> ANET; ORCL/INTU/CSCO/SNPS stay):
-     DataExportTags, block descriptions, the 12 cur_ticker/cur_name/
-     cur_shortname flow entries.
+  2. Slate v2: ORCL -> ADBE, SNPS -> EPAM, PANW -> AKAM, FTNT -> ANET
+     (INTU, CSCO stay). DataExportTags, block descriptions, the cur_ticker/
+     cur_name/cur_shortname flow entries, and the order label
+     orclfirst -> adbefirst (branch logic + ED value).
+       adbefirst: ADBE, EPAM, AKAM, CSCO, INTU, ANET
+       cscofirst: CSCO, INTU, ANET, ADBE, EPAM, AKAM
   3. FL_19 embedded-data declarations rebuilt for the fielded slate, incl. the
      pilot-3 provenance fields (<t>_fyvals, <t>_fylabels, <t>_fychange) that
      the infoscreen JS sets but draft 1 never declared (draft 1 still carried
@@ -42,14 +45,22 @@ NEW_BASE = "https://cdn.jsdelivr.net/gh/pagrass/pilot1-asset-data@main/structura
 
 # old slug -> (new slug, ticker, cur_name, cur_shortname, block description)
 SWAP = {
+    "orcl": ("adbe", "ADBE", "Adobe Inc.", "Adobe", "Stocks (Adobe)"),
+    "snps": ("epam", "EPAM", "EPAM Systems, Inc.", "EPAM Systems", "Stocks (EPAM Systems)"),
     "panw": ("akam", "AKAM", "Akamai Technologies, Inc.", "Akamai", "Stocks (Akamai)"),
     "ftnt": ("anet", "ANET", "Arista Networks, Inc.", "Arista Networks", "Stocks (Arista Networks)"),
 }
-OLD_NAMES = {"panw": ("PANW", "Palo Alto Networks, Inc.", "Palo Alto Networks", "Stocks (Palo Alto Networks)"),
-             "ftnt": ("FTNT", "Fortinet, Inc.", "Fortinet", "Stocks (Fortinet)")}
-SLATE = ["orcl", "intu", "csco", "snps", "anet", "akam"]
-ORDERS = {"orclfirst": ["ORCL", "SNPS", "AKAM", "CSCO", "INTU", "ANET"],
-          "cscofirst": ["CSCO", "INTU", "ANET", "ORCL", "SNPS", "AKAM"]}
+# old slug -> (ticker, cur_name, cur_shortname, block description) as in draft 1
+OLD_NAMES = {
+    "orcl": ("ORCL", "Oracle Corporation", "Oracle", "Stocks (Oracle)"),
+    "snps": ("SNPS", "Synopsys, Inc.", "Synopsys", "Stocks (Synopsys)"),
+    "panw": ("PANW", "Palo Alto Networks, Inc.", "Palo Alto Networks", "Stocks (Palo Alto Networks)"),
+    "ftnt": ("FTNT", "Fortinet, Inc.", "Fortinet", "Stocks (Fortinet)"),
+}
+ORDER_RENAME = ("orclfirst", "adbefirst")
+SLATE = ["adbe", "epam", "akam", "csco", "intu", "anet"]
+ORDERS = {"adbefirst": ["ADBE", "EPAM", "AKAM", "CSCO", "INTU", "ANET"],
+          "cscofirst": ["CSCO", "INTU", "ANET", "ADBE", "EPAM", "AKAM"]}
 PER_TICKER_FIELDS = ["365d_pct", "12m_max", "12m_min", "current", "sector", "valuation",
                      "pb_current", "pb_pctile", "div_y", "marketcap_raw",
                      "netprofit", "profitgrowth", "fyvals", "fylabels", "fychange"]
@@ -95,7 +106,7 @@ for p in SQ.values():
         if tag.startswith(old + "_"):
             p["DataExportTag"] = new + tag[len(old):]
             retagged.append((tag, p["DataExportTag"]))
-check(len(retagged) == 10, "10 tags retagged (got %d)" % len(retagged))
+check(len(retagged) == 5 * len(SWAP), "%d tags retagged (got %d)" % (5 * len(SWAP), len(retagged)))
 
 # block descriptions
 BL = [e for e in q["SurveyElements"] if e["Element"] == "BL"][0]["Payload"]
@@ -106,9 +117,9 @@ for b in blocks:
         if b["Description"] == OLD_NAMES[old][3]:
             b["Description"] = desc
             n_bl += 1
-check(n_bl == 2, "2 block descriptions renamed")
+check(n_bl == len(SWAP), "%d block descriptions renamed" % len(SWAP))
 
-# flow: cur_ticker / cur_name / cur_shortname entries + order sequences
+# flow: cur_ticker / cur_name / cur_shortname entries + order label + sequences
 FL = [e for e in q["SurveyElements"] if e["Element"] == "FL"][0]["Payload"]
 
 
@@ -130,9 +141,25 @@ for el in walk(FL):
                     d["cur_name"]["Value"] = nname
                     d["cur_shortname"]["Value"] = nshort
                     n_cur += 1
-check(n_cur == 4, "4 cur_* flow entries swapped (2 tickers x 2 orders)")
+check(n_cur == 2 * len(SWAP), "cur_* flow entries swapped (%d tickers x 2 orders)" % len(SWAP))
+
+# order label rename (ED value + branch logic operand/description)
+n_ord = 0
+for el in walk(FL):
+    if el.get("Type") == "EmbeddedData":
+        for x in el["EmbeddedData"]:
+            if x.get("Field") == "order" and x.get("Value") == ORDER_RENAME[0]:
+                x["Value"] = ORDER_RENAME[1]
+                n_ord += 1
+    if el.get("Type") == "Branch":
+        lg = json.dumps(el.get("BranchLogic"))
+        if '"RightOperand": "%s"' % ORDER_RENAME[0] in lg:
+            el["BranchLogic"] = json.loads(lg.replace(ORDER_RENAME[0], ORDER_RENAME[1]))
+            n_ord += 1
+check(n_ord == 2, "order label renamed in ED value + branch (got %d)" % n_ord)
 
 # verify the two presentation orders
+n_seq = 0
 for el in walk(FL):
     if el.get("Type") == "Branch":
         lg = json.dumps(el.get("BranchLogic"))
@@ -141,6 +168,8 @@ for el in walk(FL):
                 seen = [x["Value"] for sub in el.get("Flow", []) if sub.get("Type") == "EmbeddedData"
                         for x in sub["EmbeddedData"] if x.get("Field") == "cur_ticker"]
                 check(seen == seq, "order %s = %s (got %s)" % (oname, seq, seen))
+                n_seq += 1
+check(n_seq == 2, "both order branches verified")
 
 # ---------------- 3. FL_19 declarations ----------------
 fl19 = [el for el in FL["Flow"] if el.get("FlowID") == "FL_19"][0]
@@ -152,6 +181,7 @@ for t in SLATE:
     for f in PER_TICKER_FIELDS:
         x = copy.deepcopy(template)
         x["Field"] = "%s_%s" % (t, f)
+        x["Description"] = x["Field"]
         x.pop("Value", None)
         new_fields.append(x)
 fl19["EmbeddedData"] = keep + new_fields
@@ -188,6 +218,7 @@ for old, (tick, name, short, desc) in OLD_NAMES.items():
     check(old + "_" not in s, "no '%s_' tag left" % old)
     for bad in (tick, name, short, desc):
         check(bad not in s, "no '%s' left" % bad)
+check(ORDER_RENAME[0] not in s, "old order label gone")
 check(OLD_FEEDBACK not in s, "old feedback wording gone")
 for slug in SLATE:
     check(os.path.exists(os.path.join(DATA_DIR, slug + "_365d.json")), "data file for " + slug)
@@ -217,6 +248,12 @@ for el in walk(FL):
 n_gate = sum(1 for el in walk(FL) if el.get("Type") == "Branch"
              and "QID608" in json.dumps(el.get("BranchLogic")) and "QID662" in json.dumps(el.get("BranchLogic")))
 check(n_gate == 4, "4 two-question gate branches")
+# every infoscreen resolves its file from the piped cur_ticker and fetches all three data files
+for p in SQ.values():
+    if (p.get("DataExportTag") or "").endswith("_infoscreen"):
+        js = p["QuestionJS"]
+        check("${e://Field/cur_ticker}" in js and 'BASE+ticker+"_365d.json"' in js
+              and 'BASE+"fundamentals.json"' in js and 'BASE+"profits.json"' in js, "infoscreen JS shape " + p["DataExportTag"])
 
 with open(OUT, "w") as f:
     json.dump(q, f, separators=(",", ":"), ensure_ascii=False)
