@@ -1,11 +1,6 @@
 {
-  "started_at": "2026-09-09T11:56:53",
+  "started_at": "2026-09-09T12:04:13",
   "stocks": [
-    {
-      "symbol": "ORCL",
-      "points": 251,
-      "return_pct": -32.7
-    },
     {
       "symbol": "INTU",
       "points": 251,
@@ -17,11 +12,6 @@
       "return_pct": 62.1
     },
     {
-      "symbol": "SNPS",
-      "points": 251,
-      "return_pct": -35.1
-    },
-    {
       "symbol": "ANET",
       "points": 251,
       "return_pct": 37.4
@@ -30,6 +20,21 @@
       "symbol": "AKAM",
       "points": 251,
       "return_pct": 35.1
+    },
+    {
+      "symbol": "ADBE",
+      "points": 251,
+      "return_pct": -27.3
+    },
+    {
+      "symbol": "EPAM",
+      "points": 251,
+      "return_pct": -30.1
+    },
+    {
+      "symbol": "ORCL",
+      "points": 251,
+      "return_pct": -32.7
     },
     {
       "symbol": "FTNT",
@@ -44,18 +49,6 @@
   ],
   "errors": [],
   "fundamentals": {
-    "ORCL": {
-      "marketcap": 468134.17,
-      "pb_current": 12.46,
-      "pb_current_pctile": 72,
-      "pb_yahoo": 12.46,
-      "pe_yahoo": 27.9,
-      "div_y": 1.23,
-      "netprofit": 16984,
-      "netprofit_src": "netIncomeToCommon",
-      "valuation": "High",
-      "sector": "Technology"
-    },
     "INTU": {
       "marketcap": 87239.15,
       "pb_current": 4.57,
@@ -80,18 +73,6 @@
       "valuation": "Mid",
       "sector": "Technology"
     },
-    "SNPS": {
-      "marketcap": 75127.31,
-      "pb_current": 2.41,
-      "pb_current_pctile": 14,
-      "pb_yahoo": 2.41,
-      "pe_yahoo": 68.7,
-      "div_y": null,
-      "netprofit": 1077,
-      "netprofit_src": "netIncomeToCommon",
-      "valuation": "Low",
-      "sector": "Technology"
-    },
     "ANET": {
       "marketcap": 245888.37,
       "pb_current": 16.62,
@@ -114,6 +95,42 @@
       "netprofit": 411,
       "netprofit_src": "netIncomeToCommon",
       "valuation": "Low",
+      "sector": "Technology"
+    },
+    "ADBE": {
+      "marketcap": 102260.85,
+      "pb_current": 8.91,
+      "pb_current_pctile": 58,
+      "pb_yahoo": 8.91,
+      "pe_yahoo": 14.7,
+      "div_y": null,
+      "netprofit": 7229,
+      "netprofit_src": "netIncomeToCommon",
+      "valuation": "Mid",
+      "sector": "Technology"
+    },
+    "EPAM": {
+      "marketcap": 5948.49,
+      "pb_current": 1.69,
+      "pb_current_pctile": 10,
+      "pb_yahoo": 1.69,
+      "pe_yahoo": 15.6,
+      "div_y": null,
+      "netprofit": 402,
+      "netprofit_src": "netIncomeToCommon",
+      "valuation": "Low",
+      "sector": "Technology"
+    },
+    "ORCL": {
+      "marketcap": 468134.17,
+      "pb_current": 12.46,
+      "pb_current_pctile": 72,
+      "pb_yahoo": 12.46,
+      "pe_yahoo": 27.9,
+      "div_y": 1.23,
+      "netprofit": 16984,
+      "netprofit_src": "netIncomeToCommon",
+      "valuation": "High",
       "sector": "Technology"
     },
     "FTNT": {
@@ -141,5 +158,5 @@
       "sector": "Technology"
     }
   },
-  "finished_at": "2026-09-09T11:57:47"
+  "finished_at": "2026-09-09T12:05:14"
 }

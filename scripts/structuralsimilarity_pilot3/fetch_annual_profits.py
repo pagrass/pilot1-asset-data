@@ -37,7 +37,7 @@ import yfinance as yf
 from curl_cffi import requests as curl_requests
 _YF_SESSION = curl_requests.Session(impersonate="chrome")
 
-STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "ANET", "AKAM", "FTNT", "TXN"]
+STOCKS = ["INTU", "CSCO", "ANET", "AKAM", "ADBE", "EPAM", "ORCL", "FTNT", "TXN"]
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 CUR = os.path.join(REPO_ROOT, "structuralsimilarity_pilot3", "stock", "current")

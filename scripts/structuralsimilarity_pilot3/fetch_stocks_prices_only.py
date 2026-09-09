@@ -9,16 +9,21 @@ ONLY the price series and never touches fundamentals.json. Do NOT run the
 full fetch_stocks.py on launch day.
 
 Slate (2026-09-09, pilot 3 = profit-chart redesign; quadrant logic on
-(12-mo return sign x last-FY profit-change sign)); fielded six + two spares:
-  (+ret,+chg): CSCO (rebound path), ANET (mono-up)   (+ret,-chg): AKAM (decline)
-  (-ret,+chg): ORCL (mono-up), INTU (mono-up)        (-ret,-chg): SNPS (rise-fall)
-  spares (fetched, not wired in the W2 QSF): FTNT (+ret, mono-up, weak +chg),
-  TXN (+ret, vivid 3-yr decline, flat last FY).
-Matched pairs: ANET/AKAM (high side, returns within ~2pp, opposite profit
-paths) and ORCL/SNPS (low side). PANW dropped 2026-09-09: its FY2026 (Jul)
-net income came in at ~$0.31B (-73% y/y, loss quarter inside the window) =
-not a comfortably positive base. FTNT demoted: +97% return with no partner
-once PANW left.
+(12-mo return sign x last-FY profit-change sign)); fielded six + spares.
+Returns quoted for a window starting 2025-09-16 (stable after the 09-10-2025
+earnings shocks roll out):
+  (+ret,+chg): CSCO +63 (rebound path), ANET +37 (mono-up)
+  (+ret,-chg): AKAM +38 (decline)
+  (-ret,+chg): ADBE -27 (mono-up), INTU -51 (mono-up)
+  (-ret,-chg): EPAM -25 (flat-then-decline)
+Matched pairs: ANET/AKAM (high side) and ADBE/EPAM (low side), each within
+~2pp of return with opposite profit paths.
+Spares (fetched, not wired in the W2 QSF): ORCL (-47 after the roll, mono-up;
+optional 7th / swap for INTU), FTNT (+97, mono-up, weak +chg), TXN (+46,
+vivid 3-yr decline, flat last FY).
+Dropped 2026-09-09: PANW (FY2026 net income ~$0.31B, -73% y/y, loss quarter
+-> not a comfortably positive base); SNPS (its -35% return was entirely the
+2025-09-10 crash at the window start -> -10% once that day rolls out).
 
 Output: structuralsimilarity_pilot3/stock/current/ + structuralsimilarity_pilot3/stock/runs/run_YYYY-MM-DD/
 
@@ -51,7 +56,7 @@ from zoneinfo import ZoneInfo
 
 # ======================== Config ========================
 
-STOCKS = ["ORCL", "INTU", "CSCO", "SNPS", "ANET", "AKAM", "FTNT", "TXN"]
+STOCKS = ["INTU", "CSCO", "ANET", "AKAM", "ADBE", "EPAM", "ORCL", "FTNT", "TXN"]
 
 # Opt-in: fill a trailing unconsolidated (close=null) trading day. See docstring.
 FILL_UNCONSOLIDATED = os.environ.get("FILL_UNCONSOLIDATED", "0") == "1"
@@ -175,6 +180,22 @@ def fetch_price_data(ticker, max_retries=MAX_RETRIES):
     return None
 
 
+def warn_early_window_shocks(sym, pts, days=10, thresh_pct=15.0):
+    """Flag a large single-day move inside the first `days` trading days of
+    the 365-day window. Such a day drops out of the window within two weeks,
+    so the displayed 12-mo return will jump mid-fielding (SNPS 2026-09-09:
+    -35% -> -10% overnight; ORCL -33% -> -47%). Screen slates on returns
+    computed from ~2 weeks after the window start when this fires."""
+    head = pts[:days + 1]
+    worst = max((abs(head[i][1] / head[i - 1][1] - 1) * 100, i) for i in range(1, len(head)))
+    if worst[0] >= thresh_pct:
+        from datetime import datetime as _dt
+        d = _dt.fromtimestamp(head[worst[1]][0] / 1000).strftime("%Y-%m-%d")
+        alt = round((pts[-1][1] / head[-1][1] - 1) * 100, 1)
+        print(f"  \u26a0\ufe0f  {sym}: {worst[0]:.1f}% single-day move on {d} within the first {days} trading days "
+              f"of the window -> 12-mo return will shift to ~{alt:+.1f}% once it rolls out")
+
+
 def git_commit_and_push(repo_root, paths_to_add, branch="main"):
     cwd_before = os.getcwd()
     os.chdir(repo_root)
@@ -239,6 +260,7 @@ def main():
             ret = round((last_price - first_price) / first_price * 100, 1)
             print(f"  ✅ {out_name} ({len(pts)} points, ret={ret:+.1f}%)")
             summary["stocks"].append({"symbol": sym, "points": len(pts), "return_pct": ret})
+            warn_early_window_shocks(sym, pts)
         else:
             print(f"  ❌ Failed: {sym}")
             summary["errors"].append({"symbol": sym, "type": "price"})
