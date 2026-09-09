@@ -184,9 +184,9 @@ if ADD_CHART_OPTION:
 s = json.dumps(q)
 check("@latest" not in s.replace("chart.js@2.9.4", ""), "no @latest left")
 check(s.count(NEW_BASE) == 6, "6 x new BASE")
-for old, (_, tick, name, short, _) in SWAP.items():
+for old, (tick, name, short, desc) in OLD_NAMES.items():
     check(old + "_" not in s, "no '%s_' tag left" % old)
-    for bad in (tick, name, short):
+    for bad in (tick, name, short, desc):
         check(bad not in s, "no '%s' left" % bad)
 check(OLD_FEEDBACK not in s, "old feedback wording gone")
 for slug in SLATE:
