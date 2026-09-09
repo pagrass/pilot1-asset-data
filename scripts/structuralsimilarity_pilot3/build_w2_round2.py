@@ -154,9 +154,9 @@ for el in walk(FL):
                 x["Value"] = GATE_TEACH_RET_NEW
                 n_gt += 1
 check(n_gt == 1, "returns-arm obj_gate_teach rewritten once")
-check(re.search(r"\bstocks?\b", re.sub(r"<[^>]+>", " ", ins["QuestionText"]).replace("&rsquo;", "'").replace("&nbsp;", " ")
-                .replace("A stock's return", "").replace("share price", "")) is None,
-      "no stray 'stock(s)' left in the common instructions text")
+_flat = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", ins["QuestionText"]).replace("&rsquo;", "'").replace("&nbsp;", " "))
+_flat = _flat.replace("A stock's return", "").replace("share price", "")
+check(re.search(r"\bstocks?\b", _flat) is None, "no stray 'stock(s)' left in the common instructions text: %s" % re.findall(r".{30}\bstocks?\b.{30}", _flat))
 
 # ---------------- 4. randomize comp choices ----------------
 if RANDOMIZE_COMP:
