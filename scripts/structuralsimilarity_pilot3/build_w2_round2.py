@@ -33,6 +33,20 @@ Edits:
      the fielded Extreme Models comp3). Gate logic keys on choice IDs, which
      randomization does not touch.
 
+  5. "COMPANIES" AS THE COMMON ENTITY (Paul 2026-09-09): "expectations about
+     seven real stocks" primed stock prices, so the profits-arm task sentence
+     needed a reinterpretation. Instructions page now: "about seven real
+     companies", "for each of the seven companies independently", "Each
+     company's page shows past share prices and profit data". Task pipe
+     (returns arm): "how each company's stock price will change over the next
+     12 months (its return)"; profits arm unchanged ("how each company's
+     profits will change over the next 12 months") -> the two task sentences
+     differ only in "stock price" vs "profits". Comp-1 choices made parallel:
+     "How each company's stock price will change (its return)" / "How each
+     company's profits (net profit) will change" / "How much each company's
+     stock will be traded (its trading volume)". The arm-specific intro page
+     keeps its entity pipes (returns of stocks / profits of companies).
+
 Untouched: QID85 screener (Paul's "6 minutes"), Prolific codes, everything
 else. Builder asserts the source is the SV_6yhw1qgNu0dSBsG export.
 """
@@ -52,8 +66,22 @@ DEF_PROF_NEW = ("A company&rsquo;s <strong>profit</strong> (net profit, also cal
                 "Its <strong>change in profits</strong> over the next 12 months compares its total net profit over the next four reported quarters "
                 "with its net profit in the last fiscal year shown.")
 
-COMP1_CHOICE2_OLD = "How each company's <b>profits</b> will change (its earnings)"
-COMP1_CHOICE2_NEW = "How each company's <b>profits</b> (net profit) will change"
+COMP1_CHOICES_OLD = {"1": "How each stock's <b>price</b> will change (its <b>return</b>)",
+                     "2": "How each company's <b>profits</b> will change (its earnings)",
+                     "3": "How much each stock will be traded (its trading volume)"}
+COMP1_CHOICES_NEW = {"1": "How each company's <b>stock price</b> will change (its <b>return</b>)",
+                     "2": "How each company's <b>profits</b> (net profit) will change",
+                     "3": "How much each company's stock will be traded (its trading volume)"}
+COMPANY_TEXT = [  # (old, new) on the instructions page, each expected exactly once
+    ("you will state your expectations about seven real&nbsp;<strong>stocks</strong>.",
+     "you will state your expectations about seven real&nbsp;<strong>companies</strong>."),
+    ("You will form your expectations for each of the seven stocks independently.",
+     "You will form your expectations for each of the seven companies independently."),
+    ("Each stock&rsquo;s page shows past prices and profit data that you may use when making your own predictions:",
+     "Each company&rsquo;s page shows past share prices and profit data that you may use when making your own predictions:"),
+]
+GATE_TEACH_RET_OLD = "how each stock's price will change over the next 12 months (its return)"
+GATE_TEACH_RET_NEW = "how each company's stock price will change over the next 12 months (its return)"
 
 ZERO_OLD = "if (!isNaN(percent)&&percent!==0){"
 ZERO_NEW = "if (!isNaN(percent)){"
@@ -110,9 +138,25 @@ check("obj_measure" not in json.dumps(q), "no arm-specific measurement pipe")
 
 # ---------------- 3. comp question 1 wording ----------------
 c1 = by_tag["compquestion"]
-check(c1["Choices"]["2"]["Display"] == COMP1_CHOICE2_OLD, "comp1 choice 2 as expected")
-c1["Choices"]["2"]["Display"] = COMP1_CHOICE2_NEW
-check(c1["Choices"]["1"]["Display"] == "How each stock's <b>price</b> will change (its <b>return</b>)", "comp1 choice 1 unchanged")
+for k, old in COMP1_CHOICES_OLD.items():
+    check(c1["Choices"][k]["Display"] == old, "comp1 choice %s as expected" % k)
+    c1["Choices"][k]["Display"] = COMP1_CHOICES_NEW[k]
+
+# ---------------- 5. "companies" as the common entity ----------------
+for old, new in COMPANY_TEXT:
+    check(ins["QuestionText"].count(old) == 1, "company wording target found once: " + old[:45])
+    ins["QuestionText"] = ins["QuestionText"].replace(old, new)
+n_gt = 0
+for el in walk(FL):
+    if el.get("Type") == "EmbeddedData":
+        for x in el["EmbeddedData"]:
+            if x.get("Field") == "obj_gate_teach" and x.get("Value") == GATE_TEACH_RET_OLD:
+                x["Value"] = GATE_TEACH_RET_NEW
+                n_gt += 1
+check(n_gt == 1, "returns-arm obj_gate_teach rewritten once")
+check(re.search(r"\bstocks?\b", re.sub(r"<[^>]+>", " ", ins["QuestionText"]).replace("&rsquo;", "'").replace("&nbsp;", " ")
+                .replace("A stock's return", "").replace("share price", "")) is None,
+      "no stray 'stock(s)' left in the common instructions text")
 
 # ---------------- 4. randomize comp choices ----------------
 if RANDOMIZE_COMP:
@@ -127,6 +171,9 @@ s = json.dumps(q)
 check(ZERO_OLD not in s, "no zero guard left")
 check(s.count(DEF_RET_NEW) == 1 and s.count(DEF_PROF_NEW) == 1, "both common definitions present once")
 check("(its earnings)" not in s, "'(its earnings)' gone")
+check(GATE_TEACH_RET_OLD not in s and s.count(GATE_TEACH_RET_NEW) == 1, "gate-teach pipe value updated")
+for old, new in COMPANY_TEXT:
+    check(old not in s and s.count(new) == 1, "company wording applied: " + new[:40])
 check(s.count("earnings") == 1, "'earnings' appears exactly once (definition synonym)")
 src = json.loads(src_dump)
 src_initial = [e["Payload"]["QuestionText"] for e in src["SurveyElements"] if e["Element"] == "SQ" and e["Payload"].get("DataExportTag") == "initial"][0]
