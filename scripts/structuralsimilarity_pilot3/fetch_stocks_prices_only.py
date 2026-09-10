@@ -66,7 +66,7 @@ FILLED_LOG = []
 REPO_ROOT = "/Users/paulgrass/Documents/Programming/Git/pilot3-asset-data"
 BASE_DIR  = os.path.join(REPO_ROOT, "structuralsimilarity_pilot3")
 
-SLEEP_SEC   = 30
+SLEEP_SEC   = int(os.environ.get("FETCH_SLEEP", "30"))
 MAX_RETRIES = 3
 RETRY_DELAY = 10
 
