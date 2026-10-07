@@ -1,0 +1,1445 @@
+{
+  "snapshot_id": "launch_2026-10-07_v1",
+  "stocks": {
+    "ADBE": {
+      "annual_starts": [
+        "2022-09-03",
+        "2023-09-02",
+        "2024-08-31",
+        "2025-08-30"
+      ],
+      "annual_ends": [
+        "2023-09-01",
+        "2024-08-30",
+        "2025-08-29",
+        "2026-08-28"
+      ],
+      "annual_labels": [
+        "Sep 2023",
+        "Aug 2024",
+        "Aug 2025",
+        "Aug 2026"
+      ],
+      "annual_values_bn": [
+        5.121,
+        5.36,
+        6.957,
+        7.284
+      ],
+      "np_last_annual_bn": 7.284,
+      "annualchange_pct": 4.7,
+      "annualchange_pct_unrounded": 4.700301854247524,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-08-28",
+      "forecast_start": "2026-08-29",
+      "forecast_period_label": "four fiscal quarters after Aug 2026",
+      "forecast_baseline_label": "year ended Aug 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-09-03",
+          "end": "2022-12-02",
+          "val": 1176000000.0,
+          "filed": "2025-01-13",
+          "accn": "0000796343-25-000004",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000796343-25-000004",
+          "ytd_accn": "0000796343-23-000205",
+          "annual_value": 4756000000,
+          "nine_month_value": 3580000000
+        },
+        {
+          "start": "2022-12-03",
+          "end": "2023-03-03",
+          "val": 1247000000,
+          "filed": "2024-03-27",
+          "accn": "0000796343-24-000065",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-03-04",
+          "end": "2023-06-02",
+          "val": 1295000000,
+          "filed": "2024-06-26",
+          "accn": "0000796343-24-000150",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-06-03",
+          "end": "2023-09-01",
+          "val": 1403000000,
+          "filed": "2024-09-25",
+          "accn": "0000796343-24-000208",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-09-02",
+          "end": "2023-12-01",
+          "val": 1483000000.0,
+          "filed": "2026-01-15",
+          "accn": "0000796343-26-000003",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000796343-26-000003",
+          "ytd_accn": "0000796343-24-000208",
+          "annual_value": 5428000000,
+          "nine_month_value": 3945000000
+        },
+        {
+          "start": "2023-12-02",
+          "end": "2024-03-01",
+          "val": 620000000,
+          "filed": "2025-03-26",
+          "accn": "0000796343-25-000059",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-03-02",
+          "end": "2024-05-31",
+          "val": 1573000000,
+          "filed": "2025-06-25",
+          "accn": "0000796343-25-000073",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-06-01",
+          "end": "2024-08-30",
+          "val": 1684000000,
+          "filed": "2025-09-24",
+          "accn": "0000796343-25-000107",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-08-31",
+          "end": "2024-11-29",
+          "val": 1683000000.0,
+          "filed": "2026-01-15",
+          "accn": "0000796343-26-000003",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000796343-26-000003",
+          "ytd_accn": "0000796343-25-000107",
+          "annual_value": 5560000000,
+          "nine_month_value": 3877000000
+        },
+        {
+          "start": "2024-11-30",
+          "end": "2025-02-28",
+          "val": 1811000000,
+          "filed": "2026-03-25",
+          "accn": "0000796343-26-000056",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-03-01",
+          "end": "2025-05-30",
+          "val": 1691000000,
+          "filed": "2026-06-15",
+          "accn": "0000796343-26-000112",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-05-31",
+          "end": "2025-08-29",
+          "val": 1772000000,
+          "filed": "2026-09-22",
+          "accn": "0000796343-26-000156",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-08-30",
+          "end": "2025-11-28",
+          "val": 1856000000.0,
+          "filed": "2026-09-22",
+          "accn": "0000796343-26-000003",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000796343-26-000003",
+          "ytd_accn": "0000796343-26-000156",
+          "annual_value": 7130000000,
+          "nine_month_value": 5274000000
+        },
+        {
+          "start": "2025-11-29",
+          "end": "2026-02-27",
+          "val": 1889000000,
+          "filed": "2026-03-25",
+          "accn": "0000796343-26-000056",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-02-28",
+          "end": "2026-05-29",
+          "val": 1712000000,
+          "filed": "2026-06-15",
+          "accn": "0000796343-26-000112",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-05-30",
+          "end": "2026-08-28",
+          "val": 1827000000,
+          "filed": "2026-09-22",
+          "accn": "0000796343-26-000156",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        }
+      ],
+      "source_companyfacts_sha256": "86a5689aa9aa7b0f9e95be21b48b0305376e014c8dbf3b8bb3b4b131f1b6a0c4",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000796343.json"
+    },
+    "CTSH": {
+      "annual_starts": [
+        "2022-07-01",
+        "2023-07-01",
+        "2024-07-01",
+        "2025-07-01"
+      ],
+      "annual_ends": [
+        "2023-06-30",
+        "2024-06-30",
+        "2025-06-30",
+        "2026-06-30"
+      ],
+      "annual_labels": [
+        "Jun 2023",
+        "Jun 2024",
+        "Jun 2025",
+        "Jun 2026"
+      ],
+      "annual_values_bn": [
+        2.193,
+        2.195,
+        2.436,
+        2.22
+      ],
+      "np_last_annual_bn": 2.22,
+      "annualchange_pct": -8.9,
+      "annualchange_pct_unrounded": -8.866995073891616,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-06-30",
+      "forecast_start": "2026-07-01",
+      "forecast_period_label": "four fiscal quarters after Jun 2026",
+      "forecast_baseline_label": "year ended Jun 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-07-01",
+          "end": "2022-09-30",
+          "val": 629000000,
+          "filed": "2023-11-02",
+          "accn": "0001058290-23-000330",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2022-10-01",
+          "end": "2022-12-31",
+          "val": 521000000.0,
+          "filed": "2025-02-12",
+          "accn": "0001058290-25-000017",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001058290-25-000017",
+          "ytd_accn": "0001058290-23-000330",
+          "annual_value": 2290000000,
+          "nine_month_value": 1769000000
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-03-31",
+          "val": 580000000,
+          "filed": "2024-10-31",
+          "accn": "0001058290-24-000327",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-04-01",
+          "end": "2023-06-30",
+          "val": 463000000,
+          "filed": "2024-10-31",
+          "accn": "0001058290-24-000327",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-07-01",
+          "end": "2023-09-30",
+          "val": 525000000,
+          "filed": "2024-10-31",
+          "accn": "0001058290-24-000327",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-10-01",
+          "end": "2023-12-31",
+          "val": 558000000.0,
+          "filed": "2026-02-12",
+          "accn": "0001058290-26-000008",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001058290-26-000008",
+          "ytd_accn": "0001058290-24-000327",
+          "annual_value": 2126000000,
+          "nine_month_value": 1568000000
+        },
+        {
+          "start": "2024-01-01",
+          "end": "2024-03-31",
+          "val": 546000000,
+          "filed": "2025-10-29",
+          "accn": "0001058290-25-000341",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-04-01",
+          "end": "2024-06-30",
+          "val": 566000000,
+          "filed": "2025-10-29",
+          "accn": "0001058290-25-000341",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-07-01",
+          "end": "2024-09-30",
+          "val": 582000000,
+          "filed": "2025-10-29",
+          "accn": "0001058290-25-000341",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-10-01",
+          "end": "2024-12-31",
+          "val": 546000000.0,
+          "filed": "2026-02-12",
+          "accn": "0001058290-26-000008",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001058290-26-000008",
+          "ytd_accn": "0001058290-25-000341",
+          "annual_value": 2240000000,
+          "nine_month_value": 1694000000
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-03-31",
+          "val": 663000000,
+          "filed": "2026-04-29",
+          "accn": "0001058290-26-000016",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-04-01",
+          "end": "2025-06-30",
+          "val": 645000000,
+          "filed": "2025-10-29",
+          "accn": "0001058290-25-000341",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-07-01",
+          "end": "2025-09-30",
+          "val": 274000000,
+          "filed": "2025-10-29",
+          "accn": "0001058290-25-000341",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-10-01",
+          "end": "2025-12-31",
+          "val": 648000000.0,
+          "filed": "2026-02-12",
+          "accn": "0001058290-26-000008",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001058290-26-000008",
+          "ytd_accn": "0001058290-25-000341",
+          "annual_value": 2230000000,
+          "nine_month_value": 1582000000
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-03-31",
+          "val": 662000000,
+          "filed": "2026-04-29",
+          "accn": "0001058290-26-000016",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "val": 636000000,
+          "filed": "2026-07-29",
+          "source_tag": "NetIncomeLoss",
+          "derived": false,
+          "source": "Q2 2026 public earnings release",
+          "source_url": "https://news.cognizant.com/2026-07-29-Cognizant-Reports-Second-Quarter-2026-Results",
+          "source_sha256": "0b3df9209b33531665bff25f42b76846fd6ba9dfcd7b47c980ba94262dafb99b",
+          "verified_table_rows": [
+            [
+              "Net income",
+              "$\u00a0\u00a0\u00a0\u00a0\u00a0636",
+              "",
+              "$\u00a0\u00a0\u00a0\u00a0\u00a0645",
+              "",
+              "$\u00a0\u00a0\u00a01,298",
+              "",
+              "$\u00a0\u00a0\u00a01,308"
+            ],
+            [
+              "Net income",
+              "$\u00a0\u00a0\u00a0\u00a0\u00a0636",
+              "",
+              "$\u00a0\u00a0\u00a0\u00a0\u00a0645",
+              "",
+              "$\u00a0\u00a01,298",
+              "",
+              "$\u00a0\u00a01,308"
+            ]
+          ]
+        }
+      ],
+      "source_companyfacts_sha256": "64a285f6a2f6c49fe7f4b138cfbeedab076c49a3f213ca8c5d53fdd1b43678fc",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001058290.json"
+    },
+    "AKAM": {
+      "annual_starts": [
+        "2022-07-01",
+        "2023-07-01",
+        "2024-07-01",
+        "2025-07-01"
+      ],
+      "annual_ends": [
+        "2023-06-30",
+        "2024-06-30",
+        "2025-06-30",
+        "2026-06-30"
+      ],
+      "annual_labels": [
+        "Jun 2023",
+        "Jun 2024",
+        "Jun 2025",
+        "Jun 2026"
+      ],
+      "annual_values_bn": [
+        0.478378,
+        0.628813,
+        0.424601,
+        0.410965
+      ],
+      "np_last_annual_bn": 0.410965,
+      "annualchange_pct": -3.2,
+      "annualchange_pct_unrounded": -3.21148560648703,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-06-30",
+      "forecast_start": "2026-07-01",
+      "forecast_period_label": "four fiscal quarters after Jun 2026",
+      "forecast_baseline_label": "year ended Jun 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-07-01",
+          "end": "2022-09-30",
+          "val": 123694000,
+          "filed": "2023-11-08",
+          "accn": "0001086222-23-000285",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2022-10-01",
+          "end": "2022-12-31",
+          "val": 128762000,
+          "filed": "2023-02-28",
+          "accn": "0001086222-23-000078",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-03-31",
+          "val": 97106000,
+          "filed": "2024-05-09",
+          "accn": "0001086222-24-000148",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-04-01",
+          "end": "2023-06-30",
+          "val": 128816000,
+          "filed": "2024-08-08",
+          "accn": "0001086222-24-000199",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-07-01",
+          "end": "2023-09-30",
+          "val": 160542000,
+          "filed": "2024-11-08",
+          "accn": "0001086222-24-000216",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-10-01",
+          "end": "2023-12-31",
+          "val": 161165000.0,
+          "filed": "2026-02-20",
+          "accn": "0001086222-26-000022",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001086222-26-000022",
+          "ytd_accn": "0001086222-24-000216",
+          "annual_value": 547629000,
+          "nine_month_value": 386464000
+        },
+        {
+          "start": "2024-01-01",
+          "end": "2024-03-31",
+          "val": 175418000,
+          "filed": "2025-05-09",
+          "accn": "0001086222-25-000149",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-04-01",
+          "end": "2024-06-30",
+          "val": 131688000,
+          "filed": "2025-08-08",
+          "accn": "0001086222-25-000218",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-07-01",
+          "end": "2024-09-30",
+          "val": 57907000,
+          "filed": "2025-11-07",
+          "accn": "0001086222-25-000256",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-10-01",
+          "end": "2024-12-31",
+          "val": 139905000.0,
+          "filed": "2026-02-20",
+          "accn": "0001086222-26-000022",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001086222-26-000022",
+          "ytd_accn": "0001086222-25-000256",
+          "annual_value": 504918000,
+          "nine_month_value": 365013000
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-03-31",
+          "val": 123171000,
+          "filed": "2026-05-08",
+          "accn": "0001086222-26-000058",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-04-01",
+          "end": "2025-06-30",
+          "val": 103618000,
+          "filed": "2026-08-07",
+          "accn": "0001086222-26-000086",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-07-01",
+          "end": "2025-09-30",
+          "val": 140170000,
+          "filed": "2025-11-07",
+          "accn": "0001086222-25-000256",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-10-01",
+          "end": "2025-12-31",
+          "val": 85072000.0,
+          "filed": "2026-02-20",
+          "accn": "0001086222-26-000022",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001086222-26-000022",
+          "ytd_accn": "0001086222-25-000256",
+          "annual_value": 452031000,
+          "nine_month_value": 366959000
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-03-31",
+          "val": 106319000,
+          "filed": "2026-05-08",
+          "accn": "0001086222-26-000058",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "val": 79404000,
+          "filed": "2026-08-07",
+          "accn": "0001086222-26-000086",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        }
+      ],
+      "source_companyfacts_sha256": "c68c8db25a5b809ca1ae6dfafac44bd2bf2cd13a8c7bd86a985ef1baf236b641",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001086222.json"
+    },
+    "CSCO": {
+      "annual_starts": [
+        "2022-07-31",
+        "2023-07-30",
+        "2024-07-28",
+        "2025-07-27"
+      ],
+      "annual_ends": [
+        "2023-07-29",
+        "2024-07-27",
+        "2025-07-26",
+        "2026-07-25"
+      ],
+      "annual_labels": [
+        "Jul 2023",
+        "Jul 2024",
+        "Jul 2025",
+        "Jul 2026"
+      ],
+      "annual_values_bn": [
+        12.613,
+        10.32,
+        10.18,
+        13.267
+      ],
+      "np_last_annual_bn": 13.267,
+      "annualchange_pct": 30.3,
+      "annualchange_pct_unrounded": 30.32416502946955,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-07-25",
+      "forecast_start": "2026-07-26",
+      "forecast_period_label": "four fiscal quarters after Jul 2026",
+      "forecast_baseline_label": "year ended Jul 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-07-31",
+          "end": "2022-10-29",
+          "val": 2670000000,
+          "filed": "2023-11-21",
+          "accn": "0000858877-23-000031",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2022-10-30",
+          "end": "2023-01-28",
+          "val": 2773000000,
+          "filed": "2024-02-20",
+          "accn": "0000858877-24-000003",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-01-29",
+          "end": "2023-04-29",
+          "val": 3212000000,
+          "filed": "2024-05-21",
+          "accn": "0000858877-24-000007",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-04-30",
+          "end": "2023-07-29",
+          "val": 3958000000.0,
+          "filed": "2025-09-03",
+          "accn": "0000858877-25-000111",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000858877-25-000111",
+          "ytd_accn": "0000858877-24-000007",
+          "annual_value": 12613000000,
+          "nine_month_value": 8655000000
+        },
+        {
+          "start": "2023-07-30",
+          "end": "2023-10-28",
+          "val": 3638000000,
+          "filed": "2024-11-19",
+          "accn": "0000858877-24-000030",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-10-29",
+          "end": "2024-01-27",
+          "val": 2634000000,
+          "filed": "2025-02-18",
+          "accn": "0000858877-25-000007",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-01-28",
+          "end": "2024-04-27",
+          "val": 1886000000,
+          "filed": "2025-05-20",
+          "accn": "0000858877-25-000033",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-04-28",
+          "end": "2024-07-27",
+          "val": 2162000000.0,
+          "filed": "2026-09-02",
+          "accn": "0000858877-26-000132",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000858877-26-000132",
+          "ytd_accn": "0000858877-25-000033",
+          "annual_value": 10320000000,
+          "nine_month_value": 8158000000
+        },
+        {
+          "start": "2024-07-28",
+          "end": "2024-10-26",
+          "val": 2711000000,
+          "filed": "2025-11-18",
+          "accn": "0000858877-25-000171",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-10-27",
+          "end": "2025-01-25",
+          "val": 2428000000,
+          "filed": "2026-02-17",
+          "accn": "0000858877-26-000021",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-01-26",
+          "end": "2025-04-26",
+          "val": 2491000000,
+          "filed": "2026-05-19",
+          "accn": "0000858877-26-000078",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-04-27",
+          "end": "2025-07-26",
+          "val": 2550000000.0,
+          "filed": "2026-09-02",
+          "accn": "0000858877-26-000132",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000858877-26-000132",
+          "ytd_accn": "0000858877-26-000078",
+          "annual_value": 10180000000,
+          "nine_month_value": 7630000000
+        },
+        {
+          "start": "2025-07-27",
+          "end": "2025-10-25",
+          "val": 2860000000,
+          "filed": "2025-11-18",
+          "accn": "0000858877-25-000171",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-10-26",
+          "end": "2026-01-24",
+          "val": 3175000000,
+          "filed": "2026-02-17",
+          "accn": "0000858877-26-000021",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-01-25",
+          "end": "2026-04-25",
+          "val": 3373000000,
+          "filed": "2026-05-19",
+          "accn": "0000858877-26-000078",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-04-26",
+          "end": "2026-07-25",
+          "val": 3859000000.0,
+          "filed": "2026-09-02",
+          "accn": "0000858877-26-000132",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000858877-26-000132",
+          "ytd_accn": "0000858877-26-000078",
+          "annual_value": 13267000000,
+          "nine_month_value": 9408000000
+        }
+      ],
+      "source_companyfacts_sha256": "f9f6cfb3c04bb8102552f121868831471a474165074ccc7c539f6f80f19d1b99",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000858877.json"
+    },
+    "INTU": {
+      "annual_starts": [
+        "2022-08-01",
+        "2023-08-01",
+        "2024-08-01",
+        "2025-08-01"
+      ],
+      "annual_ends": [
+        "2023-07-31",
+        "2024-07-31",
+        "2025-07-31",
+        "2026-07-31"
+      ],
+      "annual_labels": [
+        "Jul 2023",
+        "Jul 2024",
+        "Jul 2025",
+        "Jul 2026"
+      ],
+      "annual_values_bn": [
+        2.384,
+        2.963,
+        3.869,
+        4.566
+      ],
+      "np_last_annual_bn": 4.566,
+      "annualchange_pct": 18.0,
+      "annualchange_pct_unrounded": 18.0149909537348,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-07-31",
+      "forecast_start": "2026-08-01",
+      "forecast_period_label": "four fiscal quarters after Jul 2026",
+      "forecast_baseline_label": "year ended Jul 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-08-01",
+          "end": "2022-10-31",
+          "val": 40000000,
+          "filed": "2023-11-28",
+          "accn": "0000896878-23-000041",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2022-11-01",
+          "end": "2023-01-31",
+          "val": 168000000,
+          "filed": "2024-02-22",
+          "accn": "0000896878-24-000011",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-02-01",
+          "end": "2023-04-30",
+          "val": 2087000000,
+          "filed": "2024-05-23",
+          "accn": "0000896878-24-000026",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-05-01",
+          "end": "2023-07-31",
+          "val": 89000000.0,
+          "filed": "2025-09-03",
+          "accn": "0000896878-25-000035",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000896878-25-000035",
+          "ytd_accn": "0000896878-24-000026",
+          "annual_value": 2384000000,
+          "nine_month_value": 2295000000
+        },
+        {
+          "start": "2023-08-01",
+          "end": "2023-10-31",
+          "val": 241000000,
+          "filed": "2024-11-21",
+          "accn": "0000896878-24-000053",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-11-01",
+          "end": "2024-01-31",
+          "val": 353000000,
+          "filed": "2025-02-25",
+          "accn": "0000896878-25-000015",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-02-01",
+          "end": "2024-04-30",
+          "val": 2389000000,
+          "filed": "2025-05-22",
+          "accn": "0000896878-25-000022",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-05-01",
+          "end": "2024-07-31",
+          "val": -20000000.0,
+          "filed": "2026-09-09",
+          "accn": "0000896878-26-000037",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000896878-26-000037",
+          "ytd_accn": "0000896878-25-000022",
+          "annual_value": 2963000000,
+          "nine_month_value": 2983000000
+        },
+        {
+          "start": "2024-08-01",
+          "end": "2024-10-31",
+          "val": 197000000,
+          "filed": "2025-11-20",
+          "accn": "0000896878-25-000048",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-11-01",
+          "end": "2025-01-31",
+          "val": 471000000,
+          "filed": "2026-02-26",
+          "accn": "0000896878-26-000014",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-02-01",
+          "end": "2025-04-30",
+          "val": 2820000000,
+          "filed": "2026-05-20",
+          "accn": "0000896878-26-000025",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-05-01",
+          "end": "2025-07-31",
+          "val": 381000000.0,
+          "filed": "2026-09-09",
+          "accn": "0000896878-26-000037",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000896878-26-000037",
+          "ytd_accn": "0000896878-26-000025",
+          "annual_value": 3869000000,
+          "nine_month_value": 3488000000
+        },
+        {
+          "start": "2025-08-01",
+          "end": "2025-10-31",
+          "val": 446000000,
+          "filed": "2025-11-20",
+          "accn": "0000896878-25-000048",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-11-01",
+          "end": "2026-01-31",
+          "val": 693000000,
+          "filed": "2026-02-26",
+          "accn": "0000896878-26-000014",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-02-01",
+          "end": "2026-04-30",
+          "val": 3064000000,
+          "filed": "2026-05-20",
+          "accn": "0000896878-26-000025",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-05-01",
+          "end": "2026-07-31",
+          "val": 363000000.0,
+          "filed": "2026-09-09",
+          "accn": "0000896878-26-000037",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000896878-26-000037",
+          "ytd_accn": "0000896878-26-000025",
+          "annual_value": 4566000000,
+          "nine_month_value": 4203000000
+        }
+      ],
+      "source_companyfacts_sha256": "456f89ae1757bb5a6ee0990f8b759e3d694222b0107c33ee4b163ee85a478d8a",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json"
+    },
+    "ANET": {
+      "annual_starts": [
+        "2022-07-01",
+        "2023-07-01",
+        "2024-07-01",
+        "2025-07-01"
+      ],
+      "annual_ends": [
+        "2023-06-30",
+        "2024-06-30",
+        "2025-06-30",
+        "2026-06-30"
+      ],
+      "annual_labels": [
+        "Jun 2023",
+        "Jun 2024",
+        "Jun 2025",
+        "Jun 2026"
+      ],
+      "annual_values_bn": [
+        1.709446,
+        2.462042,
+        3.2516,
+        4.0446
+      ],
+      "np_last_annual_bn": 4.0446,
+      "annualchange_pct": 24.4,
+      "annualchange_pct_unrounded": 24.387993603149226,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-06-30",
+      "forecast_start": "2026-07-01",
+      "forecast_period_label": "four fiscal quarters after Jun 2026",
+      "forecast_baseline_label": "year ended Jun 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-07-01",
+          "end": "2022-09-30",
+          "val": 353999000,
+          "filed": "2023-10-31",
+          "accn": "0001596532-23-000274",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2022-10-01",
+          "end": "2022-12-31",
+          "val": 427089000.0,
+          "filed": "2025-02-19",
+          "accn": "0001596532-25-000028",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001596532-25-000028",
+          "ytd_accn": "0001596532-23-000274",
+          "annual_value": 1352446000,
+          "nine_month_value": 925357000
+        },
+        {
+          "start": "2023-01-01",
+          "end": "2023-03-31",
+          "val": 436473000,
+          "filed": "2024-05-08",
+          "accn": "0001596532-24-000173",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-04-01",
+          "end": "2023-06-30",
+          "val": 491885000,
+          "filed": "2024-07-31",
+          "accn": "0001596532-24-000279",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-07-01",
+          "end": "2023-09-30",
+          "val": 545327000,
+          "filed": "2024-11-08",
+          "accn": "0001596532-24-000368",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-10-01",
+          "end": "2023-12-31",
+          "val": 613615000.0,
+          "filed": "2026-02-17",
+          "accn": "0001596532-26-000013",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001596532-26-000013",
+          "ytd_accn": "0001596532-24-000368",
+          "annual_value": 2087300000,
+          "nine_month_value": 1473685000
+        },
+        {
+          "start": "2024-01-01",
+          "end": "2024-03-31",
+          "val": 637700000,
+          "filed": "2025-05-07",
+          "accn": "0001596532-25-000106",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-04-01",
+          "end": "2024-06-30",
+          "val": 665400000,
+          "filed": "2025-08-06",
+          "accn": "0001596532-25-000216",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-07-01",
+          "end": "2024-09-30",
+          "val": 748000000,
+          "filed": "2025-11-05",
+          "accn": "0001596532-25-000286",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-10-01",
+          "end": "2024-12-31",
+          "val": 801000000.0,
+          "filed": "2026-02-17",
+          "accn": "0001596532-26-000013",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001596532-26-000013",
+          "ytd_accn": "0001596532-25-000286",
+          "annual_value": 2852100000,
+          "nine_month_value": 2051100000
+        },
+        {
+          "start": "2025-01-01",
+          "end": "2025-03-31",
+          "val": 813800000,
+          "filed": "2026-05-06",
+          "accn": "0001596532-26-000078",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-04-01",
+          "end": "2025-06-30",
+          "val": 888800000,
+          "filed": "2026-08-05",
+          "accn": "0001596532-26-000175",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-07-01",
+          "end": "2025-09-30",
+          "val": 853000000,
+          "filed": "2025-11-05",
+          "accn": "0001596532-25-000286",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-10-01",
+          "end": "2025-12-31",
+          "val": 955800000.0,
+          "filed": "2026-02-17",
+          "accn": "0001596532-26-000013",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001596532-26-000013",
+          "ytd_accn": "0001596532-25-000286",
+          "annual_value": 3511400000,
+          "nine_month_value": 2555600000
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2026-03-31",
+          "val": 1022900000,
+          "filed": "2026-05-06",
+          "accn": "0001596532-26-000078",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "val": 1212900000,
+          "filed": "2026-08-05",
+          "accn": "0001596532-26-000175",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        }
+      ],
+      "source_companyfacts_sha256": "e548756a238d794e61322ba2d70b913b5d2f925c161fba73236f54a13df85c2f",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001596532.json"
+    },
+    "ORCL": {
+      "annual_starts": [
+        "2022-09-01",
+        "2023-09-01",
+        "2024-09-01",
+        "2025-09-01"
+      ],
+      "annual_ends": [
+        "2023-08-31",
+        "2024-08-31",
+        "2025-08-31",
+        "2026-08-31"
+      ],
+      "annual_labels": [
+        "Aug 2023",
+        "Aug 2024",
+        "Aug 2025",
+        "Aug 2026"
+      ],
+      "annual_values_bn": [
+        9.376,
+        10.977,
+        12.441,
+        18.92
+      ],
+      "np_last_annual_bn": 18.92,
+      "annualchange_pct": 52.1,
+      "annualchange_pct_unrounded": 52.07780725022104,
+      "metric": "GAAP net income; four-quarter totals spaced one year apart; USD billions",
+      "latest_reported_quarter_end": "2026-08-31",
+      "forecast_start": "2026-09-01",
+      "forecast_period_label": "four fiscal quarters after Aug 2026",
+      "forecast_baseline_label": "year ended Aug 2026",
+      "forecast_definition": "Total GAAP net income for the next four fiscal quarters following the latest reported quarter shown, relative to the latest displayed four-quarter annual total. Identify quarters by fiscal sequence; actual future quarter-end days may differ for 52/53-week fiscal years.",
+      "quarterly_source_records": [
+        {
+          "start": "2022-09-01",
+          "end": "2022-11-30",
+          "val": 1741000000,
+          "filed": "2023-12-12",
+          "accn": "0000950170-23-069682",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2022-12-01",
+          "end": "2023-02-28",
+          "val": 1896000000,
+          "filed": "2024-03-12",
+          "accn": "0000950170-24-029904",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-03-01",
+          "end": "2023-05-31",
+          "val": 3319000000.0,
+          "filed": "2025-06-18",
+          "accn": "0000950170-25-087926",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0000950170-25-087926",
+          "ytd_accn": "0000950170-24-029904",
+          "annual_value": 8503000000,
+          "nine_month_value": 5184000000
+        },
+        {
+          "start": "2023-06-01",
+          "end": "2023-08-31",
+          "val": 2420000000,
+          "filed": "2024-09-10",
+          "accn": "0000950170-24-104905",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-09-01",
+          "end": "2023-11-30",
+          "val": 2503000000,
+          "filed": "2024-12-10",
+          "accn": "0000950170-24-134973",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2023-12-01",
+          "end": "2024-02-29",
+          "val": 2401000000,
+          "filed": "2025-03-11",
+          "accn": "0000950170-25-037143",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-03-01",
+          "end": "2024-05-31",
+          "val": 3144000000.0,
+          "filed": "2026-06-22",
+          "accn": "0001193125-26-277521",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001193125-26-277521",
+          "ytd_accn": "0000950170-25-037143",
+          "annual_value": 10467000000,
+          "nine_month_value": 7323000000
+        },
+        {
+          "start": "2024-06-01",
+          "end": "2024-08-31",
+          "val": 2929000000,
+          "filed": "2025-09-10",
+          "accn": "0001193125-25-200095",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-09-01",
+          "end": "2024-11-30",
+          "val": 3151000000,
+          "filed": "2025-12-11",
+          "accn": "0001193125-25-315925",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2024-12-01",
+          "end": "2025-02-28",
+          "val": 2936000000,
+          "filed": "2026-03-11",
+          "accn": "0001193125-26-101045",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-03-01",
+          "end": "2025-05-31",
+          "val": 3427000000.0,
+          "filed": "2026-06-22",
+          "accn": "0001193125-26-277521",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001193125-26-277521",
+          "ytd_accn": "0001193125-26-101045",
+          "annual_value": 12443000000,
+          "nine_month_value": 9016000000
+        },
+        {
+          "start": "2025-06-01",
+          "end": "2025-08-31",
+          "val": 2927000000,
+          "filed": "2026-09-11",
+          "accn": "0001193125-26-389274",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-09-01",
+          "end": "2025-11-30",
+          "val": 6135000000,
+          "filed": "2025-12-11",
+          "accn": "0001193125-25-315925",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2025-12-01",
+          "end": "2026-02-28",
+          "val": 3721000000,
+          "filed": "2026-03-11",
+          "accn": "0001193125-26-101045",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        },
+        {
+          "start": "2026-03-01",
+          "end": "2026-05-31",
+          "val": 4304000000.0,
+          "filed": "2026-06-22",
+          "accn": "0001193125-26-277521",
+          "source_tag": "NetIncomeLoss",
+          "derived": true,
+          "source": "annual minus nine months",
+          "annual_accn": "0001193125-26-277521",
+          "ytd_accn": "0001193125-26-101045",
+          "annual_value": 17087000000,
+          "nine_month_value": 12783000000
+        },
+        {
+          "start": "2026-06-01",
+          "end": "2026-08-31",
+          "val": 4760000000,
+          "filed": "2026-09-11",
+          "accn": "0001193125-26-389274",
+          "source_tag": "NetIncomeLoss",
+          "derived": false
+        }
+      ],
+      "source_companyfacts_sha256": "65523545f040abaea1dfcf321da2a5aec85e7f34387244b0ffcb26e4c8707f7d",
+      "source_companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json"
+    }
+  }
+}
