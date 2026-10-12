@@ -1,0 +1,154 @@
+{
+  "snapshot_id": "launch_2026-10-12_v1",
+  "collection_date": "2026-10-12",
+  "fetched_at_utc": "2026-10-12T09:50:13.789104+00:00",
+  "elapsed_calendar_days": 365,
+  "last_completed_day": "2026-10-11",
+  "kind": "crypto",
+  "assets": [
+    {
+      "symbol": "ETH-USD",
+      "slug": "eth",
+      "points": 366,
+      "requested_start": "2025-10-11",
+      "first_day": "2025-10-11",
+      "last_day": "2026-10-11",
+      "first_close": 3750.61,
+      "last_close": 2534.7,
+      "return_pct": -32.4,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "XMR-USD",
+      "slug": "xmr",
+      "points": 366,
+      "requested_start": "2025-10-11",
+      "first_day": "2025-10-11",
+      "last_day": "2026-10-11",
+      "first_close": 298.27,
+      "last_close": 537.25,
+      "return_pct": 80.1,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "BNB-USD",
+      "slug": "bnb",
+      "points": 366,
+      "requested_start": "2025-10-11",
+      "first_day": "2025-10-11",
+      "last_day": "2026-10-11",
+      "first_close": 1137.2,
+      "last_close": 753.54,
+      "return_pct": -33.7,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "BTC-USD",
+      "slug": "btc",
+      "points": 366,
+      "requested_start": "2025-10-11",
+      "first_day": "2025-10-11",
+      "last_day": "2026-10-11",
+      "first_close": 110807.88,
+      "last_close": 83679.47,
+      "return_pct": -24.5,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "HYPE32196-USD",
+      "slug": "hype",
+      "points": 365,
+      "requested_start": "2025-10-11",
+      "first_day": "2025-10-11",
+      "last_day": "2026-10-11",
+      "first_close": 36.87,
+      "last_close": 86.63,
+      "return_pct": 135.0,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [
+        "2026-02-02"
+      ],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "XRP-USD",
+      "slug": "xrp",
+      "points": 366,
+      "requested_start": "2025-10-11",
+      "first_day": "2025-10-11",
+      "last_day": "2026-10-11",
+      "first_close": 2.39,
+      "last_close": 1.41,
+      "return_pct": -41.0,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    }
+  ],
+  "replication": [
+    "ETH",
+    "XMR",
+    "BNB"
+  ],
+  "self_directed": [
+    "BTC",
+    "HYPE",
+    "XRP"
+  ],
+  "raw_source_records": [
+    {
+      "key": "crypto_eth_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "sha256": "a798461a49bd536159ef9371134263b501bf7e9509bfcf46b535d34d44a0840c"
+    },
+    {
+      "key": "crypto_xmr_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "sha256": "9d76877c7f8c51666ada030d0201bc8c2129f98a92624b8f28f1f9ca8478d67b"
+    },
+    {
+      "key": "crypto_bnb_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "sha256": "2806886d654687a191bb8f10121b209fd118b06ed4172b38a7007fccb0d74774"
+    },
+    {
+      "key": "crypto_btc_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "sha256": "b391a3dfd612499e611a4fe64aa8582425b2aea536d4d7e5525d5b08a3ddc389"
+    },
+    {
+      "key": "crypto_hype_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "sha256": "0e8434b4f155e61f90ba36c32c57c337f4120efb7729cb66baeb1940922ffe8e"
+    },
+    {
+      "key": "crypto_xrp_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760140800&period2=1791849600&interval=1d&events=splits",
+      "sha256": "56373d08971dacffed3f543d9794c158852297766bbf7e27be3773fb697c840e"
+    }
+  ],
+  "files_sha256": {
+    "eth_365d.json": "4c01c41731026728892c8c023d66cbd2f6c7aab099d10493a90789a6b83a4f81",
+    "xmr_365d.json": "2c4b12126b71fe92a19026863f54738846c88c777a3fb5f34731e20db1a2fa33",
+    "bnb_365d.json": "e08992a3484a36cef0c3235eadde1a6db1ffd0bffd367b010f524e2d5729b8f3",
+    "btc_365d.json": "c73ee0e6a264734a59d5ea6580b2b4787f81a260429c0cecc6a836459051497f",
+    "hype_365d.json": "1354c01efbc7baccf471e7152495a5eaedf6f01a10df17609f9ca96195321664",
+    "xrp_365d.json": "9a371cf996d4f0d9866f2889727a2b4c51edb7df364d20971f9367fbcedcd155",
+    "summary.json": "26100ecdafd84763937980d1eb2247bcd478fe02a2c64695dde49ab80c1c2065"
+  },
+  "freeze_note": "Both decisions-experiment surveys use this immutable snapshot; do not overwrite during fielding."
+}
