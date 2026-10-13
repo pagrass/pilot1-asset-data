@@ -1,5 +1,5 @@
 {
-  "snapshot_id": "d1_2026-10-13_v1",
+  "snapshot_id": "d1_2026-10-13_v2",
   "collection_date": "2026-10-13",
   "kind": "stock",
   "wave": 2,
@@ -301,7 +301,7 @@
     "ORCL"
   ],
   "candidate_tickers": [],
-  "status": "Day 1 publication; seven agreed pairs; fourteen stocks.",
+  "status": "Day 1 prices unchanged; main-study pairs renumbered consecutively p1 through p7.",
   "missing_dates_relative_to_original_stocks": {},
   "missing_data_policy": "No interpolation; all fourteen stocks must have identical complete trading-date coverage.",
   "files_sha256": {
@@ -319,8 +319,8 @@
     "ntap_365d.json": "323dfc840823b018b10db15f83a46111398756e3bc923484ce8fb76a0a66f98e",
     "orcl_365d.json": "70706906bc9a8a00873bafc488cfa3e02ae01e2c44b564cce0634c439be06c1d",
     "qcom_365d.json": "eda121b65497315bd45588be3bbd2cf50ff51566e1e3c0d51ae17a88eaf87d0b",
-    "seven_pair_manifest.json": "f27139c56e4176bfe496f2f50b42a0321dc6d0dac379d29f9550be86cfd32f18",
-    "summary.json": "9d9083149b11ddade0e05ded91e40869958a07c0e9c41c7fd06fddd87d7ce616",
+    "seven_pair_manifest.json": "98353ef9f3e166470a38b217717f85b402bbbfdce184f81b7bc50f80ce8a5a4c",
+    "summary.json": "db382234072e389165a3e015a9fa1f2474e2115ccb1f4328bf449ee67ecb9a2e",
     "txn_365d.json": "d5ee989a0546cfbbf30140a5ac4b13760422eb95adb3171f71e51ee327b99b76",
     "zm_365d.json": "223438c86b6f1f6d28f1b77dfb8a3a2dccaafd502987fd6e082649f98601275a"
   },
@@ -372,5 +372,6 @@
         "new_pb": 6.72
       }
     ]
-  }
+  },
+  "source_snapshot_id": "d1_2026-10-13_v1"
 }

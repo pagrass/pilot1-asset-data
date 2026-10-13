@@ -1,0 +1,47 @@
+{
+  "pair_set": "main_w2_7pairs_sequential_v2",
+  "pairs": [
+    {
+      "previous_pair_id": "p1",
+      "main_pair_id": "p1",
+      "stock_a": "CSCO",
+      "stock_b": "INTU"
+    },
+    {
+      "previous_pair_id": "p2",
+      "main_pair_id": "p2",
+      "stock_a": "NTAP",
+      "stock_b": "EPAM"
+    },
+    {
+      "previous_pair_id": "p5",
+      "main_pair_id": "p3",
+      "stock_a": "AKAM",
+      "stock_b": "NOW"
+    },
+    {
+      "previous_pair_id": "p6",
+      "main_pair_id": "p4",
+      "stock_a": "FFIV",
+      "stock_b": "CHKP"
+    },
+    {
+      "previous_pair_id": "p7",
+      "main_pair_id": "p5",
+      "stock_a": "ZM",
+      "stock_b": "ADBE"
+    },
+    {
+      "previous_pair_id": "p8",
+      "main_pair_id": "p6",
+      "stock_a": "TXN",
+      "stock_b": "QCOM"
+    },
+    {
+      "previous_pair_id": "p10",
+      "main_pair_id": "p7",
+      "stock_a": "CRM",
+      "stock_b": "ORCL"
+    }
+  ]
+}

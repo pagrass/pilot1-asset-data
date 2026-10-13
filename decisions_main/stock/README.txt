@@ -1,7 +1,8 @@
 Decisions main study — Wave 2 stock data
 Day 1 publication: 2026-10-13; completed price session: 2026-10-12.
 Current data: current/ (copy of the frozen snapshot).
-Immutable snapshot: snapshots/d1_2026-10-13_v1/
+Current immutable snapshot: snapshots/d1_2026-10-13_v2/
+Earlier v1 snapshot is retained unchanged for reproducibility.
 Public raw source responses: source_snapshots/d1_2026-10-13_v1/
 Seven selected pairs: CSCO/INTU, NTAP/EPAM, AKAM/NOW, FFIV/CHKP, ZM/ADBE, TXN/QCOM, CRM/ORCL.
 All series have 251 daily closing observations from 2025-10-13 to 2026-10-12.
@@ -18,3 +19,7 @@ To update stocks: publish a new archived snapshot, update current/, purge all cu
 The revised QSF must be imported and published in Qualtrics once; later data updates require no QSF edit.
 The earlier D1 embedded draft is superseded by the live-CDN version.
 Crypto data are unchanged.
+
+Consecutive main-study numbering: p1 CSCO/INTU; p2 NTAP/EPAM; p3 AKAM/NOW; p4 FFIV/CHKP; p5 ZM/ADBE; p6 TXN/QCOM; p7 CRM/ORCL.
+Use pair_id_crosswalk.json when comparing earlier QSF drafts or pilot IDs.
+Version 2 changes pair metadata only; all fourteen price series and fundamentals are byte-identical to version 1.
