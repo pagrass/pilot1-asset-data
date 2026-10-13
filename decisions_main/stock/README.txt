@@ -10,5 +10,11 @@ Yahoo split-adjusted quote.close, USD, rounded to cents; excludes dividend reinv
 Valuation categories use refreshed Yahoo P/B and the inherited historical Technology peer reference, not refreshed peers.
 Oracle book value changed in Yahoo: label now Mid. See fundamentals_meta.json.
 Private survey QSF files and participant data are deliberately absent.
-The prepared QSF embeds the D1 snapshot; current/ publication alone does not modify Qualtrics.
+The live-CDN W2 QSF fetches stock/current/ through jsDelivr @main with browser cache revalidation.
+No stock prices or fundamentals are embedded in that QSF.
+The downloaded manifest supplies SHA-256 checksums; mismatched/unavailable files block continuation.
+The snapshot identifier and price window are recorded per pair.
+To update stocks: publish a new archived snapshot, update current/, purge all current jsDelivr URLs, and verify hashes/CORS.
+The revised QSF must be imported and published in Qualtrics once; later data updates require no QSF edit.
+The earlier D1 embedded draft is superseded by the live-CDN version.
 Crypto data are unchanged.
