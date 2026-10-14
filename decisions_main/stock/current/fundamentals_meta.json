@@ -1,11 +1,10 @@
 {
-  "as_of": "2026-10-12",
-  "retrieved_on": "2026-10-13",
+  "as_of": "2026-10-13",
+  "retrieved_on": "2026-10-14",
   "source": "Yahoo Finance via yfinance .info",
   "valuation_method": "Current Yahoo P/B ranked against inherited WRDS GICS-45 positive-P/B peers with historical marketcap >= $10B; self excluded; Low <=33, High >=67. Peer P/B values NOT refreshed.",
   "n_reference_peers": 135,
   "valuation_non_technology": "No sector percentile or label assigned to non-Technology replacement candidates.",
   "dividend_yield_method": "Indicated annual dividendRate / frozen closing price * 100; missing rate remains null.",
-  "oracle_note": "Yahoo bookValue changed from 13.04 (Oct 12 retrieval) to 20.442 (Oct 13 retrieval); current P/B is 6.72 and valuation changes from High to Mid. This is a provider fundamentals update, not solely the daily price movement.",
   "reference_benchmark": "Unchanged inherited historical WRDS reference; no claim of a refreshed peer distribution."
 }
