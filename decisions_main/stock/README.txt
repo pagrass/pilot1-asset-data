@@ -1,9 +1,9 @@
 Decisions main study — Wave 2 stock data
 Latest publication: 2026-10-14; completed price session: 2026-10-13.
 Current data: current/ (copy of the frozen snapshot).
-Current immutable snapshot: snapshots/d2_2026-10-14_v1/
+Current immutable snapshot: snapshots/d2_2026-10-14_v2/
 All earlier snapshots are retained unchanged for reproducibility.
-Public raw source responses: source_snapshots/d2_2026-10-14_v1/
+Public raw source responses: source_snapshots/d2_2026-10-14_v2/
 Seven selected pairs: CSCO/INTU, NTAP/EPAM, AKAM/NOW, FFIV/CHKP, ZM/ADBE, TXN/QCOM, CRM/ORCL.
 All current series have 252 daily closing observations from 2025-10-13 to 2026-10-13.
 The current requested start is 2025-10-13, exactly 365 elapsed days before the closing-price date.
@@ -23,3 +23,6 @@ Crypto data are unchanged.
 Consecutive main-study numbering: p1 CSCO/INTU; p2 NTAP/EPAM; p3 AKAM/NOW; p4 FFIV/CHKP; p5 ZM/ADBE; p6 TXN/QCOM; p7 CRM/ORCL.
 Use pair_id_crosswalk.json when comparing earlier QSF drafts or pilot IDs.
 Day 1 version 2 changed pair metadata only. Day 2 adds the October 13 close and refreshes fundamentals; all overlapping historical prices are unchanged.
+
+Day 2 version 2 restores positive dividend yields for CSCO, INTU, NTAP, TXN, QCOM, CRM, and ORCL using the archived Yahoo dividendYield when dividendRate is absent. Each matches the prior annual dividend rate divided by the October 13 close. All other fundamentals and all prices are unchanged.
+For future refreshes, use the corrected dividend fallback in source_snapshots/d2_2026-10-14_v2/refresh_stocks.py. Do not treat a missing annual dividendRate as missing yield when a positive dividendYield exists.

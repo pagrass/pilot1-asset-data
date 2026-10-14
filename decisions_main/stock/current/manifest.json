@@ -1,5 +1,5 @@
 {
-  "snapshot_id": "d2_2026-10-14_v1",
+  "snapshot_id": "d2_2026-10-14_v2",
   "collection_date": "2026-10-14",
   "kind": "stock",
   "wave": 2,
@@ -301,7 +301,7 @@
     "ORCL"
   ],
   "candidate_tickers": [],
-  "status": "Day 2 publication; same seven pairs numbered p1 through p7; fourteen stocks.",
+  "status": "Day 2 dividend-field correction; October 13 prices and all other fundamentals unchanged.",
   "missing_dates_relative_to_original_stocks": {},
   "missing_data_policy": "No interpolation; all fourteen stocks must have identical complete trading-date coverage.",
   "files_sha256": {
@@ -312,15 +312,15 @@
     "csco_365d.json": "bec5eb386418b931ae727ca15983cdb04e3f2aa15d5b573660581bab76482634",
     "epam_365d.json": "b1560a559af72d6ff404e7d5f634839809356a947a8b4195be0c1c2208647e53",
     "ffiv_365d.json": "d144cf5172d27a2f51e4e7db302e18ecf82f9d2dc69a529aaf11cf9bcad24125",
-    "fundamentals.json": "a6416315b37f2f01e51f1a907cdcd6d7f7dae97995debedeb9f6845ef71616b5",
-    "fundamentals_meta.json": "1cd3938a50cd0be90768503784126d031b8532588b7d7280ed7c6db618ad8e33",
+    "fundamentals.json": "cfbe893e09a20c0a811a21a946a765d64b55b342fb622c196d923589e0564bfa",
+    "fundamentals_meta.json": "38e33a77dac60342cf9b9a227ba26fc32cf59b64fd768cdac89ad0645cb45323",
     "intu_365d.json": "0af2a4776ecb8fbe64a734afe66baa92a4302cac2817db220541f2d9a7e1356c",
     "now_365d.json": "597a68c992efaae864cf0f0fdb389c2aa1969ac0265b97680b61dd97e3a1f527",
     "ntap_365d.json": "0f6f0fa2f71decb41c2a6b200c7337cf7e9e258855c8125e7b470470a1886e58",
     "orcl_365d.json": "83c19d8fe33a428137a4207db91031b37b153080efe7d4b0732e2972fb945d5d",
     "qcom_365d.json": "f1378b8d823a87cbc6b5228fd65fc5de6fe50c08b002b5b41dbd914011b4549a",
-    "seven_pair_manifest.json": "810025671d44544799a69e2b3a6b283b6acebb562b4c52a6ef80d6e757131fbc",
-    "summary.json": "3edf6f432e099207f13e2bf4d09a5b4ed55f385b404d0cade872070591293d39",
+    "seven_pair_manifest.json": "a61aa1236d9efe89550209b66fdc49c41f712e29547249dcfc2d5af6fdd9f95b",
+    "summary.json": "eb40b2b2e1ba5fcdf9384ea6fff5066b931ea9c817d2d39b97e35657a079e5d1",
     "txn_365d.json": "fbc4ce89a28dd2e3e7ae21f86c5dad983be337c9e967318a5c839ed6048b24b4",
     "zm_365d.json": "cff66919c1735aa537b5786b16432f5af2c33edc038a7d5facaf9f9b32960eaf"
   },
@@ -329,6 +329,7 @@
     "adbe_info.json": "7ccb82325a87169b5e7b1d9aea5b07f5c1e8846817304cbd68a4f1bb547811c7",
     "akam_daily.json": "8c8c9db3dea759bea8c251a1245e04c9d32d47be6ee15740d27f9c2d292db06d",
     "akam_info.json": "78c244dc60f9423345d1fd46a8cfc99120d523fe380032fdcc18f41eaac40fa5",
+    "build_correction.py": "43e73ea7b1d068eb994bcb41beeca67a5d8beec2ff39bd24daa7d785c29c7593",
     "build_d2.py": "3b606ce5f49f42a213a3dc31daf0e520fd5189229e6ac99807d2f28fbad0a331",
     "chkp_daily.json": "af6f45a376fb31ed64a067ac5717d324a839fe798009af5059dc41d52438f8c4",
     "chkp_info.json": "875ee80755f2f7c7a419a7311dc8fcce1e851e26619aaaa95f8f74951b659a1f",
@@ -351,7 +352,7 @@
     "orcl_info.json": "58bbd5eeba4a92dc40e6e1f9ebe206056ae6a349dd787bcd8c38187cdfbd9f3b",
     "qcom_daily.json": "80c557be22d0e4861fabb0cde824199117670fb1dcf3200935e32bc2c0e40324",
     "qcom_info.json": "0e7f5147957604c65db4dab42ca5236ff0387c327e5a17a839f53857b3198dcd",
-    "refresh_stocks.py": "d4c1e2e1f978d6cef0fda8b1206ba88f74dd0be49210002b1b950b103712d66d",
+    "refresh_stocks.py": "57644829154ee75f99ac7d3bf46d7be278c9528ccea86adbd9f88b2a5cfc8463",
     "txn_daily.json": "f1834a7e3b9cf0bb76f3497252a84377661c64d8320348f6ab4f41a6da5aa887",
     "txn_info.json": "91f280124ea99ce4831641452df72e0509649204179eafa7d6b9513da37a2a6f",
     "zm_daily.json": "40d058e69429665d2cf77fe472fefb8037e8f1f9bd86631b9d775008408623d7",
@@ -364,6 +365,17 @@
     "historical_overlap_unchanged": true,
     "all_pb_matches_price_divided_by_book_value": true,
     "pair_ordering_and_signs_preserved": true,
-    "valuation_label_changes": []
-  }
+    "valuation_label_changes": [],
+    "dividend_fallback_verified_against_prior_annual_rate": true,
+    "restored_dividend_tickers": [
+      "CRM",
+      "CSCO",
+      "INTU",
+      "NTAP",
+      "ORCL",
+      "QCOM",
+      "TXN"
+    ]
+  },
+  "supersedes_snapshot_id": "d2_2026-10-14_v1"
 }
