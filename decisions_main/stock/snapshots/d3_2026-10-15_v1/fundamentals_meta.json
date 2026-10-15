@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-10-14",
+  "retrieved_on": "2026-10-15",
+  "source": "Yahoo Finance via yfinance .info",
+  "valuation_method": "Current Yahoo P/B ranked against inherited WRDS GICS-45 positive-P/B peers with historical marketcap >= $10B; self excluded; Low <=33, High >=67. Peer P/B values NOT refreshed.",
+  "n_reference_peers": 135,
+  "valuation_non_technology": "No sector percentile or label assigned to non-Technology replacement candidates.",
+  "dividend_yield_method": "Indicated annual dividendRate / frozen closing price * 100 when present; otherwise archived indicated annual rate (see verified_dividend_rates.json) / frozen closing price * 100; positive Yahoo dividendYield only when no verified rate is available. Missing or zero fallback yields retain the previous blank display for non-payers.",
+  "reference_benchmark": "Unchanged inherited historical WRDS reference; no claim of a refreshed peer distribution."
+}

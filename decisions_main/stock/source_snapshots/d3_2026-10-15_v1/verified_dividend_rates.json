@@ -1,0 +1,72 @@
+{
+  "TXN": {
+    "annual_rate": 6.08,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "txn_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 1.42,
+    "ex_dividend_date": 1793318400
+  },
+  "CRM": {
+    "annual_rate": 1.76,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "crm_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 0.44,
+    "ex_dividend_date": 1789603200
+  },
+  "INTU": {
+    "annual_rate": 5.52,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "intu_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 1.38,
+    "ex_dividend_date": 1791417600
+  },
+  "NTAP": {
+    "annual_rate": 2.08,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "ntap_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 0.52,
+    "ex_dividend_date": 1791504000
+  },
+  "QCOM": {
+    "annual_rate": 3.68,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "qcom_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 0.92,
+    "ex_dividend_date": 1788393600
+  },
+  "CSCO": {
+    "annual_rate": 1.68,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "csco_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 0.42,
+    "ex_dividend_date": 1790899200
+  },
+  "ORCL": {
+    "annual_rate": 2.0,
+    "source_snapshot": "d1_2026-10-13_v1",
+    "source_file": "orcl_info.json",
+    "source_field": "dividendRate",
+    "rate_observed_on": "2026-10-13",
+    "validation": "Current lastDividendValue and exDividendDate unchanged; reported yield matches this annual rate divided by previous close.",
+    "last_dividend_value": 0.5,
+    "ex_dividend_date": 1791504000
+  }
+}

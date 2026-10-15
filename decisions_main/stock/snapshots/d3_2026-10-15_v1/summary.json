@@ -1,0 +1,234 @@
+{
+  "snapshot_id": "d3_2026-10-15_v1",
+  "price_as_of": "2026-10-14",
+  "first_price_date": "2025-10-14",
+  "pair_count": 7,
+  "assets": [
+    {
+      "ticker": "ADBE",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 335.94,
+      "last_close": 240.68,
+      "return_pct": -28.4
+    },
+    {
+      "ticker": "AKAM",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 74.09,
+      "last_close": 91.71,
+      "return_pct": 23.8
+    },
+    {
+      "ticker": "CHKP",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 194.08,
+      "last_close": 134.08,
+      "return_pct": -30.9
+    },
+    {
+      "ticker": "CRM",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 239.77,
+      "last_close": 235.95,
+      "return_pct": -1.6
+    },
+    {
+      "ticker": "CSCO",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 68.66,
+      "last_close": 113.64,
+      "return_pct": 65.5
+    },
+    {
+      "ticker": "EPAM",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 146.98,
+      "last_close": 114.63,
+      "return_pct": -22.0
+    },
+    {
+      "ticker": "FFIV",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 343.17,
+      "last_close": 457.26,
+      "return_pct": 33.2
+    },
+    {
+      "ticker": "INTU",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 657.16,
+      "last_close": 310.44,
+      "return_pct": -52.8
+    },
+    {
+      "ticker": "NOW",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 182.25,
+      "last_close": 139.98,
+      "return_pct": -23.2
+    },
+    {
+      "ticker": "NTAP",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 120.55,
+      "last_close": 222.2,
+      "return_pct": 84.3
+    },
+    {
+      "ticker": "ORCL",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 299.0,
+      "last_close": 130.55,
+      "return_pct": -56.3
+    },
+    {
+      "ticker": "QCOM",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 161.74,
+      "last_close": 172.62,
+      "return_pct": 6.7
+    },
+    {
+      "ticker": "TXN",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 173.94,
+      "last_close": 280.65,
+      "return_pct": 61.3
+    },
+    {
+      "ticker": "ZM",
+      "first_date": "2025-10-14",
+      "last_date": "2026-10-14",
+      "n": 252,
+      "first_close": 79.32,
+      "last_close": 94.47,
+      "return_pct": 19.1
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "p1",
+      "stock_a": "CSCO",
+      "stock_b": "INTU",
+      "a_return_pct": 65.5,
+      "b_return_pct": -52.8,
+      "gap_pp": 118.3,
+      "allocation_question_id": "QID911",
+      "allocation_export_tag": "p1_alloc",
+      "canonical_allocation_field": "p1_usd_a",
+      "left_ticker_field": "p1_left",
+      "role": "mixed_sign",
+      "right_ticker_field": "p1_right"
+    },
+    {
+      "pair_id": "p2",
+      "stock_a": "NTAP",
+      "stock_b": "EPAM",
+      "a_return_pct": 84.3,
+      "b_return_pct": -22.0,
+      "gap_pp": 106.3,
+      "allocation_question_id": "QID921",
+      "allocation_export_tag": "p2_alloc",
+      "canonical_allocation_field": "p2_usd_a",
+      "left_ticker_field": "p2_left",
+      "role": "mixed_sign",
+      "right_ticker_field": "p2_right"
+    },
+    {
+      "pair_id": "p3",
+      "stock_a": "AKAM",
+      "stock_b": "NOW",
+      "a_return_pct": 23.8,
+      "b_return_pct": -23.2,
+      "gap_pp": 47.0,
+      "allocation_question_id": "QID951",
+      "allocation_export_tag": "p3_alloc",
+      "canonical_allocation_field": "p3_usd_a",
+      "left_ticker_field": "p3_left",
+      "role": "mixed_sign",
+      "right_ticker_field": "p3_right"
+    },
+    {
+      "pair_id": "p4",
+      "stock_a": "FFIV",
+      "stock_b": "CHKP",
+      "a_return_pct": 33.2,
+      "b_return_pct": -30.9,
+      "gap_pp": 64.1,
+      "allocation_question_id": "QID961",
+      "allocation_export_tag": "p4_alloc",
+      "canonical_allocation_field": "p4_usd_a",
+      "left_ticker_field": "p4_left",
+      "role": "mixed_sign",
+      "right_ticker_field": "p4_right"
+    },
+    {
+      "pair_id": "p5",
+      "stock_a": "ZM",
+      "stock_b": "ADBE",
+      "a_return_pct": 19.1,
+      "b_return_pct": -28.4,
+      "gap_pp": 47.5,
+      "allocation_question_id": "QID971",
+      "allocation_export_tag": "p5_alloc",
+      "canonical_allocation_field": "p5_usd_a",
+      "left_ticker_field": "p5_left",
+      "role": "mixed_sign",
+      "right_ticker_field": "p5_right"
+    },
+    {
+      "pair_id": "p6",
+      "stock_a": "TXN",
+      "stock_b": "QCOM",
+      "a_return_pct": 61.3,
+      "b_return_pct": 6.7,
+      "gap_pp": 54.6,
+      "allocation_question_id": "QID981",
+      "allocation_export_tag": "p6_alloc",
+      "canonical_allocation_field": "p6_usd_a",
+      "left_ticker_field": "p6_left",
+      "role": "both_up",
+      "right_ticker_field": "p6_right"
+    },
+    {
+      "pair_id": "p7",
+      "stock_a": "CRM",
+      "stock_b": "ORCL",
+      "a_return_pct": -1.6,
+      "b_return_pct": -56.3,
+      "gap_pp": 54.7,
+      "allocation_question_id": "QID991",
+      "allocation_export_tag": "p7_alloc",
+      "canonical_allocation_field": "p7_usd_a",
+      "left_ticker_field": "p7_left",
+      "role": "both_down",
+      "right_ticker_field": "p7_right"
+    }
+  ]
+}
