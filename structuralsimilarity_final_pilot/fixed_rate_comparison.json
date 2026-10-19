@@ -1,0 +1,14 @@
+{
+  "method": "Single fixed conversion factor applied to all historical monetary values",
+  "gbp_per_usd": 0.7498889185106195,
+  "reference_date": "2026-10-16",
+  "source": "ECB euro foreign exchange reference rates; GBP-per-EUR divided by USD-per-EUR",
+  "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+  "source_sha256": "4422161311c3c02cf2d1571db07bdf9884b3f42fdeb16a4926903236ae6ab42d",
+  "gbp_per_eur": 0.84385,
+  "usd_per_eur": 1.1253,
+  "fetched_at_utc": "2026-10-19T08:02:02+00:00",
+  "units": "GBP equivalents at a fixed conversion rate, not historical GBP investor returns",
+  "future_stock_rule": "Use the same fixed GBP-per-USD factor for stock prices, annual earnings/net income, market capitalisation, book values and any EPS/cash dividends. Keep percentage returns, earnings growth rates, dividend yields, P/E and P/B unchanged. Convert full precision before display rounding.",
+  "gbp_per_usd_decimal": "0.7498889185106193903847862792"
+}

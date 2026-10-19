@@ -1,0 +1,196 @@
+{
+  "snapshot_id": "pilot_2026-10-19_v1",
+  "collection_date": "2026-10-19",
+  "fetch_started_at_utc": "2026-10-19T08:01:09+00:00",
+  "fetch_finished_at_utc": "2026-10-19T08:01:10+00:00",
+  "window_start": "2025-10-18",
+  "window_end": "2026-10-18",
+  "elapsed_calendar_days": 365,
+  "source_currency": "USD",
+  "currency": "GBP",
+  "kind": "crypto",
+  "assets": [
+    {
+      "symbol": "ETH_GBP_EQUIVALENT",
+      "slug": "eth",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 2917.3303541278,
+      "last_close": 1806.2874335733,
+      "return_pct": -38.1,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "USD source closes multiplied by one fixed GBP-per-USD factor; GBP equivalents, not historical sterling investor returns; final display rounding only",
+      "source_symbol": "ETH-USD",
+      "currency": "GBP",
+      "source_first_close_usd": 3890.35,
+      "source_last_close_usd": 2408.74
+    },
+    {
+      "symbol": "XMR_GBP_EQUIVALENT",
+      "slug": "xmr",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 230.7708157825,
+      "last_close": 448.0436310317,
+      "return_pct": 94.2,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "USD source closes multiplied by one fixed GBP-per-USD factor; GBP equivalents, not historical sterling investor returns; final display rounding only",
+      "source_symbol": "XMR-USD",
+      "currency": "GBP",
+      "source_first_close_usd": 307.74,
+      "source_last_close_usd": 597.48
+    },
+    {
+      "symbol": "BNB_GBP_EQUIVALENT",
+      "slug": "bnb",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 819.7410712699,
+      "last_close": 541.6147702835,
+      "return_pct": -33.9,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "USD source closes multiplied by one fixed GBP-per-USD factor; GBP equivalents, not historical sterling investor returns; final display rounding only",
+      "source_symbol": "BNB-USD",
+      "currency": "GBP",
+      "source_first_close_usd": 1093.15,
+      "source_last_close_usd": 722.26
+    },
+    {
+      "symbol": "BTC_GBP_EQUIVALENT",
+      "slug": "btc",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 80386.7947565094,
+      "last_close": 61504.0893628366,
+      "return_pct": -23.5,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "USD source closes multiplied by one fixed GBP-per-USD factor; GBP equivalents, not historical sterling investor returns; final display rounding only",
+      "source_symbol": "BTC-USD",
+      "currency": "GBP",
+      "source_first_close_usd": 107198.27,
+      "source_last_close_usd": 82017.6
+    },
+    {
+      "symbol": "HYPE_GBP_EQUIVALENT",
+      "slug": "hype",
+      "points": 365,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 27.6184088687,
+      "last_close": 59.1512378921,
+      "return_pct": 114.2,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [
+        "2026-02-02"
+      ],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "USD source closes multiplied by one fixed GBP-per-USD factor; GBP equivalents, not historical sterling investor returns; final display rounding only",
+      "source_symbol": "HYPE32196-USD",
+      "currency": "GBP",
+      "source_first_close_usd": 36.83,
+      "source_last_close_usd": 78.88
+    },
+    {
+      "symbol": "XRP_GBP_EQUIVALENT",
+      "slug": "xrp",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 1.7697378477,
+      "last_close": 0.9748555941,
+      "return_pct": -44.9,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "USD source closes multiplied by one fixed GBP-per-USD factor; GBP equivalents, not historical sterling investor returns; final display rounding only",
+      "source_symbol": "XRP-USD",
+      "currency": "GBP",
+      "source_first_close_usd": 2.36,
+      "source_last_close_usd": 1.3
+    }
+  ],
+  "replication": [
+    "ETH",
+    "XMR",
+    "BNB"
+  ],
+  "self_directed": [
+    "BTC",
+    "HYPE",
+    "XRP"
+  ],
+  "files_sha256": {
+    "eth_365d.json": "57e7fc21f6fa6d0cb26735b8eea76cb6dbdfab4204ecc984a98ee8923363d9bb",
+    "xmr_365d.json": "ecf363c553ceb3ac963a3ec79bf17bf6f58b295d074f78e9ddf2376783ca7456",
+    "bnb_365d.json": "4e01590933340620043e95efed6ba1c650bed46a32f19086bec6ccb04e089308",
+    "btc_365d.json": "8873f5729624201635211fb7b23c37aa997049ce7e2625dd8978ada03de7d8fe",
+    "hype_365d.json": "1b5b2a4b0a6b92fb20ea88dc49db14b64363662d4b85a46c217a48ec57a86fd0",
+    "xrp_365d.json": "6d1d84e2f7ef280df666052ddf6ed3af5d6275ab987bf2bab6c52e2f3a4db04e"
+  },
+  "raw_source_records": [
+    {
+      "key": "crypto_bnb_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "0375bbcb27b97582cc274e24174070427039ed89e24a3a133e03a9b6afe56e8f"
+    },
+    {
+      "key": "crypto_eth_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "06eab29bee9537a67537f63a63b0e11c7da867bdaacfdd7e80408d7dabe1ec10"
+    },
+    {
+      "key": "crypto_xmr_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "c0ee3d0993c7f743b465a29a3aab182f727bd713cc0d71380cb6d84e11251324"
+    },
+    {
+      "key": "crypto_btc_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "048a53f287c78a9cf3b26bd222ff408284fa3369da9566ab66f6e5aa092f16bd"
+    },
+    {
+      "key": "crypto_hype_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "0e8ae3d0587f113abe597cad8b0694cc77dff3bd5f90dbc8c4dbc46a8d79bb49"
+    },
+    {
+      "key": "crypto_xrp_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "12b21a109fa9fc80c9dd44dd8df27e308fe618f73e2d2ca552bcb23a3617b402"
+    }
+  ],
+  "note": "Fresh download. No prior cache reused. Current UTC day excluded. Historical interior gaps are omitted and disclosed, never interpolated.",
+  "currency_method": "fixed_rate_equivalent",
+  "fx": {
+    "method": "Single fixed conversion factor applied to all historical monetary values",
+    "gbp_per_usd": 0.7498889185106195,
+    "reference_date": "2026-10-16",
+    "source": "ECB euro foreign exchange reference rates; GBP-per-EUR divided by USD-per-EUR",
+    "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "source_sha256": "4422161311c3c02cf2d1571db07bdf9884b3f42fdeb16a4926903236ae6ab42d",
+    "gbp_per_eur": 0.84385,
+    "usd_per_eur": 1.1253,
+    "fetched_at_utc": "2026-10-19T08:02:02+00:00",
+    "units": "GBP equivalents at a fixed conversion rate, not historical GBP investor returns",
+    "future_stock_rule": "Use the same fixed GBP-per-USD factor for stock prices, annual earnings/net income, market capitalisation, book values and any EPS/cash dividends. Keep percentage returns, earnings growth rates, dividend yields, P/E and P/B unchanged. Convert full precision before display rounding.",
+    "gbp_per_usd_decimal": "0.7498889185106193903847862792"
+  }
+}

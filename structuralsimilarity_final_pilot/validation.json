@@ -1,0 +1,144 @@
+{
+  "snapshot_id": "pilot_2026-10-19_v1",
+  "current_fetch": true,
+  "no_old_cache_reused": true,
+  "window": [
+    "2025-10-18",
+    "2026-10-18"
+  ],
+  "fx": {
+    "method": "historical_gbp_prices_native_where_available_daily_fx_fallback",
+    "default_currency": "GBP",
+    "price_interpretation": "GBP historical price/return series, including currency movements",
+    "native_gbp_assets": [
+      "ETH",
+      "XMR",
+      "BNB",
+      "BTC",
+      "XRP"
+    ],
+    "daily_fx_converted_assets": [
+      "HYPE"
+    ],
+    "crypto_fx_fallback": {
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1760140800&period2=1792368000&interval=1d",
+      "quote": "USD per GBP",
+      "date_timezone": "Europe/London",
+      "non_trading_days": "latest previous available FX close; never a future rate",
+      "last_fx_day": "2026-10-16"
+    },
+    "fixed_rate_comparison_only": "fixed_rate_comparison.json and gbp_fixed_rate_comparison; not used in the default GBP QSF",
+    "prospective_wave2": "Use genuine GBP stock prices where available; otherwise convert each USD close using date-matched historical GBP/USD. For annual net income/earnings, document an appropriate period-average translation basis and derive GBP growth from the converted GBP amounts. Ratios need consistent underlying units and definitions. Verify the intended price-versus-earnings pattern after translation; never carry USD growth figures over unexamined.",
+    "wave2_data_changed": false
+  },
+  "checks": [
+    {
+      "ticker": "ETH",
+      "previous_usd_return_pct": -32.4,
+      "fresh_usd_return_pct": -38.1,
+      "current_return_pct": -37.7,
+      "gbp_return_pct": -37.7,
+      "sign_preserved": true,
+      "source_method": "native GBP source series",
+      "points": 366,
+      "omitted_days": []
+    },
+    {
+      "ticker": "XMR",
+      "previous_usd_return_pct": 80.1,
+      "fresh_usd_return_pct": 94.2,
+      "current_return_pct": 95.4,
+      "gbp_return_pct": 95.4,
+      "sign_preserved": true,
+      "source_method": "native GBP source series",
+      "points": 366,
+      "omitted_days": []
+    },
+    {
+      "ticker": "BNB",
+      "previous_usd_return_pct": -33.7,
+      "fresh_usd_return_pct": -33.9,
+      "current_return_pct": -33.5,
+      "gbp_return_pct": -33.5,
+      "sign_preserved": true,
+      "source_method": "native GBP source series",
+      "points": 366,
+      "omitted_days": []
+    },
+    {
+      "ticker": "BTC",
+      "previous_usd_return_pct": -24.5,
+      "fresh_usd_return_pct": -23.5,
+      "current_return_pct": -23,
+      "gbp_return_pct": -23,
+      "sign_preserved": true,
+      "source_method": "native GBP source series",
+      "points": 366,
+      "omitted_days": []
+    },
+    {
+      "ticker": "HYPE",
+      "previous_usd_return_pct": 135,
+      "fresh_usd_return_pct": 114.2,
+      "current_return_pct": 117,
+      "gbp_return_pct": 117,
+      "sign_preserved": true,
+      "source_method": "historical daily FX conversion",
+      "points": 365,
+      "omitted_days": [
+        "2026-02-02"
+      ]
+    },
+    {
+      "ticker": "XRP",
+      "previous_usd_return_pct": -41,
+      "fresh_usd_return_pct": -44.9,
+      "current_return_pct": -44.4,
+      "gbp_return_pct": -44.4,
+      "sign_preserved": true,
+      "source_method": "native GBP source series",
+      "points": 366,
+      "omitted_days": []
+    }
+  ],
+  "all_signs_preserved": true,
+  "both_groups_one_positive_two_negative": true,
+  "native_gbp_pair_count": 5,
+  "historical_daily_fx_fallback": [
+    "HYPE"
+  ],
+  "raw_sources": [
+    {
+      "key": "crypto_bnb_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "0375bbcb27b97582cc274e24174070427039ed89e24a3a133e03a9b6afe56e8f"
+    },
+    {
+      "key": "crypto_eth_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "06eab29bee9537a67537f63a63b0e11c7da867bdaacfdd7e80408d7dabe1ec10"
+    },
+    {
+      "key": "crypto_xmr_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "c0ee3d0993c7f743b465a29a3aab182f727bd713cc0d71380cb6d84e11251324"
+    },
+    {
+      "key": "crypto_btc_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "048a53f287c78a9cf3b26bd222ff408284fa3369da9566ab66f6e5aa092f16bd"
+    },
+    {
+      "key": "crypto_hype_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "0e8ae3d0587f113abe597cad8b0694cc77dff3bd5f90dbc8c4dbc46a8d79bb49"
+    },
+    {
+      "key": "crypto_xrp_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "12b21a109fa9fc80c9dd44dd8df27e308fe618f73e2d2ca552bcb23a3617b402"
+    }
+  ],
+  "future_wave2_stock_data_changed": false,
+  "all_raw_source_hashes_verified": true
+}

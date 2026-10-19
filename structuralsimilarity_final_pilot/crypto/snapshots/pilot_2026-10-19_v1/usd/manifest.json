@@ -1,0 +1,157 @@
+{
+  "snapshot_id": "pilot_2026-10-19_v1",
+  "collection_date": "2026-10-19",
+  "fetch_started_at_utc": "2026-10-19T08:01:09+00:00",
+  "fetch_finished_at_utc": "2026-10-19T08:01:10+00:00",
+  "window_start": "2025-10-18",
+  "window_end": "2026-10-18",
+  "elapsed_calendar_days": 365,
+  "source_currency": "USD",
+  "currency": "USD",
+  "kind": "crypto",
+  "assets": [
+    {
+      "symbol": "ETH-USD",
+      "slug": "eth",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 3890.35,
+      "last_close": 2408.74,
+      "return_pct": -38.1,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "XMR-USD",
+      "slug": "xmr",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 307.74,
+      "last_close": 597.48,
+      "return_pct": 94.2,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "BNB-USD",
+      "slug": "bnb",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 1093.15,
+      "last_close": 722.26,
+      "return_pct": -33.9,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "BTC-USD",
+      "slug": "btc",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 107198.27,
+      "last_close": 82017.6,
+      "return_pct": -23.5,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "HYPE32196-USD",
+      "slug": "hype",
+      "points": 365,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 36.83,
+      "last_close": 78.88,
+      "return_pct": 114.2,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [
+        "2026-02-02"
+      ],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    },
+    {
+      "symbol": "XRP-USD",
+      "slug": "xrp",
+      "points": 366,
+      "requested_start": "2025-10-18",
+      "first_day": "2025-10-18",
+      "last_day": "2026-10-18",
+      "first_close": 2.36,
+      "last_close": 1.3,
+      "return_pct": -44.9,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "price_definition": "Yahoo quote.close; split-adjusted; no dividend reinvestment; historical missing daily values omitted, never interpolated"
+    }
+  ],
+  "replication": [
+    "ETH",
+    "XMR",
+    "BNB"
+  ],
+  "self_directed": [
+    "BTC",
+    "HYPE",
+    "XRP"
+  ],
+  "files_sha256": {
+    "eth_365d.json": "82582707fcd42679a219d7f8e6c91321d82f892b34105e1e306c27b405f193c6",
+    "xmr_365d.json": "52a926b247cbfef9f767fa780be319b10b01a33b5d60a4c06cb6258c0c9bfeac",
+    "bnb_365d.json": "39f9f447fb88691f5a1d8b6151811fde0ef7cb2db9a4c689da7b6409ec3ae68b",
+    "btc_365d.json": "19a24fedd183fb2a1a091d780c4d6f32e9cc3261c825a3002362eda99fd0438d",
+    "hype_365d.json": "6752f1ecb5c1a8f3b9ed2f3d40f23eba9b56b143b9d33d3c245120e00fe4751f",
+    "xrp_365d.json": "a377ae1dde5b33b7df388c12c9266e3d6a3476a1af412df0b38c45e2dc960276"
+  },
+  "raw_source_records": [
+    {
+      "key": "crypto_bnb_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "0375bbcb27b97582cc274e24174070427039ed89e24a3a133e03a9b6afe56e8f"
+    },
+    {
+      "key": "crypto_eth_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "06eab29bee9537a67537f63a63b0e11c7da867bdaacfdd7e80408d7dabe1ec10"
+    },
+    {
+      "key": "crypto_xmr_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "c0ee3d0993c7f743b465a29a3aab182f727bd713cc0d71380cb6d84e11251324"
+    },
+    {
+      "key": "crypto_btc_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "048a53f287c78a9cf3b26bd222ff408284fa3369da9566ab66f6e5aa092f16bd"
+    },
+    {
+      "key": "crypto_hype_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "0e8ae3d0587f113abe597cad8b0694cc77dff3bd5f90dbc8c4dbc46a8d79bb49"
+    },
+    {
+      "key": "crypto_xrp_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760745600&period2=1792454400&interval=1d&events=splits",
+      "sha256": "12b21a109fa9fc80c9dd44dd8df27e308fe618f73e2d2ca552bcb23a3617b402"
+    }
+  ],
+  "note": "Fresh download. No prior cache reused. Current UTC day excluded. Historical interior gaps are omitted and disclosed, never interpolated."
+}

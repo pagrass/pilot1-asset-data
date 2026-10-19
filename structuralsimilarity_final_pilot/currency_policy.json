@@ -1,0 +1,25 @@
+{
+  "method": "historical_gbp_prices_native_where_available_daily_fx_fallback",
+  "default_currency": "GBP",
+  "price_interpretation": "GBP historical price/return series, including currency movements",
+  "native_gbp_assets": [
+    "ETH",
+    "XMR",
+    "BNB",
+    "BTC",
+    "XRP"
+  ],
+  "daily_fx_converted_assets": [
+    "HYPE"
+  ],
+  "crypto_fx_fallback": {
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1760140800&period2=1792368000&interval=1d",
+    "quote": "USD per GBP",
+    "date_timezone": "Europe/London",
+    "non_trading_days": "latest previous available FX close; never a future rate",
+    "last_fx_day": "2026-10-16"
+  },
+  "fixed_rate_comparison_only": "fixed_rate_comparison.json and gbp_fixed_rate_comparison; not used in the default GBP QSF",
+  "prospective_wave2": "Use genuine GBP stock prices where available; otherwise convert each USD close using date-matched historical GBP/USD. For annual net income/earnings, document an appropriate period-average translation basis and derive GBP growth from the converted GBP amounts. Ratios need consistent underlying units and definitions. Verify the intended price-versus-earnings pattern after translation; never carry USD growth figures over unexamined.",
+  "wave2_data_changed": false
+}
