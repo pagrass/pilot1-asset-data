@@ -1,0 +1,149 @@
+[
+  {
+    "symbol": "FICO",
+    "name": "Fair Isaac Corporation",
+    "price_return_pct": -51.9,
+    "annual_profit_change_pct": 24.2,
+    "annual_profits_gbp_bn": [
+      0.3467785738821831,
+      0.3800269588911166,
+      0.4888063711539689,
+      0.6069440982885326
+    ],
+    "annual_ends": [
+      "2023-06-30",
+      "2024-06-30",
+      "2025-06-30",
+      "2026-06-30"
+    ],
+    "marketcap_gbp_bn": 12.54854092458933,
+    "marketcap_usd_bn": 16.655881216,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "OLED",
+    "name": "Universal Display Corporation",
+    "price_return_pct": -47.6,
+    "annual_profit_change_pct": -22.7,
+    "annual_profits_gbp_bn": [
+      0.1734479250261003,
+      0.1769200648335053,
+      0.18896211022106768,
+      0.1459847420633731
+    ],
+    "annual_ends": [
+      "2023-06-30",
+      "2024-06-30",
+      "2025-06-30",
+      "2026-06-30"
+    ],
+    "marketcap_gbp_bn": 2.6995186576966845,
+    "marketcap_usd_bn": 3.583114752,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "DBX",
+    "name": "Dropbox, Inc.",
+    "price_return_pct": 26.6,
+    "annual_profit_change_pct": -12.2,
+    "annual_profits_gbp_bn": [
+      0.442013026932709,
+      0.46514659536741304,
+      0.37581556750306194,
+      0.32985057623004443
+    ],
+    "annual_ends": [
+      "2023-06-30",
+      "2024-06-30",
+      "2025-06-30",
+      "2026-06-30"
+    ],
+    "marketcap_gbp_bn": 5.827122812274719,
+    "marketcap_usd_bn": 7.734434304,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "CSCO",
+    "name": "Cisco Systems, Inc.",
+    "price_return_pct": 57.0,
+    "annual_profit_change_pct": 26.2,
+    "annual_profits_gbp_bn": [
+      10.377449012382893,
+      8.210914960865386,
+      7.840219030001054,
+      9.894910410768457
+    ],
+    "annual_ends": [
+      "2023-07-29",
+      "2024-07-27",
+      "2025-07-26",
+      "2026-07-25"
+    ],
+    "marketcap_gbp_bn": 318.9853492859726,
+    "marketcap_usd_bn": 423.394410496,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "INTU",
+    "name": "Intuit Inc.",
+    "price_return_pct": -49.2,
+    "annual_profit_change_pct": 13.2,
+    "annual_profits_gbp_bn": [
+      1.9530727539681678,
+      2.3513047242629885,
+      3.0030780648979016,
+      3.399882596121291
+    ],
+    "annual_ends": [
+      "2023-07-31",
+      "2024-07-31",
+      "2025-07-31",
+      "2026-07-31"
+    ],
+    "marketcap_gbp_bn": 65.46426875313303,
+    "marketcap_usd_bn": 86.891782144,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "ANET",
+    "name": "Arista Networks, Inc.",
+    "price_return_pct": 22.4,
+    "annual_profit_change_pct": 19.9,
+    "annual_profits_gbp_bn": [
+      1.4172041065654044,
+      1.9551167245174748,
+      2.5129628461742075,
+      3.013829038864596
+    ],
+    "annual_ends": [
+      "2023-06-30",
+      "2024-06-30",
+      "2025-06-30",
+      "2026-06-30"
+    ],
+    "marketcap_gbp_bn": 168.1675717322241,
+    "marketcap_usd_bn": 223.211536384,
+    "sector": "Technology"
+  },
+  {
+    "symbol": "OTEX",
+    "name": "Open Text Corporation",
+    "price_return_pct": -33.6,
+    "annual_profit_change_pct": 41.1,
+    "annual_profits_gbp_bn": [
+      0.12954331690954107,
+      0.3684089369659356,
+      0.3395242621276364,
+      0.47917736571438574
+    ],
+    "annual_ends": [
+      "2023-06-30",
+      "2024-06-30",
+      "2025-06-30",
+      "2026-06-30"
+    ],
+    "marketcap_gbp_bn": 4.65166605737654,
+    "marketcap_usd_bn": 6.174231552,
+    "sector": "Technology"
+  }
+]

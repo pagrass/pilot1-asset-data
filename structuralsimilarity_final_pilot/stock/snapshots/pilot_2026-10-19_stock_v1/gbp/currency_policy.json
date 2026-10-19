@@ -1,0 +1,19 @@
+{
+  "currency": "GBP",
+  "prices": "For each US trading date, multiply the USD closing price by that date's GBP per USD daily FX close. If missing, use the last available prior FX date (at most four calendar days earlier). Daily closes are a date-matched approximation, not simultaneous executable quotes. Price returns exclude dividends.",
+  "earnings": "Translate each reporting quarter's GAAP net income using the arithmetic mean of available daily GBP-per-USD FX closes inside that exact quarter. Sum four translated quarters for each annual bar. Compute percentage growth from unrounded GBP annual totals. These are researcher-translated estimates, not company-reported GBP accounts.",
+  "market_cap": "USD market capitalisation from the frozen source, converted at the final price-date FX close.",
+  "outcome_scoring": "Use the same conversion method for eventual outcomes. Price target: close on or immediately before 16 October 2027, GBP FX for that trading date. Profit target: the four company reporting quarters immediately after the latest displayed annual end, each translated using its own quarter-average GBP per USD; compare with the frozen displayed GBP baseline. Preserve the frozen baseline even if historical accounts are restated later.",
+  "fx_source": {
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1640995200&period2=1792195200&interval=1d",
+    "quote": "USD per GBP",
+    "requested_start": "2022-01-01",
+    "last_date": "2026-10-16",
+    "date_timezone": "Europe/London",
+    "conversion": "GBP per USD is reciprocal of the daily close"
+  },
+  "fx_direction": "GBP per USD = 1 / GBPUSD=X close; average the reciprocals, not the original USD-per-GBP quotes.",
+  "fx_start_date": "2022-01-01",
+  "last_price_day": "2026-10-16",
+  "method_selection": "Quarter averaging chosen because earnings accrue over time, before choosing the correlation; no post-baseline outcomes used."
+}
