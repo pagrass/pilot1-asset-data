@@ -1,0 +1,12 @@
+{
+  "snapshot_id": "pilot_2026-10-20_stock_v3",
+  "base_snapshot": "pilot_2026-10-20_stock_v2",
+  "base_commit": "935968d5fea35cd04318eef3d8a578688113eab8",
+  "change": "Replace OTEX with ORCL; preserve all financial values for the other six companies.",
+  "price_and_fx_close": "2026-10-19",
+  "earnings_latest_quarter": "2026-08-31",
+  "oracle_info_policy": "Use previously frozen ORCL_info.json, consistent with the other six frozen company-information sources; translate market cap at final price-date FX.",
+  "oracle_info_quote_timestamp": 1792181030,
+  "oracle_earnings_source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
+  "oracle_earnings_latest_filing": "2026-09-11"
+}
