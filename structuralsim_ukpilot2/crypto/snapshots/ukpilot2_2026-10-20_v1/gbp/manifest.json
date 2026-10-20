@@ -1,0 +1,196 @@
+{
+  "snapshot_id": "ukpilot2_2026-10-20_v1",
+  "currency": "GBP",
+  "currency_method": "historical_gbp_prices_native_where_available_daily_fx_fallback",
+  "collection_date": "2026-10-20",
+  "fetch_started_at_utc": "2026-10-20T11:41:35+00:00",
+  "fetch_finished_at_utc": "2026-10-20T11:41:38+00:00",
+  "window_start": "2025-10-19",
+  "window_end": "2026-10-19",
+  "elapsed_calendar_days": 365,
+  "assets": [
+    {
+      "symbol": "ETH-GBP",
+      "slug": "eth",
+      "points": 366,
+      "requested_start": "2025-10-19",
+      "first_day": "2025-10-19",
+      "last_day": "2026-10-19",
+      "first_close": 2968.12,
+      "last_close": 1806.87,
+      "return_pct": -39.1,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "price_definition": "Yahoo daily GBP quote.close; historical gaps omitted and disclosed, never interpolated",
+      "currency": "GBP",
+      "currency_method": "native_gbp_source_series"
+    },
+    {
+      "symbol": "XMR-GBP",
+      "slug": "xmr",
+      "points": 366,
+      "requested_start": "2025-10-19",
+      "first_day": "2025-10-19",
+      "last_day": "2026-10-19",
+      "first_close": 235.06,
+      "last_close": 454.89,
+      "return_pct": 93.5,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "price_definition": "Yahoo daily GBP quote.close; historical gaps omitted and disclosed, never interpolated",
+      "currency": "GBP",
+      "currency_method": "native_gbp_source_series"
+    },
+    {
+      "symbol": "BNB-GBP",
+      "slug": "bnb",
+      "points": 366,
+      "requested_start": "2025-10-19",
+      "first_day": "2025-10-19",
+      "last_day": "2026-10-19",
+      "first_close": 826.59,
+      "last_close": 549.21,
+      "return_pct": -33.6,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "price_definition": "Yahoo daily GBP quote.close; historical gaps omitted and disclosed, never interpolated",
+      "currency": "GBP",
+      "currency_method": "native_gbp_source_series"
+    },
+    {
+      "symbol": "BTC-GBP",
+      "slug": "btc",
+      "points": 366,
+      "requested_start": "2025-10-19",
+      "first_day": "2025-10-19",
+      "last_day": "2026-10-19",
+      "first_close": 80944.53,
+      "last_close": 61501.23,
+      "return_pct": -24.0,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "price_definition": "Yahoo daily GBP quote.close; historical gaps omitted and disclosed, never interpolated",
+      "currency": "GBP",
+      "currency_method": "native_gbp_source_series"
+    },
+    {
+      "symbol": "HYPE32196-USD / GBPUSD=X",
+      "slug": "hype",
+      "points": 365,
+      "requested_start": "2025-10-19",
+      "first_day": "2025-10-19",
+      "last_day": "2026-10-19",
+      "first_close": 27.83,
+      "last_close": 59.36,
+      "return_pct": 113.3,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [
+        "2026-02-02"
+      ],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "price_definition": "Yahoo HYPE daily USD quote.close divided by the same-date GBPUSD daily close, or latest preceding available FX close on non-trading days; never future FX; same output precision as the original UK pilot",
+      "currency": "GBP",
+      "source_currency": "USD",
+      "currency_method": "daily_historical_fx_conversion",
+      "fx_source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1760227200&period2=1792454400&interval=1d",
+      "native_pair_unavailable": {
+        "symbol": "HYPE32196-GBP",
+        "status": 404,
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+        "response_sha256": "f0b5f9feeac9f1fc93c31b1edc03fbc1fda4acb3ec5e233ebb39d6f8b66e1769"
+      }
+    },
+    {
+      "symbol": "XRP-GBP",
+      "slug": "xrp",
+      "points": 366,
+      "requested_start": "2025-10-19",
+      "first_day": "2025-10-19",
+      "last_day": "2026-10-19",
+      "first_close": 1.78,
+      "last_close": 0.9788,
+      "return_pct": -45.0,
+      "backfilled_from_1h": [],
+      "historical_missing_days_omitted": [],
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "price_definition": "Yahoo daily GBP quote.close; historical gaps omitted and disclosed, never interpolated",
+      "currency": "GBP",
+      "currency_method": "native_gbp_source_series"
+    }
+  ],
+  "errors": [],
+  "replication": [
+    "ETH",
+    "XMR",
+    "BNB"
+  ],
+  "self_directed": [
+    "BTC",
+    "HYPE",
+    "XRP"
+  ],
+  "raw_source_records": [
+    {
+      "key": "crypto_bnb_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "sha256": "532c9b7ce40f4d6e0cb40e43483847916b155cfd5310dfdb72a9df5a67c483d7"
+    },
+    {
+      "key": "crypto_btc_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "sha256": "8186d521f162072d05d9122c3e34ed77a84f270c106c671f889c068bdc2b463d"
+    },
+    {
+      "key": "crypto_eth_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "sha256": "126be3d4b7a66cb0debed71f3e91c5e49406dcdcebb6ac69fd6101adbbbf18f6"
+    },
+    {
+      "key": "crypto_hype_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "sha256": "df6f031000a6b65344b261ced91544cebc4492b45ebf2117d80e77d44854f728"
+    },
+    {
+      "key": "crypto_xmr_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "sha256": "d57096ef889c0520165afe98967657f055eef33c8ad1a4fc0ebe762af441bbc1"
+    },
+    {
+      "key": "crypto_xrp_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-GBP?period1=1760832000&period2=1792540800&interval=1d&events=splits",
+      "sha256": "a532919237aeec34609df041e13d8b8320921e200ec0abc2c5a52aeb298b5a96"
+    },
+    {
+      "key": "gbpusd_daily",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1760227200&period2=1792454400&interval=1d",
+      "sha256": "fc2ba22fde2951399d247215e13f462a407d816e39ee6638268a49ffd95adfca"
+    }
+  ],
+  "files_sha256": {
+    "bnb_365d.json": "f6184e4657de13a597fb89508752f7c56f7eb7e3a5aea6aa73570c76809d6866",
+    "btc_365d.json": "b744c6fee8f9e47ffe9a932e3b591f0e673116a8294995e571f1e3b790f91744",
+    "eth_365d.json": "0aa7d29a97e1a69668023f3ed5df5a154f2b102d59a7849fad13b0cd742dfbbc",
+    "hype_365d.json": "d293bcb76e0cb571657e025cdd11f59c35af246cc23095181a35c06389713337",
+    "xmr_365d.json": "394f6e706783021c8da1d2819df6d4d3818baf05d62e69188bb940d086b9c99d",
+    "xrp_365d.json": "7b0b99c4b3124fed9cb17f1304362187f8218e43ad71d88fe0d96d4501ea7932"
+  },
+  "native_pair_fallbacks": [
+    {
+      "slug": "hype",
+      "reason": "Native GBP pair returned HTTP 404",
+      "method": "Yahoo HYPE daily USD quote.close divided by the same-date GBPUSD daily close, or latest preceding available FX close on non-trading days; never future FX; same output precision as the original UK pilot"
+    }
+  ],
+  "fx_policy": {
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1760227200&period2=1792454400&interval=1d",
+    "quote": "USD per GBP",
+    "date_timezone": "Europe/London",
+    "non_trading_days": "latest preceding FX close; never a future rate",
+    "last_fx_day": "2026-10-19"
+  },
+  "note": "Fresh fetch; no prior source cache reused; current UTC day excluded; historical interior gaps omitted and disclosed."
+}
