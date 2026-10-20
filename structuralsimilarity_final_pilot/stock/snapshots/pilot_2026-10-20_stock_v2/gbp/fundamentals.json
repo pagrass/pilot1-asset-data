@@ -1,0 +1,92 @@
+{
+  "_metadata": {
+    "snapshot_id": "pilot_2026-10-20_stock_v2",
+    "currency": "GBP",
+    "marketcap_units": "millions of GBP",
+    "netprofit_units": "billions of GBP"
+  },
+  "FICO": {
+    "name": "Fair Isaac Corporation",
+    "sector": "Technology",
+    "marketcap": 12649.755715973994,
+    "marketcap_usd_for_eligibility": 16869.265408,
+    "pb_current": -4.1172004,
+    "div_y": 0.0,
+    "netprofit": 0.6069440982885326,
+    "netprofit_growth": 24.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "OLED": {
+    "name": "Universal Display Corporation",
+    "sector": "Technology",
+    "marketcap": 2765.804597385214,
+    "marketcap_usd_for_eligibility": 3688.37888,
+    "pb_current": 2.2028825,
+    "div_y": 2.49,
+    "netprofit": 0.1459847420633731,
+    "netprofit_growth": -22.7,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "DBX": {
+    "name": "Dropbox, Inc.",
+    "sector": "Technology",
+    "marketcap": 5860.149477199883,
+    "marketcap_usd_for_eligibility": 7814.887424,
+    "pb_current": -3.6084335,
+    "div_y": 0.0,
+    "netprofit": 0.32985057623004443,
+    "netprofit_growth": -12.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "CSCO": {
+    "name": "Cisco Systems, Inc.",
+    "sector": "Technology",
+    "marketcap": 314859.54259572667,
+    "marketcap_usd_for_eligibility": 419885.514752,
+    "pb_current": 8.35753,
+    "div_y": 1.58,
+    "netprofit": 9.894910410768457,
+    "netprofit_growth": 26.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "INTU": {
+    "name": "Intuit Inc.",
+    "sector": "Technology",
+    "marketcap": 65251.722425613516,
+    "marketcap_usd_for_eligibility": 87017.381888,
+    "pb_current": 4.6014924,
+    "div_y": 1.7,
+    "netprofit": 3.399882596121291,
+    "netprofit_growth": 13.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "ANET": {
+    "name": "Arista Networks, Inc.",
+    "sector": "Technology",
+    "marketcap": 173025.78608223776,
+    "marketcap_usd_for_eligibility": 230741.049344,
+    "pb_current": 15.5927725,
+    "div_y": 0.0,
+    "netprofit": 3.013829038864596,
+    "netprofit_growth": 19.9,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "OTEX": {
+    "name": "Open Text Corporation",
+    "sector": "Technology",
+    "marketcap": 4669.814941199917,
+    "marketcap_usd_for_eligibility": 6227.49952,
+    "pb_current": 1.5209935,
+    "div_y": 4.36,
+    "netprofit": 0.47917736571438574,
+    "netprofit_growth": 41.1,
+    "valuation": "",
+    "pb_current_pctile": null
+  }
+}
