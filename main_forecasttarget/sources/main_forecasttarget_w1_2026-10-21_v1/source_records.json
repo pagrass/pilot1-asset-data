@@ -1,0 +1,32 @@
+[
+  {
+    "key": "crypto_btc_daily",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BTC-USD?period1=1760918400&period2=1792627200&interval=1d&events=splits",
+    "sha256": "a32ea60f5f779bfca723aa260caeb94dfcfc5a2bb1bdce2cb75b67b1c997bec1"
+  },
+  {
+    "key": "crypto_xrp_daily",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XRP-USD?period1=1760918400&period2=1792627200&interval=1d&events=splits",
+    "sha256": "4ed0f5f61ba6dc790c38a2d2c7e65cfd3e533b003a50143849abf35d4f178b45"
+  },
+  {
+    "key": "crypto_bnb_daily",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/BNB-USD?period1=1760918400&period2=1792627200&interval=1d&events=splits",
+    "sha256": "61bc8d0a8739a37201e9f109735a3fbbec0fb4514d690d810fde94b61d34a0e7"
+  },
+  {
+    "key": "crypto_hype_daily",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/HYPE32196-USD?period1=1760918400&period2=1792627200&interval=1d&events=splits",
+    "sha256": "5d6f5765a16e5fd21331cf1a3da3fecbb8734dcf4aab0e49aaaa75184cd04b96"
+  },
+  {
+    "key": "crypto_xmr_daily",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/XMR-USD?period1=1760918400&period2=1792627200&interval=1d&events=splits",
+    "sha256": "d7b9bc8392d8f5fe8463ba6bcb4d6b8a548b36e460baf99a4675e35ad806831a"
+  },
+  {
+    "key": "crypto_eth_daily",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ETH-USD?period1=1760918400&period2=1792627200&interval=1d&events=splits",
+    "sha256": "ac7a522d08970d233d829d0e62cd785c62d45a656c095db3fcd5c6592a5b1bcb"
+  }
+]
