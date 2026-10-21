@@ -58,4 +58,4 @@ Comparison: stock/reviews/comparison_2026-10-21.json.
 
 The Wave 1 crypto snapshot and its source files are unchanged.
 
-Final W2 selection, 21 October 2026: stock/snapshots/ukpilot2_2026-10-21_stock_final_v1/gbp. Autodesk replaces FICO; Oracle is retained. Data end at 20 October 2026. Frozen snapshot with seven stocks and exact hashes in manifest.json. Two fixed reverse orders begin with Cisco and Dropbox; see stock/reviews/final_selection_2026-10-21.json. Crypto data are unchanged.
+Final W2 selection, 21 October 2026: stock/snapshots/ukpilot2_2026-10-21_stock_final_v1/gbp. Autodesk replaces FICO; Oracle is retained. Data end at 20 October 2026. Frozen snapshot with seven stocks and exact hashes in manifest.json. Randomise the order of two intact blocks: A = Cisco, Autodesk, Universal Display; B = Oracle, Arista, Dropbox, Intuit. Thus A-B opens with Cisco and B-A opens with Oracle; within-block order stays fixed; see stock/reviews/final_selection_2026-10-21.json. Crypto data are unchanged.

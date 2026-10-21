@@ -13,20 +13,33 @@
     "cscofirst": [
       "CSCO",
       "ADSK",
-      "INTU",
       "OLED",
       "ORCL",
       "ANET",
-      "DBX"
-    ],
-    "dbxfirst": [
       "DBX",
-      "ANET",
+      "INTU"
+    ],
+    "orclfirst": [
       "ORCL",
-      "OLED",
+      "ANET",
+      "DBX",
       "INTU",
+      "CSCO",
       "ADSK",
-      "CSCO"
+      "OLED"
+    ]
+  },
+  "blocks": {
+    "A": [
+      "CSCO",
+      "ADSK",
+      "OLED"
+    ],
+    "B": [
+      "ORCL",
+      "ANET",
+      "DBX",
+      "INTU"
     ]
   },
   "metrics": {
@@ -64,5 +77,5 @@
     },
     "max_loo_abs": 0.417171816716151
   },
-  "selection": "User selected Autodesk in place of FICO, retaining Oracle, and two reverse orders with familiar openers."
+  "selection": "User selected Autodesk in place of FICO, retaining Oracle, and randomised order of two intact blocks (three and four stocks), with Cisco or Oracle opening."
 }
