@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "ORCL",
+    "longName": "Oracle Corporation",
+    "shortName": "Oracle Corporation",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "currency": "USD",
+    "marketCap": 397551042560,
+    "sharesOutstanding": 3031501149,
+    "regularMarketPrice": 131.14,
+    "regularMarketTime": 1792526638,
+    "priceToBook": 6.4152236,
+    "dividendYield": 1.53
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:46.015048+00:00",
+  "full_local_response_sha256": "ba6c7ce625e86eb5c047272b54a813693f22d1932bcfaa0f85ac3872fe892c50"
+}

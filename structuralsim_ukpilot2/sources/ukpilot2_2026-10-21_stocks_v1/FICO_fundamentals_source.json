@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "FICO",
+    "longName": "Fair Isaac Corporation",
+    "shortName": "Fair Isaac Corporation",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "currency": "USD",
+    "marketCap": 17272276992,
+    "sharesOutstanding": 21597635,
+    "regularMarketPrice": 799.73,
+    "regularMarketTime": 1792526403,
+    "priceToBook": -4.215562,
+    "dividendYield": 0.0
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:40.034449+00:00",
+  "full_local_response_sha256": "b839e52f8f1a4c27310bc7949315246c40e4e41042730aa3e895a5ee5c0f9b02"
+}

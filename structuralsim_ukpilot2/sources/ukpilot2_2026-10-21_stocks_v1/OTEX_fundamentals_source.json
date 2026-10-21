@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "OTEX",
+    "longName": "Open Text Corporation",
+    "shortName": "Open Text Corporation",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "currency": "USD",
+    "marketCap": 6416358400,
+    "sharesOutstanding": 242126739,
+    "regularMarketPrice": 26.5,
+    "regularMarketTime": 1792526400,
+    "priceToBook": 1.5671201,
+    "dividendYield": 4.23
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:45.309405+00:00",
+  "full_local_response_sha256": "9f6af07f18a6ad6721dba342ad153fa508b1be24a55e787394dff50f6f397b7e"
+}

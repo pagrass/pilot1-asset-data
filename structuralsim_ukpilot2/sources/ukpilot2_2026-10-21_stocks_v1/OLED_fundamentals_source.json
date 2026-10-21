@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "OLED",
+    "longName": "Universal Display Corporation",
+    "shortName": "Universal Display Corporation",
+    "sector": "Technology",
+    "industry": "Electronic Components",
+    "currency": "USD",
+    "marketCap": 3773417472,
+    "sharesOutstanding": 45966835,
+    "regularMarketPrice": 82.09,
+    "regularMarketTime": 1792526401,
+    "priceToBook": 2.253672,
+    "dividendYield": 2.44
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:42.494277+00:00",
+  "full_local_response_sha256": "a5c4b335b37473735b15b9d3a300c147df479d07e6d1fbf8845eace3e4e4e633"
+}

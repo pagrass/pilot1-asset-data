@@ -1,0 +1,424 @@
+{
+  "collection_date": "2026-10-21",
+  "price_first_day": "2025-10-20",
+  "price_last_day": "2026-10-20",
+  "points": 252,
+  "previous_price_first_day": "2025-10-17",
+  "previous_price_last_day": "2026-10-19",
+  "fx_first": [
+    0.7448300307055856,
+    "2025-10-20"
+  ],
+  "fx_last": [
+    0.7514000170727781,
+    "2026-10-20"
+  ],
+  "variants": {
+    "opentext": {
+      "stocks": [
+        "FICO",
+        "OLED",
+        "DBX",
+        "CSCO",
+        "INTU",
+        "ANET",
+        "OTEX"
+      ],
+      "previous": {
+        "price_profit_r": 0.06187618712707157,
+        "price_four_year_r": -0.3042454841364686,
+        "profit_four_year_r": 0.7492786991271612,
+        "sd_price": 44.44374185952608,
+        "sd_profit": 22.532304851141213,
+        "min_abs_price": 24.5,
+        "min_abs_profit": 12.2,
+        "max_price_variation_share": {
+          "ticker": "CSCO",
+          "share": 0.3428392754555111
+        },
+        "max_profit_variation_share": {
+          "ticker": "OLED",
+          "share": 0.4140413170651967
+        },
+        "max_joint_leverage": {
+          "ticker": "OLED",
+          "leverage": 0.6368473984875183
+        },
+        "individual_leverage": {
+          "FICO": 0.3351598749449681,
+          "OLED": 0.6368473984875183,
+          "DBX": 0.4718366489308037,
+          "CSCO": 0.5284184708095077,
+          "INTU": 0.27710572179477744,
+          "ANET": 0.28605246184407324,
+          "OTEX": 0.4645794231883512
+        },
+        "leave_one_out_r": {
+          "FICO": 0.17012866487015893,
+          "OLED": -0.2668297831599088,
+          "DBX": 0.2845656224302654,
+          "CSCO": -0.13884781162917753,
+          "INTU": 0.07057857138465881,
+          "ANET": 0.008202730364292535,
+          "OTEX": 0.23178719052729463
+        },
+        "sign_cells": {
+          "price_+1_profit_+1": 2,
+          "price_+1_profit_-1": 1,
+          "price_-1_profit_+1": 3,
+          "price_-1_profit_-1": 1
+        },
+        "two_cue_vif": 1.003843377528931
+      },
+      "current": {
+        "price_profit_r": 0.06306379455175187,
+        "price_four_year_r": -0.30666730829845684,
+        "profit_four_year_r": 0.7492786991271612,
+        "sd_price": 43.21168272365153,
+        "sd_profit": 22.532304851141213,
+        "min_abs_price": 24.8,
+        "min_abs_profit": 12.2,
+        "max_price_variation_share": {
+          "ticker": "CSCO",
+          "share": 0.3537825543394467
+        },
+        "max_profit_variation_share": {
+          "ticker": "OLED",
+          "share": 0.4140413170651967
+        },
+        "max_joint_leverage": {
+          "ticker": "OLED",
+          "leverage": 0.6399764757989874
+        },
+        "individual_leverage": {
+          "FICO": 0.33620041892899544,
+          "OLED": 0.6399764757989874,
+          "DBX": 0.4830500007220528,
+          "CSCO": 0.5388395026166597,
+          "INTU": 0.2763550308586422,
+          "ANET": 0.26600344784529417,
+          "OTEX": 0.4595751232293683
+        },
+        "leave_one_out_r": {
+          "FICO": 0.17184302517349928,
+          "OLED": -0.27271847725680404,
+          "DBX": 0.29769495161953496,
+          "CSCO": -0.14229032511633824,
+          "INTU": 0.07182327949042407,
+          "ANET": 0.014109105213034361,
+          "OTEX": 0.2244167276483894
+        },
+        "sign_cells": {
+          "price_+1_profit_+1": 2,
+          "price_+1_profit_-1": 1,
+          "price_-1_profit_+1": 3,
+          "price_-1_profit_-1": 1
+        },
+        "two_cue_vif": 1.0039929222033026
+      },
+      "current_unrounded": {
+        "price_profit_r": 0.0631690833173082,
+        "price_four_year_r": -0.3066156603314371,
+        "profit_four_year_r": 0.7494802304079837,
+        "sd_price": 43.209653611628454,
+        "sd_profit": 22.555963854597437,
+        "min_abs_price": 24.7871695960894,
+        "min_abs_profit": 12.230731041401842,
+        "max_price_variation_share": {
+          "ticker": "CSCO",
+          "share": 0.35352336114986377
+        },
+        "max_profit_variation_share": {
+          "ticker": "OLED",
+          "share": 0.4141209228148986
+        },
+        "max_joint_leverage": {
+          "ticker": "OLED",
+          "leverage": 0.6399840769027286
+        },
+        "individual_leverage": {
+          "FICO": 0.33596531427504245,
+          "OLED": 0.6399840769027286,
+          "DBX": 0.483358798756914,
+          "CSCO": 0.5385325414842962,
+          "INTU": 0.27650344682564304,
+          "ANET": 0.26604105941310674,
+          "OTEX": 0.45961476234226895
+        },
+        "leave_one_out_r": {
+          "FICO": 0.17161082398584804,
+          "OLED": -0.27255366126091335,
+          "DBX": 0.2981078059493447,
+          "CSCO": -0.1419607615030586,
+          "INTU": 0.07208023682407652,
+          "ANET": 0.014032011187389145,
+          "OTEX": 0.22443941649274637
+        },
+        "sign_cells": {
+          "price_+1_profit_+1": 2,
+          "price_+1_profit_-1": 1,
+          "price_-1_profit_+1": 3,
+          "price_-1_profit_-1": 1
+        },
+        "two_cue_vif": 1.004006319636954
+      }
+    },
+    "oracle": {
+      "stocks": [
+        "FICO",
+        "OLED",
+        "DBX",
+        "CSCO",
+        "INTU",
+        "ANET",
+        "ORCL"
+      ],
+      "previous": {
+        "price_profit_r": -0.07586290700948428,
+        "price_four_year_r": -0.3151393797524675,
+        "profit_four_year_r": 0.6753332198412066,
+        "sd_price": 46.96603129111608,
+        "sd_profit": 24.02684015052848,
+        "min_abs_price": 24.5,
+        "min_abs_profit": 12.2,
+        "max_price_variation_share": {
+          "ticker": "CSCO",
+          "share": 0.33730259559957654
+        },
+        "max_profit_variation_share": {
+          "ticker": "OLED",
+          "share": 0.38402631158137807
+        },
+        "max_joint_leverage": {
+          "ticker": "OLED",
+          "leverage": 0.6331494654020975
+        },
+        "individual_leverage": {
+          "FICO": 0.2729603397742387,
+          "OLED": 0.6331494654020975,
+          "DBX": 0.427329861612867,
+          "CSCO": 0.5456830694364165,
+          "INTU": 0.24570231358543992,
+          "ANET": 0.29765595556608393,
+          "ORCL": 0.5775189946228566
+        },
+        "leave_one_out_r": {
+          "FICO": -0.009062441140513288,
+          "OLED": -0.39070702267174023,
+          "DBX": 0.11596062905927182,
+          "CSCO": -0.2887635565010935,
+          "INTU": -0.08465991044722516,
+          "ANET": -0.13272267660778686,
+          "ORCL": 0.23178719052729463
+        },
+        "sign_cells": {
+          "price_+1_profit_+1": 2,
+          "price_+1_profit_-1": 1,
+          "price_-1_profit_+1": 3,
+          "price_-1_profit_-1": 1
+        },
+        "two_cue_vif": 1.005788494491477
+      },
+      "current": {
+        "price_profit_r": -0.07224967154522603,
+        "price_four_year_r": -0.33373000480364934,
+        "profit_four_year_r": 0.6753332198412066,
+        "sd_price": 45.53079543927751,
+        "sd_profit": 24.02684015052848,
+        "min_abs_price": 24.8,
+        "min_abs_profit": 12.2,
+        "max_price_variation_share": {
+          "ticker": "CSCO",
+          "share": 0.34914763408563215
+        },
+        "max_profit_variation_share": {
+          "ticker": "OLED",
+          "share": 0.38402631158137807
+        },
+        "max_joint_leverage": {
+          "ticker": "OLED",
+          "leverage": 0.6362920181083886
+        },
+        "individual_leverage": {
+          "FICO": 0.27480400089178475,
+          "OLED": 0.6362920181083886,
+          "DBX": 0.4374136206501636,
+          "CSCO": 0.5567927079291262,
+          "INTU": 0.24582834095604214,
+          "ANET": 0.27750412671660946,
+          "ORCL": 0.5713651847478854
+        },
+        "leave_one_out_r": {
+          "FICO": -0.004602209718659839,
+          "OLED": -0.39386176508917664,
+          "DBX": 0.13054924436845466,
+          "CSCO": -0.2906131841899788,
+          "INTU": -0.08082560635878519,
+          "ANET": -0.12350922335266784,
+          "ORCL": 0.2244167276483894
+        },
+        "sign_cells": {
+          "price_+1_profit_+1": 2,
+          "price_+1_profit_-1": 1,
+          "price_-1_profit_+1": 3,
+          "price_-1_profit_-1": 1
+        },
+        "two_cue_vif": 1.0052474065796515
+      },
+      "current_unrounded": {
+        "price_profit_r": -0.0719376336367958,
+        "price_four_year_r": -0.33388856194026556,
+        "profit_four_year_r": 0.6755993457935793,
+        "sd_price": 45.525927259323915,
+        "sd_profit": 24.044361246529146,
+        "min_abs_price": 24.7871695960894,
+        "min_abs_profit": 12.230731041401842,
+        "max_price_variation_share": {
+          "ticker": "CSCO",
+          "share": 0.34893263830939997
+        },
+        "max_profit_variation_share": {
+          "ticker": "OLED",
+          "share": 0.38424302927426857
+        },
+        "max_joint_leverage": {
+          "ticker": "OLED",
+          "leverage": 0.6363676716428537
+        },
+        "individual_leverage": {
+          "FICO": 0.2747493820683265,
+          "OLED": 0.6363676716428537,
+          "DBX": 0.43777518829153494,
+          "CSCO": 0.5565174910357089,
+          "INTU": 0.24592503607974162,
+          "ANET": 0.27756973820105335,
+          "ORCL": 0.5710954926807811
+        },
+        "leave_one_out_r": {
+          "FICO": -0.004460039810513433,
+          "OLED": -0.39356412759955084,
+          "DBX": 0.13121022223664236,
+          "CSCO": -0.2901604363956854,
+          "INTU": -0.08036241298907967,
+          "ANET": -0.1234145343644744,
+          "ORCL": 0.22443941649274637
+        },
+        "sign_cells": {
+          "price_+1_profit_+1": 2,
+          "price_+1_profit_-1": 1,
+          "price_-1_profit_+1": 3,
+          "price_-1_profit_-1": 1
+        },
+        "two_cue_vif": 1.0052019433102302
+      }
+    }
+  },
+  "companies": [
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac Corporation",
+      "previous_price_return": -51.3,
+      "price_return": -50.2,
+      "previous_profit_growth": 24.2,
+      "profit_growth": 24.2,
+      "four_year_growth": 75.02352913382127,
+      "latest_quarter": "2026-06-30",
+      "latest_used_filing": "2026-07-29",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 17.272276992
+    },
+    {
+      "ticker": "OLED",
+      "name": "Universal Display Corporation",
+      "previous_price_return": -45.7,
+      "price_return": -45.3,
+      "previous_profit_growth": -22.7,
+      "profit_growth": -22.7,
+      "four_year_growth": -15.83367627983704,
+      "latest_quarter": "2026-06-30",
+      "latest_used_filing": "2026-07-30",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 3.773417472
+    },
+    {
+      "ticker": "DBX",
+      "name": "Dropbox, Inc.",
+      "previous_price_return": 24.5,
+      "price_return": 25.2,
+      "previous_profit_growth": -12.2,
+      "profit_growth": -12.2,
+      "four_year_growth": -25.375372187783938,
+      "latest_quarter": "2026-06-30",
+      "latest_used_filing": "2026-08-07",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 7.906213888
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems, Inc.",
+      "previous_price_return": 53.1,
+      "price_return": 52.4,
+      "previous_profit_growth": 26.2,
+      "profit_growth": 26.2,
+      "four_year_growth": -4.649876872809944,
+      "latest_quarter": "2026-07-25",
+      "latest_used_filing": "2026-09-02",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 420.71343104
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "previous_price_return": -50.4,
+      "price_return": -49.1,
+      "previous_profit_growth": 13.2,
+      "profit_growth": 13.2,
+      "four_year_growth": 74.07864551965912,
+      "latest_quarter": "2026-07-31",
+      "latest_used_filing": "2026-09-09",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 89.601564672
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks, Inc.",
+      "previous_price_return": 28.9,
+      "price_return": 24.8,
+      "previous_profit_growth": 19.9,
+      "profit_growth": 19.9,
+      "four_year_growth": 112.66019657313961,
+      "latest_quarter": "2026-06-30",
+      "latest_used_filing": "2026-08-05",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 228.521312256
+    },
+    {
+      "ticker": "OTEX",
+      "name": "Open Text Corporation",
+      "previous_price_return": -33.6,
+      "price_return": -31.7,
+      "previous_profit_growth": 41.1,
+      "profit_growth": 41.1,
+      "four_year_growth": 269.8974035449401,
+      "latest_quarter": "2026-06-30",
+      "latest_used_filing": "2026-08-06",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 6.4163584
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "previous_price_return": -55.1,
+      "price_return": -52.3,
+      "previous_profit_growth": 47.8,
+      "profit_growth": 47.8,
+      "four_year_growth": 84.05031858085653,
+      "latest_quarter": "2026-08-31",
+      "latest_used_filing": "2026-09-11",
+      "earnings_source_values_changed": false,
+      "marketcap_usd_bn": 397.55104256
+    }
+  ],
+  "all_earnings_source_values_unchanged": true,
+  "note": "Main correlations use displayed one-decimal price return and annual profit growth. Four-year growth is first-to-last growth across four annual bars (three years between endpoints). All SDs are sample SDs, ddof=1."
+}

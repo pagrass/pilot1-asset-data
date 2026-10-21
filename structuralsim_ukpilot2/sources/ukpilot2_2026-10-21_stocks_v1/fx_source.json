@@ -1,0 +1,1 @@
+{"url": "https://query1.finance.yahoo.com/v8/finance/chart/GBPUSD=X?period1=1640995200&period2=1792540800&interval=1d&events=splits", "quote": "USD per GBP", "requested_start": "2022-01-01", "last_date": "2026-10-20", "date_timezone": "Europe/London", "conversion": "GBP per USD is reciprocal of daily close"}

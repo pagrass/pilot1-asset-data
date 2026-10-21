@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "INTU",
+    "longName": "Intuit Inc.",
+    "shortName": "Intuit Inc.",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "currency": "USD",
+    "marketCap": 89601564672,
+    "sharesOutstanding": 267236000,
+    "regularMarketPrice": 335.29,
+    "regularMarketTime": 1792526401,
+    "priceToBook": 4.738144,
+    "dividendYield": 1.65
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:41.079780+00:00",
+  "full_local_response_sha256": "6000be3c1e99ae5eed1a16489a220a90ac08f79e7df04c0c39604fbbc5df29d9"
+}

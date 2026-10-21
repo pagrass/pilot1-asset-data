@@ -1,0 +1,92 @@
+{
+  "_metadata": {
+    "snapshot_id": "ukpilot2_2026-10-21_stock_orcl_v1",
+    "currency": "GBP",
+    "marketcap_units": "millions of GBP",
+    "netprofit_units": "billions of GBP"
+  },
+  "FICO": {
+    "name": "Fair Isaac Corporation",
+    "sector": "Technology",
+    "marketcap": 12978.389226674552,
+    "marketcap_usd_for_eligibility": 17272.276992,
+    "pb_current": -4.215562,
+    "div_y": 0.0,
+    "netprofit": 0.6069440982885326,
+    "netprofit_growth": 24.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "OLED": {
+    "name": "Universal Display Corporation",
+    "sector": "Technology",
+    "marketcap": 2835.345952883519,
+    "marketcap_usd_for_eligibility": 3773.417472,
+    "pb_current": 2.253672,
+    "div_y": 2.44,
+    "netprofit": 0.1459847420633731,
+    "netprofit_growth": -22.7,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "DBX": {
+    "name": "Dropbox, Inc.",
+    "sector": "Technology",
+    "marketcap": 5940.729250424235,
+    "marketcap_usd_for_eligibility": 7906.213888,
+    "pb_current": -3.6506023,
+    "div_y": 0.0,
+    "netprofit": 0.32985057623004443,
+    "netprofit_growth": -12.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "CSCO": {
+    "name": "Cisco Systems, Inc.",
+    "sector": "Technology",
+    "marketcap": 316124.07926620304,
+    "marketcap_usd_for_eligibility": 420713.43104,
+    "pb_current": 8.374009,
+    "div_y": 1.57,
+    "netprofit": 9.894910410768457,
+    "netprofit_growth": 26.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "INTU": {
+    "name": "Intuit Inc.",
+    "sector": "Technology",
+    "marketcap": 67326.61722428842,
+    "marketcap_usd_for_eligibility": 89601.564672,
+    "pb_current": 4.738144,
+    "div_y": 1.65,
+    "netprofit": 3.399882596121291,
+    "netprofit_growth": 13.2,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "ANET": {
+    "name": "Arista Networks, Inc.",
+    "sector": "Technology",
+    "marketcap": 171710.91793065204,
+    "marketcap_usd_for_eligibility": 228521.312256,
+    "pb_current": 15.442769,
+    "div_y": 0.0,
+    "netprofit": 3.013829038864596,
+    "netprofit_growth": 19.9,
+    "valuation": "",
+    "pb_current_pctile": null
+  },
+  "ORCL": {
+    "name": "Oracle Corporation",
+    "sector": "Technology",
+    "marketcap": 298719.8601668848,
+    "marketcap_usd_for_eligibility": 397551.04256,
+    "pb_current": 6.4152236,
+    "div_y": 1.53,
+    "netprofit": 14.112108513229183,
+    "netprofit_growth": 47.8,
+    "valuation": "",
+    "pb_current_pctile": null
+  }
+}

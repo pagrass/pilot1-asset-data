@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "CSCO",
+    "longName": "Cisco Systems, Inc.",
+    "shortName": "Cisco Systems, Inc.",
+    "sector": "Technology",
+    "industry": "Communication Equipment",
+    "currency": "USD",
+    "marketCap": 420713431040,
+    "sharesOutstanding": 3942586873,
+    "regularMarketPrice": 106.71,
+    "regularMarketTime": 1792526401,
+    "priceToBook": 8.374009,
+    "dividendYield": 1.57
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:43.899351+00:00",
+  "full_local_response_sha256": "d045b24cc0769517843f6994ddc35b479e815668ac5a5814fae82f980052a899"
+}

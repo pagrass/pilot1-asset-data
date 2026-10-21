@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "ANET",
+    "longName": "Arista Networks, Inc.",
+    "shortName": "Arista Networks, Inc.",
+    "sector": "Technology",
+    "industry": "Computer Hardware",
+    "currency": "USD",
+    "marketCap": 228521312256,
+    "sharesOutstanding": 1261224648,
+    "regularMarketPrice": 181.19,
+    "regularMarketTime": 1792526403,
+    "priceToBook": 15.442769,
+    "dividendYield": 0.0
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "retrieved_at_utc": "2026-10-21T06:48:41.460603+00:00",
+  "full_local_response_sha256": "f1461fed2f6b78b03c62059fa64ebfa2431479ba68906790fae28279f5109aae"
+}
