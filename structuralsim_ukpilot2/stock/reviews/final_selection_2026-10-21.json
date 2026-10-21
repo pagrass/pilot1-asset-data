@@ -1,0 +1,68 @@
+{
+  "snapshot_id": "ukpilot2_2026-10-21_stock_final_v1",
+  "selected_symbols": [
+    "ADSK",
+    "OLED",
+    "DBX",
+    "CSCO",
+    "INTU",
+    "ANET",
+    "ORCL"
+  ],
+  "orders": {
+    "cscofirst": [
+      "CSCO",
+      "ADSK",
+      "INTU",
+      "OLED",
+      "ORCL",
+      "ANET",
+      "DBX"
+    ],
+    "dbxfirst": [
+      "DBX",
+      "ANET",
+      "ORCL",
+      "OLED",
+      "INTU",
+      "ADSK",
+      "CSCO"
+    ]
+  },
+  "metrics": {
+    "stocks": [
+      "ADSK",
+      "OLED",
+      "DBX",
+      "CSCO",
+      "INTU",
+      "ANET",
+      "ORCL"
+    ],
+    "r_pe": -0.062255134782640345,
+    "r_pl": -0.2850544555980182,
+    "r_el": 0.6585724957288523,
+    "sd_price": 42.80340440398904,
+    "sd_profit": 28.14953268663959,
+    "leverage": {
+      "ADSK": 0.40300087586173355,
+      "OLED": 0.6348745909818141,
+      "DBX": 0.42314189840532507,
+      "CSCO": 0.5120583755495944,
+      "INTU": 0.29663047803591186,
+      "ANET": 0.24999434517507366,
+      "ORCL": 0.4802994359905469
+    },
+    "loo_r": {
+      "ADSK": -0.004602209718659839,
+      "OLED": -0.417171816716151,
+      "DBX": 0.12613769903583621,
+      "CSCO": -0.18935435236783793,
+      "INTU": -0.1014684786891602,
+      "ANET": -0.07849918948173226,
+      "ORCL": 0.18527478422659463
+    },
+    "max_loo_abs": 0.417171816716151
+  },
+  "selection": "User selected Autodesk in place of FICO, retaining Oracle, and two reverse orders with familiar openers."
+}

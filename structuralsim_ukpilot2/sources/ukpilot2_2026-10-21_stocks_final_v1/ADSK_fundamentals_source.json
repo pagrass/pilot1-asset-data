@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "symbol": "ADSK",
+    "longName": "Autodesk, Inc.",
+    "shortName": "Autodesk, Inc.",
+    "sector": "Technology",
+    "industry": "Software - Application",
+    "currency": "USD",
+    "marketCap": 51326222336,
+    "sharesOutstanding": 209000000,
+    "regularMarketPrice": 245.58,
+    "regularMarketTime": 1792526401,
+    "priceToBook": 15.171433,
+    "dividendYield": 0.0
+  },
+  "retrieval_method": "Yahoo Finance quoteSummary and quote endpoints via yfinance",
+  "full_local_response_sha256": "8e36e9617cb7feefb062db18749fd8692b24423a8e59127a07854de982d16eac",
+  "retrieved_at_utc": "2026-10-21T07:02:28.692450+00:00"
+}

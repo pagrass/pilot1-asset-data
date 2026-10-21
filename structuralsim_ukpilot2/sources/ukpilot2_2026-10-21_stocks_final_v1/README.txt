@@ -1,0 +1,1 @@
+Autodesk sources were collected on 21 October 2026. Other six stocks and GBPUSD source records are unchanged from structuralsim_ukpilot2/sources/ukpilot2_2026-10-21_stocks_v1. Full converted inputs for all seven final stocks are included here.
